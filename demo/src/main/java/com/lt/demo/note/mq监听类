@@ -1,0 +1,9 @@
+注意：
+
+a. @RabbitListener注解
+RabbitMQ队列消息监听注解，该注解配置监听queues内的队列名称列表，可以配置多个。队列名称对应Constants常量中的对应的名称user.save.queue.name。
+
+b. @RabbitHandler注解
+RabbitMQ消息处理方法，该方法的参数需要消息发送者发送的消息的类型保持一致，否则无法自动调用消费方法，也就无法完成消息的分发。
+
+这样我们就监听了user.save.queue.name这个队列上的消息，只要我们往Direct Exchange交换机发送满足route key的消息，该消息就会由交换机分发到我们接收者

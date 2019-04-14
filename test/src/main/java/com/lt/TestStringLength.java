@@ -11,7 +11,7 @@ import java.io.UnsupportedEncodingException;
  * @Version 1.0
  */
 public class TestStringLength {
-  private static   Logger logger = Logger.getLogger(TestStringLength.class);
+    private static Logger logger = Logger.getLogger(TestStringLength.class);
 
     public static void main(String[] args) {
         String str = "只";

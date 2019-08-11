@@ -4,7 +4,48 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e30616-5c9f-40a3-85a7-a6918c43a91b" name="Default Changelist" comment="" />
+    <list default="true" id="00e30616-5c9f-40a3-85a7-a6918c43a91b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit_demo/src/test/java/com/lt/demo/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/lt/thread/MutpartThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/lt/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/lt/utils/ThreadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/resource/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/META-INF/test.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/com/lt/thread/MutpartThread$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/com/lt/thread/MutpartThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/com/lt/utils/FileUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/com/lt/utils/ThreadUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/bean/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/bean/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/config/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/config/SaveUserQueueConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/SaveUserQueueConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/note/mq监听类" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/note/mq监听类" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/recive/ReceiveMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/recive/ReceiveMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/utils/SendMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/utils/SendMessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/lt/demo/utils/SendMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/utils/SendMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/lt/TestStringLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/lt/TestStringLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/produre/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
     <ignored path="$PROJECT_DIR$/test/target/" />
@@ -21,7 +62,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/demo.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +110,7 @@
         <option value="$PROJECT_DIR$/demo/src/test/java/com/lt/demo/test/ArrayCurrSort.java" />
         <option value="$PROJECT_DIR$/test/src/test/java/com/lt/test/StreamTest.java" />
         <option value="$PROJECT_DIR$/demo/src/test/java/com/lt/demo/test/ConnectTest.java" />
+        <option value="$PROJECT_DIR$/demo/HELP.md" />
       </list>
     </option>
   </component>
@@ -101,7 +149,17 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,6 +313,7 @@
       <workItem from="1555296272214" duration="2842000" />
       <workItem from="1555319252722" duration="600000" />
       <workItem from="1565157262685" duration="290000" />
+      <workItem from="1565508980597" duration="289000" />
     </task>
     <servers />
   </component>
@@ -273,12 +332,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13790000" />
+    <option name="totallyTimeSpent" value="14079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19213313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,7 +355,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5433715" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5417349" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3295082" />
@@ -570,6 +629,25 @@
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="25">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

@@ -1,4 +1,4 @@
-package com.lt.utils;
+package com.lt.cloudtest.utils;
 
 import com.sun.istack.internal.NotNull;
 

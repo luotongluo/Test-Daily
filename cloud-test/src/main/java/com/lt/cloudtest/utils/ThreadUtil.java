@@ -1,4 +1,4 @@
-package com.lt.utils;
+package com.lt.cloudtest.utils;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 

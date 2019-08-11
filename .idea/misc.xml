@@ -12,7 +12,7 @@
       <list>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbit_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-test/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
+        <module name="cloud-test" />
         <module name="test" />
+        <module name="demo" />
         <module name="demo (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-test" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo (1)" target="1.8" />
       <module name="eurke" target="1.8" />
@@ -21,11 +23,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-test" options="-parameters" />
       <module name="demo" options="-parameters" />
-<<<<<<< HEAD
-=======
-      <module name="demo (1)" options="-parameters" />
->>>>>>> 58068e1afce5e42d56552992ee358bdbf76750db
+      <module name="test" options="" />
     </option>
   </component>
 </project>

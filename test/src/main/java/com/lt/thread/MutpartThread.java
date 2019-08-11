@@ -1,7 +1,7 @@
 package com.lt.thread;
 
-import com.lt.utils.FileUtils;
-import com.lt.utils.ThreadUtil;
+import com.lt.cloudtest.utils.FileUtils;
+import com.lt.cloudtest.utils.ThreadUtil;
 
 import java.util.concurrent.ThreadPoolExecutor;
 

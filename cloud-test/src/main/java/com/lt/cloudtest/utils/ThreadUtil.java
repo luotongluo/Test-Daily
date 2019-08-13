@@ -18,6 +18,11 @@ public class ThreadUtil {
     public ThreadUtil() {
     }
 
+    /**
+     * 初始化线程池
+     *
+     * @return
+     */
     public ThreadPoolExecutor init() {
         ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build();
         //common thread pool

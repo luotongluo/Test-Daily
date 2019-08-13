@@ -1,4 +1,4 @@
-package com.lt.thread;
+package com.lt.cloudtest.thread;
 
 import com.lt.cloudtest.utils.FileUtils;
 import com.lt.cloudtest.utils.ThreadUtil;
@@ -17,7 +17,7 @@ public class MutpartThread {
         ThreadUtil threadUtil = new ThreadUtil();
         ThreadPoolExecutor poolExecutor = threadUtil.init();
 
-        int maxVal = 1090000;
+        int maxVal = 1000000;
 //        int judgenum = 5;
         int threadNum = 5;
         StringBuffer buffer = new StringBuffer();
@@ -78,14 +78,10 @@ public class MutpartThread {
                 } catch (InterruptedException e) {
                     System.out.println("errror" + e);
                 }
-//                System.out.println("name:" + Thread.currentThread().getName() +
-//                        "\t id:" + Thread.currentThread().getId() +
-//                        "\tstatus:" + Thread.currentThread().getState() +
-//                        "\tnum:" + finalA2);
                 buffer.append("name:" + Thread.currentThread().getName() +
                         "\t id:" + Thread.currentThread().getId() +
                         "\tstatus:" + Thread.currentThread().getState() +
-                        "\tnum:" + finalA2);
+                        "\tnum:" + finalA2 + "\n");
             }
         });
     }

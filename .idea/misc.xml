@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-web0tomcat/pom.xml" />
       </list>
     </option>
   </component>

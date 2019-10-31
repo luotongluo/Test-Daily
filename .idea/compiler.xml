@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-test" />
-        <module name="test" />
         <module name="demo" />
+        <module name="cloud-test" />
+        <module name="utils" />
+        <module name="test" />
         <module name="demo (1)" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="eurke" target="1.8" />
       <module name="produre" target="1.8" />
       <module name="test" target="1.8" />
+      <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +28,7 @@
       <module name="cloud-test" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="test" options="" />
+      <module name="utils" options="-parameters" />
     </option>
   </component>
 </project>

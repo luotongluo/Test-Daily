@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e30616-5c9f-40a3-85a7-a6918c43a91b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/produre/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
@@ -37,23 +35,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="50" column="24" selection-start-line="47" selection-start-column="8" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="275">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="261">
               <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-end-line="113" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/bidimap/TreeBidiMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="1825" column="24" selection-start-line="1825" selection-start-column="24" selection-end-line="1825" selection-end-column="24" />
+              <folding>
+                <element signature="e#63716#63717#0" expanded="true" />
+                <element signature="e#63764#63765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,23 +113,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/config/CommonProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#369#382#1" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/test/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
@@ -155,6 +149,7 @@
       <find>getLastdayForCurrMonth</find>
       <find>JedisCluster</find>
       <find>StringUtils</find>
+      <find>isBlank</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,11 +204,11 @@
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/test/TestController.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/tools/JedisClusterUtils.java" />
         <option value="$PROJECT_DIR$/utils/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpSSLUtil.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/tools/DateUtil.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpClientMethod.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/utils/pom.xml" />
       </list>
     </option>
   </component>
@@ -316,16 +311,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="HttpClientMethod" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
@@ -538,7 +523,7 @@
       <workItem from="1571818263224" duration="1945000" />
       <workItem from="1571966823948" duration="585000" />
       <workItem from="1572225439089" duration="586000" />
-      <workItem from="1572439241867" duration="7516000" />
+      <workItem from="1572439241867" duration="7630000" />
     </task>
     <servers />
   </component>
@@ -557,7 +542,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44166000" />
+    <option name="totallyTimeSpent" value="44280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -667,13 +652,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/lt/TestStringLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1002,14 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="50" column="24" selection-start-line="47" selection-start-column="8" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/org/springframework/util/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1050,11 +1020,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="261">
           <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-end-line="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/bidimap/TreeBidiMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1825" column="24" selection-start-line="1825" selection-start-column="24" selection-end-line="1825" selection-end-column="24" />
+          <folding>
+            <element signature="e#63716#63717#0" expanded="true" />
+            <element signature="e#63764#63765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>

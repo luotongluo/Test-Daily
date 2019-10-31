@@ -1,7 +1,5 @@
 package com.lt;
 
-import org.apache.log4j.Logger;
-
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -11,14 +9,12 @@ import java.io.UnsupportedEncodingException;
  * @Version 1.0
  */
 public class TestStringLength {
-    private static Logger logger = Logger.getLogger(TestStringLength.class);
 
     public static void main(String[] args) {
         String str = "只";
 
         System.out.println(getWordCount(str));
         int wordCount = getWordCount(str);
-        logger.info("111{}");
         System.out.println(getWordCountRegex(str));
         try {
             System.out.println(getWordCountCode(str, "GBK"));

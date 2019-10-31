@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e30616-5c9f-40a3-85a7-a6918c43a91b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/produre/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/utils/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="-100">
               <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
-              <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-end-line="113" />
+              <caret line="112" column="45" selection-start-line="112" selection-end-line="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpClientMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -523,7 +523,7 @@
       <workItem from="1571818263224" duration="1945000" />
       <workItem from="1571966823948" duration="585000" />
       <workItem from="1572225439089" duration="586000" />
-      <workItem from="1572439241867" duration="7630000" />
+      <workItem from="1572439241867" duration="8285000" />
     </task>
     <servers />
   </component>
@@ -542,13 +542,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44280000" />
+    <option name="totallyTimeSpent" value="44935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21028744" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.21028744" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.19515885" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -566,7 +565,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5417349" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5417349" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" weight="0.6710311" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3295082" />
@@ -1011,7 +1010,7 @@
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpClientMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1021,7 +1020,7 @@
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/http/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="112" column="45" lean-forward="true" selection-start-line="112" selection-end-line="113" />
+          <caret line="112" column="45" selection-start-line="112" selection-end-line="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1042,7 +1041,7 @@
     <entry file="file://$PROJECT_DIR$/utils/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="-100">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>

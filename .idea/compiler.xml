@@ -7,28 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="test" />
+        <module name="rabbit" />
         <module name="cloud-test" />
         <module name="utils" />
-        <module name="test" />
-        <module name="demo (1)" />
+        <module name="demo-tomcattest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-test" target="1.8" />
-      <module name="demo" target="1.8" />
-      <module name="demo (1)" target="1.8" />
-      <module name="eurke" target="1.8" />
-      <module name="produre" target="1.8" />
-      <module name="test" target="1.8" />
-      <module name="utils" target="1.8" />
+      <module name="demo" target="1.5" />
+      <module name="demo-tomcattest" target="1.5" />
+      <module name="rabbit" target="1.8" />
+      <module name="test" target="1.5" />
+      <module name="utils" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-test" options="-parameters" />
-      <module name="demo" options="-parameters" />
-      <module name="test" options="" />
-      <module name="utils" options="-parameters" />
+      <module name="rabbit" options="-parameters" />
     </option>
   </component>
 </project>

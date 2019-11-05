@@ -275,6 +275,21 @@ public class DateUtil {
         }
     }
 
+    /**
+     * 获取当前日期是星期几<br>
+     *
+     * @param date
+     * @return 当前日期是星期几
+     */
+    public static String getWeekOfDate(Date date) {
+        String[] weekDays = { "星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六" };
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
+        if (w < 0)
+            w = 0;
+        return weekDays[w];
+    }
     public static void main(String[] args) {
         Date d1 = parseDate("2014-01-02 11:30:23");
         Date d2 = parseDate("2004-01-02 11:30:24");
@@ -282,5 +297,8 @@ public class DateUtil {
         System.out.println(formatDateTime(addYear(d2, -1), "yyyy-MM-dd HH:mm:ss"));
         System.out.println(formatDateTime(addYear(d2, 0), "yyyy-MM-dd HH:mm:ss"));
         System.out.println(subYearDate(d2, d1));
+
+        int week = DateUtil.getMonth(new Date());
+        System.out.println(week);
     }
 }

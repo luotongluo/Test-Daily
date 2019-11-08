@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-test/cloud-test.iml" filepath="$PROJECT_DIR$/cloud-test/cloud-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-web0tomcat/demo-tomcattest.iml" filepath="$PROJECT_DIR$/demo-web0tomcat/demo-tomcattest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demo-web0tomcat/demo-tomcattest.iml" filepath="$PROJECT_DIR$/demo-web0tomcat/demo-tomcattest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rabbit_demo/rabbit.iml" filepath="$PROJECT_DIR$/rabbit_demo/rabbit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit_demo/rabbit.iml" filepath="$PROJECT_DIR$/rabbit_demo/rabbit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-recive/rabbit-recive.iml" filepath="$PROJECT_DIR$/rabbit-recive/rabbit-recive.iml" />
       <module fileurl="file://$PROJECT_DIR$/sql-gener/sql-gener.iml" filepath="$PROJECT_DIR$/sql-gener/sql-gener.iml" />

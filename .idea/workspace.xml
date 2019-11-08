@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e30616-5c9f-40a3-85a7-a6918c43a91b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/produre/target/" />
@@ -29,36 +30,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/com/lt/io/NioBlockingHttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/com/lt/io/NioNonBlockingHttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/com/lt/enums/HttpConstant.java">
+        <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/lt/demo/DemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="98" selection-start-line="10" selection-start-column="57" selection-end-line="11" selection-end-column="98" />
+            <state relative-caret-position="150">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -205,49 +182,40 @@
           <expand>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Test-Daily" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lt" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioNonBlockingHttpClient">
+  <component name="RunManager" selected="Spring Boot.UtilsApplication">
     <configuration name="NioBlockingHttpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lt.io.NioBlockingHttpClient" />
       <module name="test" />
@@ -417,6 +385,9 @@
     </configuration>
     <list>
       <item itemvalue="Application.VoliteTest" />
+      <item itemvalue="Application.NioBlockingHttpClient" />
+      <item itemvalue="Application.SocketHttpClient" />
+      <item itemvalue="Application.NioNonBlockingHttpClient" />
       <item itemvalue="Spring Boot.ProdureApplication" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.CloudTestApplication" />
@@ -425,9 +396,6 @@
       <item itemvalue="Spring Boot.GenerApplication" />
       <item itemvalue="Spring Boot.ResiveApplication" />
       <item itemvalue="Spring Boot.DemoApplication (2)" />
-      <item itemvalue="Application.NioBlockingHttpClient" />
-      <item itemvalue="Application.SocketHttpClient" />
-      <item itemvalue="Application.NioNonBlockingHttpClient" />
     </list>
     <recent_temporary>
       <list>
@@ -473,7 +441,9 @@
       <workItem from="1572439241867" duration="8465000" />
       <workItem from="1572851093411" duration="4832000" />
       <workItem from="1572948659077" duration="880000" />
-      <workItem from="1573004618059" duration="7821000" />
+      <workItem from="1573004618059" duration="9161000" />
+      <workItem from="1573104650494" duration="574000" />
+      <workItem from="1573178325365" duration="2156000" />
     </task>
     <servers />
   </component>
@@ -492,14 +462,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58648000" />
+    <option name="totallyTimeSpent" value="62718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" weight="0.21633889" />
-      <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" visible="true" weight="0.21633889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49099836" visible="true" weight="0.2193646" />
+      <window_info id="Structure" order="1" sideWeight="0.5090016" side_tool="true" weight="0.2193646" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -635,13 +604,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/config/CommonProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -730,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/UtilsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/tools/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -748,12 +703,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1441">
           <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sql-gener/HELP.md" />
     <entry file="file://$PROJECT_DIR$/sql-gener/mvnw.cmd" />
@@ -797,29 +752,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql-gener/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbit-recive/HELP.md" />
     <entry file="file://$PROJECT_DIR$/rabbit-recive/mvnw" />
     <entry file="file://$PROJECT_DIR$/rabbit-recive/mvnw.cmd" />
     <entry file="file://$PROJECT_DIR$/rabbit_demo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-450" />
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbit-recive/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbit-recive/src/main/java/com/lt/rabbit/demo/listen/Listen.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1023,8 +978,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/lt/enums/HttpConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="98" selection-start-line="10" selection-start-column="57" selection-end-line="11" selection-end-column="98" />
+        <state relative-caret-position="300">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/lt/utils/utils/UtilsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/lt/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>

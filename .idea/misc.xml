@@ -16,7 +16,6 @@
         <option value="$PROJECT_DIR$/demo-web0tomcat/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-test/pom.xml" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/sql-gener/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit-recive/pom.xml" />
       </list>
     </option>

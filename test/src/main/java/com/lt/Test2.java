@@ -1,6 +1,9 @@
 package com.lt;
 
-import java.util.ArrayList;
+import org.springframework.util.StringUtils;
+
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -11,13 +14,17 @@ import java.util.List;
  */
 public class Test2 {
     public static void main(String[] args) {
-        List<String> negativeShopList =new ArrayList<>();
-        negativeShopList.add("571");
-        String ss= "571";
-        String s1= "1";
-        boolean contains =negativeShopList.contains(ss);
-        boolean contains2 =negativeShopList.contains(1);
-        System.out.println(contains);
-        System.out.println(contains2);
+        String ss = "";
+        String s1 = null;
+        List<String> onelist = null;
+        if (!StringUtils.isEmpty(ss)) {
+            String[] leve1 = ss.split(",");
+            onelist = Arrays.asList(leve1);
+        }
+
+        HashMap<Integer, List<String>> cityListMap = new HashMap<>();
+        cityListMap.put(1, onelist);
+        cityListMap.put(2, onelist);
+        System.out.println("11");
     }
 }

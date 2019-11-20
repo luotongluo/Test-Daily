@@ -21,6 +21,7 @@ public class TestController {
 
     @RequestMapping("test")
     public Map test(@RequestBody String ss){
+        logger.info("init______>");
         HashMap<String, String> hashMap = new HashMap<>();
         hashMap.put("code",ss);
         return hashMap;

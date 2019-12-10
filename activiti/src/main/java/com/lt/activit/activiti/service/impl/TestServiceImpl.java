@@ -35,10 +35,12 @@ public class TestServiceImpl implements TestService {
     @Autowired
     private ProcessEngine processEngine;
 
+    @Override
     public void activiti() {
         System.out.println("任务已经执行.....................................");
     }
 
+    @Override
     public List<String> user() {
         return Arrays.asList("xiaoming", "xiaohong");
     }
@@ -68,6 +70,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 发布一个新的审批流
      */
+    @Override
     public void creatActivitiTask(String fileName, String nameOfApprove) {
         //加载的那两个内容就是我们之前已经弄好的基础内容哦。
         //得到了流程引擎
@@ -89,6 +92,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 2：启动流程实例
      */
+    @Override
     public void testStartProcessInstance() {
         //这个是查看数据库中act_re_procdef表
         processEngine.getRuntimeService()
@@ -99,6 +103,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 完成请假申请
      */
+    @Override
     public void testQingjia() {
         //查看act_ru_task表
         processEngine.getTaskService()
@@ -108,6 +113,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 查询正在执行的任务
      */
+    @Override
     public void testQueryTask(String assingee) {
 
         //下面代码中的小毛，就是我们之前设计那个流程图中添加的班主任内容
@@ -130,6 +136,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 完成任务
      */
+    @Override
     public void testFinishTaskManager() {
         //查看act_ru_task数据表
         processEngine.getTaskService()
@@ -139,6 +146,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 结束任务
      */
+    @Override
     public void testFinishTask() {
         processEngine.getTaskService()
                 .complete("30002");
@@ -147,6 +155,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 查看已经完成的任务和当前在执行的任务
      */
+    @Override
     public void findHistoryTask() {
         //如果只想获取到已经执行完成的，那么就要加入completed这个过滤条件
         List<HistoricTaskInstance> historicTaskInstances1 = processEngine.getHistoryService()
@@ -164,6 +173,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 删除已经部署的流程
      */
+    @Override
     public void testDelete() {
         //得到流程引擎
         //第一个参数是部署的流程的ID，第二个true表示是进行级联删除
@@ -174,6 +184,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 根据名称查询流程部署
      */
+    @Override
     public void testQueryDeploymentByName(String deployName) {
         List<Deployment> deployments = processEngine.getRepositoryService()
                 .createDeploymentQuery()
@@ -189,6 +200,7 @@ public class TestServiceImpl implements TestService {
     /**
      * 查询所有的部署流程
      */
+    @Override
     public void queryAllDeplyoment() {
         //得到流程引擎
         List<Deployment> lists = processEngine.getRepositoryService()
@@ -206,6 +218,7 @@ public class TestServiceImpl implements TestService {
      *
      * @throws Exception
      */
+    @Override
     public void testShowImage() throws Exception {
 //        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         InputStream inputStream = processEngine.getRepositoryService()

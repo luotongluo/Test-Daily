@@ -22,7 +22,7 @@ public class Test2 {
             onelist = Arrays.asList(leve1);
         }
 
-        HashMap<Integer, List<String>> cityListMap = new HashMap<>();
+        HashMap<Integer, List<String>> cityListMap = new HashMap<Integer, List<String>>();
         cityListMap.put(1, onelist);
         cityListMap.put(2, onelist);
         System.out.println("11");

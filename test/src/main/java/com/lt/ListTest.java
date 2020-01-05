@@ -1,7 +1,7 @@
 package com.lt;
 
-import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @Author: LT
@@ -15,7 +15,10 @@ public class ListTest {
 //        boolean empty = li.isEmpty();
 //        System.out.println(empty);
         String ss = "11,22,33";
-        List<String> strings = Arrays.asList( ss.split(","));
+//        List<String> strings = Arrays.asList( ss.split(","));
+        List<String> strings = null;
+        CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList(strings);
+        boolean empty = copyOnWriteArrayList.isEmpty();
         System.out.println("111");
     }
 }

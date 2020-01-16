@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author LT
  */
 @SpringBootApplication
-public class DemoApplication {
+public class RabbitApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(RabbitApplication.class, args);
     }
 
 }

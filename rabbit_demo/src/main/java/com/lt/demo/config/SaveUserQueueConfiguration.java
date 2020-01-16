@@ -28,7 +28,7 @@ public class SaveUserQueueConfiguration {
      *
      * @return
      */
-    @Bean
+    @Bean("directExchange")
     public DirectExchange directExchange() {
         return new DirectExchange(Constants.SAVE_USER_EXCHANGE_NAME);
     }
@@ -38,7 +38,7 @@ public class SaveUserQueueConfiguration {
      *
      * @return
      */
-    @Bean
+    @Bean("queue")
     public Queue queue() {
         return new Queue(Constants.SAVE_USER_QUEUE_NAME, true);
     }

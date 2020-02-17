@@ -9,7 +9,7 @@ import java.util.concurrent.CountDownLatch;
  * @Version 1.0
  */
 public class ThreadTest {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
         Foo2 foo = new Foo2();
         foo.first(() -> {
             System.out.println(1 + Thread.currentThread().getName());

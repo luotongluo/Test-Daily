@@ -26,7 +26,9 @@ public class WeatherServiceTest {
         HashMap<String, String> reqMap = new HashMap<>(16);
         reqMap.put("area", "");
         reqMap.put("areaid", "");
+        //月份
         reqMap.put("month", "");
+        //地址
         reqMap.put("path", "/weatherhistory");
         this.weatherService.testWeather(reqMap);
     }
@@ -36,6 +38,7 @@ public class WeatherServiceTest {
         HashMap<String, String> reqMap = new HashMap<>(16);
         //下面参数二选一 或者二者都可
         reqMap.put("area", "北京");
+        //城市地址id
 //        reqMap.put("areaid", "");
         reqMap.put("path", "/hour24");
         /*

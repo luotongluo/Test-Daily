@@ -1,4 +1,4 @@
-package com.lt.alidemo.aliapi;
+package com.lt.alidemo;
 
 /**
  * @Author: LT

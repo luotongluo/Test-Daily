@@ -1,4 +1,4 @@
-package com.lt.alidemo.aliapi;
+package com.lt.alidemo;
 
 import com.lt.alidemo.config.CommonConfig;
 import com.lt.alidemo.utils.HttpUtils;

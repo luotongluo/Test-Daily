@@ -1,4 +1,4 @@
-package com.lt;
+package com.lt.leecode;
 
 /**
  * @Author: LT

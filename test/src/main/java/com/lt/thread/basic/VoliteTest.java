@@ -1,4 +1,4 @@
-package com.lt.thread;
+package com.lt.thread.basic;
 
 import java.util.Vector;
 import java.util.concurrent.locks.Lock;

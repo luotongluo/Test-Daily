@@ -1,4 +1,4 @@
-package com.lt.thread;
+package com.lt.thread.cooperation;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;

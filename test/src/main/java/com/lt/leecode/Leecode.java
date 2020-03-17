@@ -6,7 +6,7 @@ package com.lt.leecode;
  * @Description:
  * @Version 1.0
  */
-public class leecode {
+public class Leecode {
     public int rob(int[] nums) {
         int length = nums.length;
         if (length == 1) {

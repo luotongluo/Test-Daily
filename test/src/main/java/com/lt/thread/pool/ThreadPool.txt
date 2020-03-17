@@ -1,0 +1,29 @@
+参考博客：https://blog.csdn.net/liujiahan629629/article/details/84454908
+
+workQueue，当任务被提交但尚未被执行的任务队列，
+是一个BlockingQueue接口的对象，只存放Runnable对象。
+根据队列功能分类，看下JDK提供的几种BlockingQueue：
+work queue class name	说明
+SynchronousQueue	直接提交队列：没有容量，每一个插入操作都要等待一个相应的删除操作。通常使用需要将maximumPoolSize的值设置很大，
+否则很容易触发拒绝策略。
+ArrayBlockingQueue	有界的任务队列：任务大小通过入参 int capacity决定，当填满队列后才会创建大于corePoolSize的线程。
+LinkedBlockingQueue	无界的任务队列：线程个数最大为corePoolSize，如果任务过多，则不断扩充队列，知道内存资源耗尽。
+PriorityBlockingQueue	优先任务队列：是一个无界的特殊队列，可以控制任务执行的先后顺序，而上边几个都是先进先出的策略。
+
+拒绝策略：如果线程池处理速度达不到任务的出现速度时，只能执行拒绝策略，看下JDK提供几种，然后自定义看个例子：
+策略名称	描述
+AbortPolicy	该策略会直接抛出异常，阻止系统正常 工作。线程池默认为此。
+CallerRunsPolicy	只要线程池未关闭，该策略直接在调用者线程中，运行当前被丢弃的任务。
+DiscardOledestPolicy	该策略将丢弃最老的一个请求，也就是即将被执行的一个任务，并尝试重新提交当前任务。
+DiscardPolicy	该策略默默地丢弃无法处理的任务，不予任务处理。
+
+线程池的扩展：JDK已经对线程池做了非常好的编写，如果我们想扩展怎么办呢？ThreadPoolExecutor提供了三个方法供我们使用：
+beforeExecute()每个线程执行前，afterExecute()每个线程执行后，terminated()线程池退出时
+
+线程数量的优化：线程池的大小对系统性能有一定的影响，过大或者过小都无法发挥系统的最佳性能。但是也没有必要做的特别精确，
+只是不要太大，不要太小即可。我们可以根据此公式进行粗略计算：线程池个数=CPU的数量*CPU的使用率*（1+等待时间/计算时间）。
+当然了还需要根据实际情况，积累实际经验，来进行判断。
+
+七，最后看下分而治之：Fork/Join：大家都知道hadoop中的Map-Reduce分开处理，合并结果；当今流行的分布式，将用户的请求分散处理等等。
+分而治之是非常有用实用的。JDK帮我们提供了ForkJoinPool线程池，供我们做这些处理，有两个子类供我们使用，Recursive有返回值，
+RecursiveAction无返回值

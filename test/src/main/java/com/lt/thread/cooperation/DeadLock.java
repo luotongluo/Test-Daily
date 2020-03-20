@@ -30,9 +30,32 @@ public class DeadLock extends Thread {
                     e.printStackTrace();
                 }
             }
-            synchronized (o2){
-
+            synchronized (o2) {
+                System.out.println("哲学家A开始吃饭了");
+            }
+        }
+        if (tool == o2) {
+            synchronized (o2) {
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            synchronized (o1) {
+                System.out.println("哲学家B开始吃饭了");
             }
         }
     }
+
+    public static void main(String[] args) throws InterruptedException{
+        DeadLock deadLock2 = new DeadLock(o2);
+        DeadLock deadLock = new DeadLock(o1);
+        deadLock.start();
+        deadLock2.start();
+
+        Thread.sleep(500);
+    }
+
+
 }

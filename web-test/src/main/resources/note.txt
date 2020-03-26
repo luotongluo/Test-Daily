@@ -1,0 +1,14 @@
+增删改查
+https://blog.csdn.net/u012459871/article/details/79858666
+
+项目配置
+#https://blog.csdn.net/weixin_33832340/article/details/89622325
+
+Springboot2注解使用Mybatis动态SQL
+https://www.cnblogs.com/luohanguo/p/10194160.html
+
+--动态sql执行
+https://www.iteye.com/blog/412887952-qq-com-2391924
+
+Spring Boot中集成Mybatis（动态拼接SQL）
+https://blog.csdn.net/hdn_kb/article/details/100139885

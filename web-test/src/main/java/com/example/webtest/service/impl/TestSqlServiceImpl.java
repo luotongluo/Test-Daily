@@ -1,10 +1,12 @@
 package com.example.webtest.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.example.webtest.dao.TestMapper;
 import com.example.webtest.dao.TestMapper1;
 import com.example.webtest.po.ElectronicInvoiceShopResVo;
 import com.example.webtest.service.TestSqlService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -16,24 +18,26 @@ import java.util.Map;
  */
 @Service
 public class TestSqlServiceImpl implements TestSqlService {
-//    @Autowired
-//    private TestMapper1 testMapper1;
+    @Autowired
+    private TestMapper testMapper;
 
     @Override
     public String testActiveSql(Map map) {
-        return "select * from apollo_electronic_invoice_shop ";
+        ElectronicInvoiceShopResVo electronicInvoiceShopResVo = null;
+        electronicInvoiceShopResVo =new ElectronicInvoiceShopResVo("shopname","indet_name","placr-code",2,12);
+
+        Integer integer = testMapper.updateSql(electronicInvoiceShopResVo);
+        return String.valueOf(integer);
     }
 
+    @Override
     public void getdate() {
-//        Object info = testMapper.getInfo();
-//        String s = JSON.toJSONString(info);
-//        System.out.println(s);
+
     }
 
     @Override
     public String insert(ElectronicInvoiceShopResVo electronicInvoiceShopResVo) {
-        String sql = "insert into apollo_electronic_invoice_shop (shop_name,identification_number,type)values ('123','222',2);";
-        return sql;
+        return null;
     }
 
     @Override

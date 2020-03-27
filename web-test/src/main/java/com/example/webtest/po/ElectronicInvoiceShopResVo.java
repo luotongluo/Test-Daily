@@ -16,11 +16,12 @@ public class ElectronicInvoiceShopResVo {
     public ElectronicInvoiceShopResVo() {
     }
 
-    public ElectronicInvoiceShopResVo(String shopName, String identificationNumber, String placeCode, Integer type) {
+    public ElectronicInvoiceShopResVo(String shopName, String identificationNumber, String placeCode, Integer type,Integer id) {
         this.shopName = shopName;
         this.identificationNumber = identificationNumber;
         this.placeCode = placeCode;
         this.type = type;
+        this.id = id;
     }
 
     public Integer getId() {

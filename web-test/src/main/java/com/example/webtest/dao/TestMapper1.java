@@ -14,6 +14,4 @@ import org.springframework.stereotype.Component;
 public interface TestMapper1 {
     Integer getDate();
 
-//    @InsertProvider(type = TestSqlServiceImpl.class,method = "testActiveSql")
-//    public void insert();
 }

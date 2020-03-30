@@ -6,17 +6,17 @@ package com.example.webtest.po;
  * @Description:
  * @Version 1.0
  */
-public class ElectronicInvoiceShopResVo {
+public class ElectronicInvoiceShop {
     private Integer id;
     private String shopName;
     private String identificationNumber;
     private String placeCode;
     private Integer type;
 
-    public ElectronicInvoiceShopResVo() {
+    public ElectronicInvoiceShop() {
     }
 
-    public ElectronicInvoiceShopResVo(String shopName, String identificationNumber, String placeCode, Integer type,Integer id) {
+    public ElectronicInvoiceShop(String shopName, String identificationNumber, String placeCode, Integer type, Integer id) {
         this.shopName = shopName;
         this.identificationNumber = identificationNumber;
         this.placeCode = placeCode;

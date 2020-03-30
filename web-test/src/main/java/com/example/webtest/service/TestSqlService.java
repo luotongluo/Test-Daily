@@ -1,6 +1,6 @@
 package com.example.webtest.service;
 
-import com.example.webtest.po.ElectronicInvoiceShopResVo;
+import com.example.webtest.po.ElectronicInvoiceShop;
 
 import java.util.Map;
 
@@ -15,7 +15,7 @@ public interface TestSqlService {
 
     public void getdate();
 
-    public String insert(ElectronicInvoiceShopResVo electronicInvoiceShopResVo);
+    public String insert(ElectronicInvoiceShop electronicInvoiceShopResVo);
 
     public Integer getDate();
 }

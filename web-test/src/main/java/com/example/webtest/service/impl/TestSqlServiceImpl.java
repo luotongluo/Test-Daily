@@ -1,12 +1,9 @@
 package com.example.webtest.service.impl;
 
-import com.alibaba.fastjson.JSON;
 import com.example.webtest.dao.TestMapper;
-import com.example.webtest.dao.TestMapper1;
-import com.example.webtest.po.ElectronicInvoiceShopResVo;
+import com.example.webtest.po.ElectronicInvoiceShop;
 import com.example.webtest.service.TestSqlService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -23,8 +20,8 @@ public class TestSqlServiceImpl implements TestSqlService {
 
     @Override
     public String testActiveSql(Map map) {
-        ElectronicInvoiceShopResVo electronicInvoiceShopResVo = null;
-        electronicInvoiceShopResVo =new ElectronicInvoiceShopResVo("shopname","indet_name","placr-code",2,12);
+        ElectronicInvoiceShop electronicInvoiceShopResVo = null;
+        electronicInvoiceShopResVo =new ElectronicInvoiceShop("shopname","indet_name","placr-code",2,12);
 
         Integer integer = testMapper.updateSql(electronicInvoiceShopResVo);
         return String.valueOf(integer);
@@ -36,7 +33,7 @@ public class TestSqlServiceImpl implements TestSqlService {
     }
 
     @Override
-    public String insert(ElectronicInvoiceShopResVo electronicInvoiceShopResVo) {
+    public String insert(ElectronicInvoiceShop electronicInvoiceShopResVo) {
         return null;
     }
 

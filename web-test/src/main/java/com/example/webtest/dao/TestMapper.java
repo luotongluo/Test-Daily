@@ -1,6 +1,6 @@
 package com.example.webtest.dao;
 
-import com.example.webtest.po.ElectronicInvoiceShopResVo;
+import com.example.webtest.po.ElectronicInvoiceShop;
 import org.apache.commons.lang.StringUtils;
 import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.Mapper;
@@ -24,13 +24,13 @@ public interface TestMapper {
     final static Logger LOGGER = LoggerFactory.getLogger(TestMapper.class);
 
     @SelectProvider(type = BuilderActiveSql.class, method = "getqueryActiveSql")
-    public List<ElectronicInvoiceShopResVo> getInfo();
+    public List<ElectronicInvoiceShop> getInfo();
 
     @InsertProvider(type = BuilderActiveSql.class, method = "insertSql")
     public Integer insertDb();
 
     @UpdateProvider(type = BuilderActiveSql.class, method = "updateActiveSql")
-    public Integer updateSql(ElectronicInvoiceShopResVo electronicInvoiceShopResVo);
+    public Integer updateSql(ElectronicInvoiceShop electronicInvoiceShopResVo);
 
     /**
      * 成员内部类可以直接访问外部类的成员字段和成员方法，因为它是关联着一个外部类实例的
@@ -46,7 +46,7 @@ public interface TestMapper {
             return "insert into apollo_electronic_invoice_shop (shop_name,identification_number,type)values ('123','222',2);";
         }
 
-        public String updateActiveSql(final ElectronicInvoiceShopResVo electronicInvoiceShopResVo) {
+        public String updateActiveSql(final ElectronicInvoiceShop electronicInvoiceShopResVo) {
             StringBuffer sql = new StringBuffer();
             sql.append("update apollo_electronic_invoice_shop set ");
             if (StringUtils.isNotEmpty(electronicInvoiceShopResVo.getPlaceCode())) {

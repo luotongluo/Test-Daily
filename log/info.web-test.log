@@ -1,0 +1,15 @@
+2020-03-31 13:36:48,394 [main] INFO  c.example.webtest.WebTestApplication 55 - Starting WebTestApplication on LEYOU-20171226Q with PID 10780 (D:\Work_space\Test-Daily\web-test\target\classes started by Administrator in D:\Work_space\Test-Daily)
+2020-03-31 13:36:48,397 [main] DEBUG c.example.webtest.WebTestApplication 56 - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-31 13:36:48,397 [main] INFO  c.example.webtest.WebTestApplication 655 - The following profiles are active: test
+2020-03-31 13:36:51,531 [main] INFO  c.example.webtest.WebTestApplication 61 - Started WebTestApplication in 3.604 seconds (JVM running for 4.532)
+2020-03-31 13:37:06,956 [main] INFO  c.example.webtest.WebTestApplication 55 - Starting WebTestApplication on LEYOU-20171226Q with PID 15420 (D:\Work_space\Test-Daily\web-test\target\classes started by Administrator in D:\Work_space\Test-Daily)
+2020-03-31 13:37:06,958 [main] DEBUG c.example.webtest.WebTestApplication 56 - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-31 13:37:06,959 [main] INFO  c.example.webtest.WebTestApplication 655 - The following profiles are active: test
+2020-03-31 13:37:08,838 [main] INFO  c.example.webtest.WebTestApplication 61 - Started WebTestApplication in 2.146 seconds (JVM running for 3.321)
+2020-03-31 13:38:48,288 [main] INFO  c.example.webtest.WebTestApplication 55 - Starting WebTestApplication on LEYOU-20171226Q with PID 11100 (D:\Work_space\Test-Daily\web-test\target\classes started by Administrator in D:\Work_space\Test-Daily)
+2020-03-31 13:38:48,290 [main] DEBUG c.example.webtest.WebTestApplication 56 - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-31 13:38:48,291 [main] INFO  c.example.webtest.WebTestApplication 655 - The following profiles are active: test
+2020-03-31 13:38:50,370 [main] INFO  c.example.webtest.WebTestApplication 61 - Started WebTestApplication in 2.603 seconds (JVM running for 3.151)
+2020-03-31 13:39:18,881 [http-nio-1111-exec-1] DEBUG c.e.w.controller.HomeController 31 - 日志输出 debug
+2020-03-31 13:39:18,881 [http-nio-1111-exec-1] INFO  c.e.w.controller.HomeController 32 - 日志输出 info
+2020-03-31 13:39:18,881 [http-nio-1111-exec-1] WARN  c.e.w.controller.HomeController 33 - 日志输出 warn

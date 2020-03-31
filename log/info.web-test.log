@@ -95,3 +95,7 @@
 2020-03-31 20:19:34,656 [main] DEBUG c.example.webtest.WebTestApplication 56 - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
 2020-03-31 20:19:34,657 [main] INFO  c.example.webtest.WebTestApplication 655 - The following profiles are active: test
 2020-03-31 20:19:37,685 [main] INFO  c.example.webtest.WebTestApplication 61 - Started WebTestApplication in 3.34 seconds (JVM running for 3.857)
+2020-03-31 20:32:38,921 [main] INFO  c.example.webtest.WebTestApplication 55 - Starting WebTestApplication on LEYOU-20171226Q with PID 12228 (D:\Work_space\Test-Daily\web-test\target\classes started by Administrator in D:\Work_space\Test-Daily)
+2020-03-31 20:32:38,924 [main] DEBUG c.example.webtest.WebTestApplication 56 - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-31 20:32:38,924 [main] INFO  c.example.webtest.WebTestApplication 655 - The following profiles are active: test
+2020-03-31 20:32:41,694 [main] INFO  c.example.webtest.WebTestApplication 61 - Started WebTestApplication in 3.113 seconds (JVM running for 3.713)

@@ -38,4 +38,11 @@ public class TestActiveSqlControler {
     public String findById(@PathVariable int id) {
         return " findById" + id;
     }
+
+    @ApiOperation("testtest")
+    @RequestMapping("testtest")
+    public String testtest(){
+        logger.info("test");
+        return "123";
+    }
 }

@@ -1,6 +1,6 @@
 package com.example.webtest.controller;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

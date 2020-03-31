@@ -1,9 +1,13 @@
-swaggerconfig
+===================swaggerconfig
 https://blog.csdn.net/qq_34495753/article/details/90052387
-swagger 注解说明
+===================swagger 注解说明
 https://blog.csdn.net/xiaojin21cen/article/details/78654652
 swagger配置和简单使用
 https://www.cnblogs.com/zhaopengcheng/p/8583659.html
 
-logback:
+===================logback:
 https://www.cnblogs.com/zlwsq/p/10898346.html
+===================spring boot配置德鲁伊
+访问方式都是固定的/druid/index.html或者是/druid/login.html
+https://blog.csdn.net/weixin_30887919/article/details/96669199
+https://www.cnblogs.com/AshOfTime/p/10926569.html

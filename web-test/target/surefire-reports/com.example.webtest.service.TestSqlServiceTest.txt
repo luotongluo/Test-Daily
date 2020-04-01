@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.example.webtest.service.TestSqlServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.954 s <<< FAILURE! - in com.example.webtest.service.TestSqlServiceTest
+testActiveSql  Time elapsed: 0.071 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+
+### Error updating database.  Cause: java.sql.SQLException: Field 'create_time' doesn't have a default value
+### The error may exist in com/example/webtest/dao/TestMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into apollo_electronic_invoice_shop (shop_name,identification_number,type)values ('123','222',2);
+### Cause: java.sql.SQLException: Field 'create_time' doesn't have a default value
+; Field 'create_time' doesn't have a default value; nested exception is java.sql.SQLException: Field 'create_time' doesn't have a default value
+	at com.example.webtest.service.TestSqlServiceTest.testActiveSql(TestSqlServiceTest.java:42)
+Caused by: java.sql.SQLException: Field 'create_time' doesn't have a default value
+	at com.example.webtest.service.TestSqlServiceTest.testActiveSql(TestSqlServiceTest.java:42)
+

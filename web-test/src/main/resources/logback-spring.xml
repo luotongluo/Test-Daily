@@ -9,6 +9,13 @@
         <!--<property name="logback.logdir" value="/log/"/>-->
         <property name="logback.appname" value="web-test"/>
     </springProfile>
+    <springProfile name="prod">
+        <!--在项目的根目录下面创建文件-->
+        <property name="logback.logdir" value="/home/log/"/>
+        <!--在磁盘的根目录下面创建日志文件-->
+        <!--<property name="logback.logdir" value="/log/"/>-->
+        <property name="logback.appname" value="web-test"/>
+    </springProfile>
 
 
     <!--输出到控制台 ConsoleAppender-->
@@ -105,8 +112,8 @@
     <!-- 生产环境. -->
     <springProfile name="prod">
         <logger name="com.example.webtest" level="INFO" additivity="false">
-            <appender-ref ref="consoleLog1"/>
-            <appender-ref ref="consoleLog2"/>
+            <appender-ref ref="console"/>
+            <appender-ref ref="fileErrorLog"/>
         </logger>
     </springProfile>
 

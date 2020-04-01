@@ -17,31 +17,43 @@ public class ResultModel<T> {
     private String message;
     @ApiModelProperty("业务数据")
     private T data;
+    @ApiModelProperty("描述性返回状态 0 返回成功 其他为错误代码")
+    private Integer resCode = 0;
 
-    public ResultModel(boolean result, String message, T data) {
+    public ResultModel(boolean result, String message, T data, Integer resCode) {
         this.result = result;
         this.message = message;
         this.data = data;
-    }
-    public static<T> ResultModel<T> success(T data) {
-        return new ResultModel<>(true, "SUCCESS", data);
+        this.resCode = resCode;
     }
 
 
-    public static<T> ResultModel<T> success(String message, T data) {
-        return new ResultModel<>(true, message, data);
+    public static <T> ResultModel<T> success(T data) {
+        return new ResultModel<>(true, "SUCCESS", data, 0);
     }
 
 
-    public static ResultModel failure() {
-        return new ResultModel<>(false, "FAILURE", null);
+    public static <T> ResultModel<T> success(String message, T data) {
+        return new ResultModel<>(true, message, data, 0);
     }
 
 
-    public static ResultModel failure(String message) {
-        return new ResultModel<>(false, message, null);
+    public static ResultModel failure(Integer resCode) {
+        return new ResultModel<>(false, "FAILURE", null, resCode);
     }
 
+
+    public static ResultModel failure(String message, Integer resCode) {
+        return new ResultModel<>(false, message, null, resCode);
+    }
+
+    public Integer getResCode() {
+        return resCode;
+    }
+
+    public void setResCode(Integer resCode) {
+        this.resCode = resCode;
+    }
     public boolean isResult() {
         return result;
     }

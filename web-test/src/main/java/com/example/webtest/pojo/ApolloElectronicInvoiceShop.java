@@ -1,5 +1,6 @@
 package com.example.webtest.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 public class ApolloElectronicInvoiceShop {

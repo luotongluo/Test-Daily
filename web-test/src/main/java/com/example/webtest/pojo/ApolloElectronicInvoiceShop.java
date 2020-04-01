@@ -3,7 +3,7 @@ package com.example.webtest.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ApolloElectronicInvoiceShop {
+public class ApolloElectronicInvoiceShop implements Serializable {
     private Integer id;
 
     private String shopName;
@@ -19,6 +19,8 @@ public class ApolloElectronicInvoiceShop {
     private Date createTime;
 
     private Date updateTime;
+
+    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

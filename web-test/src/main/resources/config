@@ -1,3 +1,18 @@
+增删改查
+https://blog.csdn.net/u012459871/article/details/79858666
+
+项目配置
+#https://blog.csdn.net/weixin_33832340/article/details/89622325
+
+Springboot2注解使用Mybatis动态SQL
+https://www.cnblogs.com/luohanguo/p/10194160.html
+
+--动态sql执行
+https://www.iteye.com/blog/412887952-qq-com-2391924
+
+Spring Boot中集成Mybatis（动态拼接SQL）
+https://blog.csdn.net/hdn_kb/article/details/100139885
+
 ===================swaggerconfig
 https://blog.csdn.net/qq_34495753/article/details/90052387
 ===================swagger 注解说明
@@ -15,3 +30,7 @@ https://www.cnblogs.com/AshOfTime/p/10926569.html
 ===================SpringBoot SpringCloud 热部署 热加载 热调试
 https://www.cnblogs.com/moly/p/7978303.html
 https://www.cnblogs.com/crazymakercircle/p/12077373.html
+
+逆向工程：
+https://www.cnblogs.com/lifan666/p/lalala.html
+

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lt.rabbit</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>rabbit-recive</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>resive</name>
-    <description>Demo project for Spring Boot</description>
+    <name>rabbit-recive</name>
+    <description>rabbit-recive</description>
 
     <properties>
         <java.version>1.8</java.version>

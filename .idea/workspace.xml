@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/error.web-test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/info.web-test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-test/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +372,7 @@
       <workItem from="1585622583804" duration="7773000" />
       <workItem from="1585637058277" duration="5275000" />
       <workItem from="1585716629119" duration="6485000" />
-      <workItem from="1585732868897" duration="335000" />
+      <workItem from="1585732868897" duration="1200000" />
     </task>
     <servers />
   </component>
@@ -504,6 +502,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="359" y="95" width="647" height="538" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1585536499418" />
+    <state x="467" y="154" key="git4idea.merge.GitMergeDialog" timestamp="1585796378461">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="467" y="154" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1585796378461" />
     <state x="54" y="0" key="new project wizard" timestamp="1585101249447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

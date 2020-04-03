@@ -35,22 +35,22 @@ import java.util.HashMap;
 @Configuration
 @MapperScan(basePackages = {"com.example.webtest.dao"}, sqlSessionTemplateRef = "sqlSessionTemplate")
 public class DruidConfig {
-    //    @Bean
+//        @Bean
 //    @ConfigurationProperties(prefix = "spring.datasource")
 //    public DataSource druidDataSource() {
 //        return new DruidDataSource();
 //    }
-    @Bean
-    @ConfigurationProperties("spring.datasource")
-    public DataSourceProperties newDataSourceProperties() {
-        return new DataSourceProperties();
-    }
+//    @Bean
+//    @ConfigurationProperties("spring.datasource")
+//    public DataSourceProperties newDataSourceProperties() {
+//        return new DataSourceProperties();
+//    }
 
-    @Bean(name = "dataSource")
-    @ConfigurationProperties(prefix = "spring.datasource")
-    public DataSource newDataSource() {
-        return newDataSourceProperties().initializeDataSourceBuilder().build();
-    }
+//    @Bean(name = "dataSource")
+//    @ConfigurationProperties(prefix = "spring.datasource")
+//    public DataSource newDataSource() {
+//        return newDataSourceProperties().initializeDataSourceBuilder().build();
+//    }
 
     @Bean
     public SqlSessionFactory newSqlSessionFactory(@Qualifier("dataSource") DataSource dataSource) throws Exception {
@@ -72,21 +72,21 @@ public class DruidConfig {
         }
     }
 
-    @Bean
-    public SqlSessionTemplate newSqlSessionTemplate(@Qualifier("newSqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
-        SqlSessionTemplate template = new SqlSessionTemplate(sqlSessionFactory);
-        return template;
-    }
+//    @Bean
+//    public SqlSessionTemplate newSqlSessionTemplate(@Qualifier("sqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
+//        SqlSessionTemplate template = new SqlSessionTemplate(sqlSessionFactory);
+//        return template;
+//    }
 
-    /**
-     * 事务管理
-     *
-     * @return 事务管理实例
-     */
-    @Bean
-    public PlatformTransactionManager platformTransactionManager() {
-        return new DataSourceTransactionManager(newDataSource());
-    }
+//    /**
+//     * 事务管理
+//     *
+//     * @return 事务管理实例
+//     */
+//    @Bean
+//    public PlatformTransactionManager platformTransactionManager() {
+//        return new DataSourceTransactionManager(newDataSource());
+//    }
 
     //配置druid监控
     @Bean

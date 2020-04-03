@@ -4,7 +4,7 @@
     <contextName>logback-demo</contextName>
     <springProfile name="test,dev">
         <!--在项目的根目录下面创建文件-->
-        <property name="logback.logdir" value="log/"/>
+        <property name="logback.logdir" value="web-test/log/"/>
         <!--在磁盘的根目录下面创建日志文件-->
         <!--<property name="logback.logdir" value="/log/"/>-->
         <property name="logback.appname" value="web-test"/>

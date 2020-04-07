@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Date;
+
 /**
  * @Author: LT
  * @Date: 2019/12/3 21:24
@@ -28,8 +30,11 @@ class TestServiceTest {
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         processEngine.getRepositoryService()
                 .createDeployment()
-                .addClasspathResource("TestAct.bpmn")
-                .addClasspathResource("TestAct.png")
+                .name("EnglishTesk")
+                .activateProcessDefinitionsOn(new Date())
+                //以文本方式打开 process中的内容不能存在空的
+                .addClasspathResource("EnglishTesk.bpmn")
+//                .addClasspathResource("TestAct.png")
                 .deploy();
     }
 
@@ -41,7 +46,15 @@ class TestServiceTest {
 //        String assgn = "big-mall2";
 //        this.testService.testQueryTask(assgn);
 //        this.testService.testFinishTaskManager();
-        this.testService.testFinishTask();
+//        this.testService.getQueryList();
+        /*
+        myProcess_1:3:37504
+myProcess_1:2:32504
+myProcess_1:1:22504
+         */
+//        this.testService.startProcesses("myProcess_1:3:37504");
+//        testService.getSomeOnejobs();
+        testService.doSomeOnejobs();
     }
 
 }

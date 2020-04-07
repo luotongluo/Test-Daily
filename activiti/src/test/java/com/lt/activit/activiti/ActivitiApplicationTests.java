@@ -28,7 +28,6 @@ class ActivitiApplicationTests {
      */
     @Test
     public void testActivitiEnvironment2() {
-
         ProcessEngineConfiguration configuration = ProcessEngineConfiguration
                 .createProcessEngineConfigurationFromResource("/activiti.cfg.xml");
         ProcessEngine processEngine = configuration.buildProcessEngine();
@@ -41,7 +40,7 @@ class ActivitiApplicationTests {
 
     @Test
     public void start() {
-        this.testService.start();
+//        this.testService.start();
     }
 
     //部署流程
@@ -49,7 +48,7 @@ class ActivitiApplicationTests {
     public void deployProcess() {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         DeploymentBuilder builder = repositoryService.createDeployment();
-        builder.addClasspathResource("TestAct.bpmn");//bpmn文件的名称
+        builder.addClasspathResource("EnglishTesk.bpmn");//bpmn文件的名称
         builder.deploy();
     }
 

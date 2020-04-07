@@ -4,7 +4,29 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="" />
+    <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/activiti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/activiti.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/Activiti工作流的自带数据表的含义.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/EnglishTesk.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/ActivitiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/service/impl/TestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/流程实例.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/classes/流程部署.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/test-classes/com/lt/activit/activiti/ActivitiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/target/test-classes/com/lt/activit/activiti/service/TestServiceTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,47 +148,51 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebTestApplication">
-    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lt.thread.ThreadLocalTest" />
-      <module name="test" />
+  <component name="RunManager" selected="JUnit.TestServiceTest.creatActivitiTask">
+    <configuration name="ActivitiApplicationTests.deployProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lt.thread.*" />
+          <option name="PATTERN" value="com.lt.activit.activiti.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeControllerTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.webtest.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.webtest.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.webtest.controller.HomeControllerTest" />
-      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="PACKAGE_NAME" value="com.lt.activit.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.ActivitiApplicationTests" />
+      <option name="METHOD_NAME" value="deployProcess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSqlServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web-test" />
+    <configuration name="TestServiceTest.creatActivitiTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.webtest.service.*" />
+          <option name="PATTERN" value="com.lt.activit.activiti.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.webtest.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.webtest.service.TestSqlServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.lt.activit.activiti.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.service.TestServiceTest" />
+      <option name="METHOD_NAME" value="creatActivitiTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServiceTest.testDeployFromClasspath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activiti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lt.activit.activiti.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lt.activit.activiti.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.service.TestServiceTest" />
+      <option name="METHOD_NAME" value="testDeployFromClasspath" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,22 +208,6 @@
       <option name="PACKAGE_NAME" value="com.example.webtest.service" />
       <option name="MAIN_CLASS_NAME" value="com.example.webtest.service.TestSqlServiceTest" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSqlServiceTest.testActiveSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.webtest.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.webtest.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.webtest.service.TestSqlServiceTest" />
-      <option name="METHOD_NAME" value="testActiveSql" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,6 +286,19 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="activiti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lt.activit.activiti.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lt.activit.activiti.ActivitiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlidemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="alidemo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lt.alidemo.AlidemoApplication" />
@@ -326,11 +349,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadLocalTest" />
-      <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
-      <item itemvalue="JUnit.TestSqlServiceTest" />
       <item itemvalue="JUnit.TestSqlServiceTest.test1" />
-      <item itemvalue="JUnit.TestSqlServiceTest.testActiveSql" />
       <item itemvalue="Maven.web-test [package,-Dmaven.test.skip=true]" />
       <item itemvalue="Spring Boot.AlidemoApplication" />
       <item itemvalue="Spring Boot.CloudTestApplication" />
@@ -339,14 +358,18 @@
       <item itemvalue="Spring Boot.ResiveApplication" />
       <item itemvalue="Spring Boot.UtilsApplication" />
       <item itemvalue="Spring Boot.WebTestApplication" />
+      <item itemvalue="JUnit.TestServiceTest.testDeployFromClasspath" />
+      <item itemvalue="JUnit.ActivitiApplicationTests.deployProcess" />
+      <item itemvalue="Spring Boot.ActivitiApplication" />
+      <item itemvalue="JUnit.TestServiceTest.creatActivitiTask" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServiceTest.creatActivitiTask" />
+        <item itemvalue="JUnit.TestServiceTest.testDeployFromClasspath" />
+        <item itemvalue="Spring Boot.ActivitiApplication" />
+        <item itemvalue="JUnit.ActivitiApplicationTests.deployProcess" />
         <item itemvalue="JUnit.TestSqlServiceTest.test1" />
-        <item itemvalue="JUnit.TestSqlServiceTest.testActiveSql" />
-        <item itemvalue="JUnit.TestSqlServiceTest" />
-        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
-        <item itemvalue="Application.ThreadLocalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -359,6 +382,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -407,6 +435,7 @@
       <workItem from="1585732868897" duration="5465000" />
       <workItem from="1585883098114" duration="2983000" />
       <workItem from="1585903728126" duration="538000" />
+      <workItem from="1586251502487" duration="1868000" />
     </task>
     <servers />
   </component>
@@ -440,10 +469,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585555018960" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1585720774135">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1586253370935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585720774135" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586253370935" />
     <state x="454" y="221" width="458" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585550316971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -468,38 +497,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585890259745" />
-    <state width="904" height="257" key="GridCell.Tab.0.bottom" timestamp="1585904271355">
+    <state width="1322" height="319" key="GridCell.Tab.0.bottom" timestamp="1586253404900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.0.center" timestamp="1585904271355">
+    <state width="1322" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="1322" height="319" key="GridCell.Tab.0.center" timestamp="1586253404900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.0.left" timestamp="1585904271355">
+    <state width="1322" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="1322" height="319" key="GridCell.Tab.0.left" timestamp="1586253404900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.0.right" timestamp="1585904271355">
+    <state width="1322" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="1322" height="319" key="GridCell.Tab.0.right" timestamp="1586253404900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.1.bottom" timestamp="1585904271355">
+    <state width="1322" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="904" height="257" key="GridCell.Tab.1.bottom" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.1.center" timestamp="1585904271355">
+    <state width="904" height="257" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
+    <state width="904" height="257" key="GridCell.Tab.1.center" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.1.left" timestamp="1585904271355">
+    <state width="904" height="257" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
+    <state width="904" height="257" key="GridCell.Tab.1.left" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
-    <state width="904" height="257" key="GridCell.Tab.1.right" timestamp="1585904271355">
+    <state width="904" height="257" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
+    <state width="904" height="257" key="GridCell.Tab.1.right" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="904" height="257" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585904271355" />
+    <state width="904" height="257" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
     <state width="1322" height="328" key="GridCell.Tab.2.bottom" timestamp="1585556881235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -532,10 +561,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585726111734" />
-    <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585622936787">
+    <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586252809281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585622936787" />
+    <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586252809281" />
     <state x="437" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585205220081">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +50,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\Program_films\IntelliJ IDEA 2019.3.3" />
-        <option name="mavenHome" value="D:/Work/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\Work\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="localRepository" value="E:\Program_films\maven_Repository" />
+        <option name="mavenHome" value="E:/Program_films/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\Program_films\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -417,7 +418,9 @@
       <workItem from="1585883098114" duration="2983000" />
       <workItem from="1585903728126" duration="538000" />
       <workItem from="1586251502487" duration="1868000" />
-      <workItem from="1586326678852" duration="124000" />
+      <workItem from="1586326678852" duration="1353000" />
+      <workItem from="1586328468918" duration="40000" />
+      <workItem from="1586328511206" duration="89000" />
     </task>
     <servers />
   </component>
@@ -475,27 +478,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585805178867" />
-    <state x="497" y="134" key="FileChooserDialogImpl" timestamp="1586326716333">
+    <state x="497" y="134" key="FileChooserDialogImpl" timestamp="1586328592562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585890259745" />
-    <state x="497" y="134" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586326716333" />
-    <state width="1322" height="319" key="GridCell.Tab.0.bottom" timestamp="1586253404900">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="497" y="134" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586328592562" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586328661564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.center" timestamp="1586253404900">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586328661564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586328661564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.left" timestamp="1586253404900">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586328661564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586328661564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.right" timestamp="1586253404900">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586328661564" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586328661564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586328661564" />
     <state width="904" height="257" key="GridCell.Tab.1.bottom" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -540,11 +547,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="471" y="73" width="683" height="558" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585805180325" />
-    <state x="183" y="0" key="SettingsEditor" timestamp="1586326803318">
+    <state x="183" y="0" key="SettingsEditor" timestamp="1586328597196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585726111734" />
-    <state x="183" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586326803318" />
+    <state x="183" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586328597196" />
     <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586252809281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

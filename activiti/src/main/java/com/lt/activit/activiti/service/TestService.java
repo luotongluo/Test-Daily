@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface TestService {
     /**
-     *
+     * 部署流程
      */
     public void activiti();
 
@@ -39,5 +39,12 @@ public interface TestService {
      * //办理任务(主要操作ACT_RU_EXECUTION、ACT_RU_TASK表)
      */
     public void doSomeOnejobs();
+
+    /**
+     * 历史记录
+     */
+    public void historyData();
+
+    public void doApproveByAllStep();
 
 }

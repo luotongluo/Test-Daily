@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:activiti="http://activiti.org/bpmn"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:tns="http://www.activiti.org/test"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath"
+             id="m1586328907868"
+             name=""
+             targetNamespace="http://www.activiti.org/test"
+             typeLanguage="http://www.w3.org/2001/XMLSchema">
+   <process  id="myProcess_1" isClosed="false" isExecutable="true"
+            processType="None">
+      <startEvent id="_2" name="StartEvent"/>
+      <userTask activiti:assignee="${TL}" activiti:exclusive="true" id="firstleve" name="组长审批"/>
+      <userTask activiti:assignee="${ML}" activiti:exclusive="true" id="secondleve" name="经理审批"/>
+      <endEvent id="_5" name="EndEvent"/>
+      <sequenceFlow id="_6" sourceRef="_2" targetRef="firstleve"/>
+      <sequenceFlow id="_7" sourceRef="firstleve" targetRef="secondleve"/>
+      <sequenceFlow id="_8" sourceRef="secondleve" targetRef="_5"/>
+   </process>
+   <bpmndi:BPMNDiagram xmlns=""
+                       documentation="background=#3C3F41;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0"
+                       id="Diagram-_1"
+                       name="New Diagram">
+      <bpmndi:BPMNPlane bpmnElement="myProcess_1">
+         <bpmndi:BPMNShape bpmnElement="_2" id="Shape-_2">
+            <omgdc:Bounds height="32.0" width="32.0" x="130.0" y="50.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="firstleve" id="Shape-firstleve">
+            <omgdc:Bounds height="55.0" width="85.0" x="140.0" y="155.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="secondleve" id="Shape-secondleve">
+            <omgdc:Bounds height="55.0" width="85.0" x="140.0" y="295.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="_5" id="Shape-_5">
+            <omgdc:Bounds height="32.0" width="32.0" x="180.0" y="430.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="_2" targetElement="firstleve">
+            <omgdi:waypoint x="151.0" y="81.19868415357067"/>
+            <omgdi:waypoint x="151.0" y="155.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_7" id="BPMNEdge__7" sourceElement="firstleve"
+                          targetElement="secondleve">
+            <omgdi:waypoint x="182.5" y="210.0"/>
+            <omgdi:waypoint x="182.5" y="295.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_8" id="BPMNEdge__8" sourceElement="secondleve" targetElement="_5">
+            <omgdi:waypoint x="196.0" y="350.0"/>
+            <omgdi:waypoint x="196.0" y="430.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+   </bpmndi:BPMNDiagram>
+</definitions>

@@ -32,7 +32,7 @@ class TestServiceTest {
 
     @Test
     public void startProcesses() {
-        this.testService.startProcesses("");
+        this.testService.startProcesses(null);
     }
 
     @Test
@@ -59,5 +59,20 @@ class TestServiceTest {
     public void doApproveByAllStep() {
         this.testService.doApproveByAllStep();
     }
+
+    @Test
+    public void delApproveInfo() {
+        this.testService.delApproveInfo();
+    }
+
+    @Test
+    public void getDeployList() {
+        this.testService.getDeployList();
+    }
+    @Test
+    public void delApproveDely() {
+        this.testService.delApproveDely();
+    }
+
 
 }

@@ -12,6 +12,7 @@ import org.activiti.engine.history.HistoricActivityInstanceQuery;
 import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.DeploymentBuilder;
+import org.activiti.engine.repository.DeploymentQuery;
 import org.activiti.engine.repository.NativeProcessDefinitionQuery;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
@@ -31,6 +32,9 @@ import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * @Author: LT
@@ -54,11 +58,14 @@ public class TestServiceImpl implements TestService {
     @Override
     public void activiti() {
         // 获得一个部署构建器对象，用于加载流程定义文件（test1.bpmn,test.png）完成流程定义的部署
-        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-        DeploymentBuilder builder = processEngine.getRepositoryService().createDeployment();
+//        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        DeploymentBuilder builder = repositoryService.createDeployment();
         // 加载流程定义文件
-        builder.addClasspathResource("TestApprove.bpmn")
-        .deploy();
+        UUID uuid = UUID.randomUUID();
+        Deployment deploy = builder
+                .name(String.valueOf(uuid))
+                .addClasspathResource("EnglishTesk.bpmn")
+                .deploy();
 
     }
 
@@ -69,33 +76,50 @@ public class TestServiceImpl implements TestService {
         ACT_HI_PROCINST、ACT_HI_ACTINST、ACT_HI_TASKINST、ACT_RU_IDENTITYLINK、
         ACT_HI_IDENTITYLINK表)
          */
-//        String processDefinitionId="qjlc:1:104";
+
+        // 流程定义查询对象，查询表 act_re_procdef
         ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
-        query.orderByDeploymentId().asc();
+        query.orderByDeploymentId().active().asc();
         //分页查询
-        query.listPage(0, 2);
+        query.listPage(0, 10);
+        List<ProcessDefinition> list = query.list();
+        for (ProcessDefinition item : list) {
+            System.out.println(item.getName() + "" + item.getId());
+            ProcessInstance processInstance = null;
+            HashMap<String, Object> stringObjectHashMap = new HashMap<>();
+            stringObjectHashMap.put("TL", "123");
+            processInstance = runtimeService.startProcessInstanceById(item.getId(), stringObjectHashMap);
+            logger.info("id :{}", processInstance == null ? "" : processInstance.getId());
+        }
+    }
+
+    @Override
+    public void startApproveByAssige() {
+        /*
+        根据流程定义的Id启动一个流程实例(操作ACT_RU_EXECUTION、ACT_RU_TASK、
+        ACT_HI_PROCINST、ACT_HI_ACTINST、ACT_HI_TASKINST、ACT_RU_IDENTITYLINK、
+        ACT_HI_IDENTITYLINK表)
+         */
+        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+        query.orderByDeploymentId().active().asc();
+        //分页查询
+        query.listPage(0, 10);
         List<ProcessDefinition> list = query.list();
         for (ProcessDefinition item : list) {
             System.out.println(item.getId());
             ProcessInstance processInstance = null;
+            HashMap<String, Object> stringStringHashMap = new HashMap<>();
+            stringStringHashMap.put("TL", "TLApprove");
             try {
-                processInstance = runtimeService.startProcessInstanceById(item.getId());
-            } catch (Exception e) {
-                HashMap<String, Object> stringStringHashMap = new HashMap<>();
-                stringStringHashMap.put("TL", "TLApprove");
-                try {
-                    runtimeService.startProcessInstanceById(item.getId(), stringStringHashMap);
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
+                runtimeService.startProcessInstanceById(item.getId(), stringStringHashMap);
+            } catch (Exception ex) {
+                ex.printStackTrace();
             } finally {
 
             }
-            System.out.print(processInstance.getId());//201
-        }
-        ProcessInstance processInstance = runtimeService.startProcessInstanceById(bizId);
-        System.out.print(processInstance.getId());//201
+            logger.info("id :{}", processInstance == null ? "" : JSON.toJSONString(processInstance));
 
+        }
     }
 
     @Override
@@ -119,7 +143,8 @@ public class TestServiceImpl implements TestService {
     @Override
     public void getSomeOnejobs() {
         TaskQuery query = taskService.createTaskQuery();
-//        query.taskAssignee("张三");
+//        query.taskAssignee("123");
+
         List<Task> list = query.list();
         for (Task item : list) {
             System.out.println(item.getId() + "===" + item.getName());//204===提交请假申请
@@ -131,11 +156,13 @@ public class TestServiceImpl implements TestService {
     public void doSomeOnejobs() {
 //        taskService.complete("15003");
         TaskQuery query = taskService.createTaskQuery();
-//        query.taskAssignee("张三");
+//        query.taskAssignee("TL");
         List<Task> list = query.list();
         for (Task item : list) {
             System.out.println(item.getId() + "===" + item.getName());//204===提交请假申请
-            taskService.complete(item.getId());
+            HashMap<String, Object> hashMap = new HashMap<>();
+            hashMap.put("ML", "TL");
+            taskService.complete(item.getId(), hashMap);
         }
     }
 
@@ -171,5 +198,40 @@ public class TestServiceImpl implements TestService {
 
         }
 
+    }
+
+    @Override
+    public void delApproveInfo() {
+        // 部署查询对象，查询表act_re_deployment
+        DeploymentQuery query = repositoryService.createDeploymentQuery();
+        List<Deployment> list = query.list();
+        for (Deployment deployment : list) {
+            repositoryService.deleteDeployment(deployment.getId(), true);
+            logger.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
+        }
+
+    }
+
+    @Override
+    public void delApproveDely() {
+        // 流程定义查询对象，查询表act_re_procdef
+        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+        List<ProcessDefinition> list = query.list();
+        for (ProcessDefinition pd : list) {
+            repositoryService.deleteDeployment(pd.getDeploymentId(),
+                    true);
+            System.out.println(pd.getName() + "" + pd.getDeploymentId());
+        }
+
+    }
+
+    @Override
+    public void getDeployList() {
+        // 部署查询对象，查询表act_re_deployment
+        DeploymentQuery query = repositoryService.createDeploymentQuery();
+        List<Deployment> list = query.list();
+        for (Deployment deployment : list) {
+            logger.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
+        }
     }
 }

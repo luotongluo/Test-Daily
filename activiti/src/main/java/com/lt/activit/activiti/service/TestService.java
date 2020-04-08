@@ -25,6 +25,11 @@ public interface TestService {
     public void startProcesses(String bizId);
 
     /**
+     * 根据定义的人来启动流程
+     */
+    public void startApproveByAssige();
+
+    /**
      * 查询流程定义列表
      */
     public void getQueryList();
@@ -46,5 +51,20 @@ public interface TestService {
     public void historyData();
 
     public void doApproveByAllStep();
+
+    /**
+     * 删除部署信息
+     */
+    public void delApproveInfo();
+
+    /**
+     * 删除流程定义(通过删除部署信息达到删除流程定义的目的)
+     */
+    public void delApproveDely();
+
+    /**
+     * 查询部署列表
+     */
+    public void getDeployList();
 
 }

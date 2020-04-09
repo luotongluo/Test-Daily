@@ -20,7 +20,7 @@ import java.util.Date;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {ActivitiApplication.class, TestServiceTest.class})
-class TestServiceTest {
+public class TestServiceTest {
     @Autowired
     private TestServiceImpl testService;
 

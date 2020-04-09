@@ -64,9 +64,9 @@ public class TestServiceImpl implements TestService {
         UUID uuid = UUID.randomUUID();
         Deployment deploy = builder
                 .name(String.valueOf(uuid))
-                .addClasspathResource("EnglishTesk.bpmn")
+                .addClasspathResource("TestBmpn.bpmn")
                 .deploy();
-
+        System.out.println("success");
     }
 
     @Override
@@ -87,8 +87,8 @@ public class TestServiceImpl implements TestService {
             System.out.println(item.getName() + "" + item.getId());
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
-            stringObjectHashMap.put("TL", "123");
-            processInstance = runtimeService.startProcessInstanceById(item.getId(), stringObjectHashMap);
+            stringObjectHashMap.put("oneLevel", "123");
+            processInstance = runtimeService.startProcessInstanceById(item.getId(),"TestBmpn", stringObjectHashMap);
             logger.info("id :{}", processInstance == null ? "" : processInstance.getId());
         }
     }
@@ -161,7 +161,8 @@ public class TestServiceImpl implements TestService {
         for (Task item : list) {
             System.out.println(item.getId() + "===" + item.getName());//204===提交请假申请
             HashMap<String, Object> hashMap = new HashMap<>();
-            hashMap.put("ML", "TL");
+            hashMap.put("oneLevel", "TL");
+            hashMap.put("day", "5");
             taskService.complete(item.getId(), hashMap);
         }
     }

@@ -5,55 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/TestBmpn.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/activiti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/activiti.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/ActivitiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/ActivitiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +38,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="BpmnFile" />
       </list>
     </option>
   </component>
@@ -150,6 +107,9 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.webtest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work_space\Test-Daily\activiti\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.webtest.dao" />
@@ -415,7 +375,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -461,7 +421,8 @@
       <workItem from="1585903728126" duration="538000" />
       <workItem from="1586251502487" duration="2395000" />
       <workItem from="1586395664589" duration="815000" />
-      <workItem from="1586401804006" duration="1360000" />
+      <workItem from="1586401804006" duration="4251000" />
+      <workItem from="1586432762500" duration="688000" />
     </task>
     <servers />
   </component>
@@ -519,42 +480,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585805178867" />
-    <state x="442" y="118" key="FileChooserDialogImpl" timestamp="1586424365287">
+    <state x="442" y="118" key="FileChooserDialogImpl" timestamp="1586431369630">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586424365287" />
-    <state width="1046" height="257" key="GridCell.Tab.0.bottom" timestamp="1586425049801">
+    <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586431369630" />
+    <state width="1046" height="257" key="GridCell.Tab.0.bottom" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586425049801" />
-    <state width="1046" height="257" key="GridCell.Tab.0.center" timestamp="1586425049801">
+    <state width="1046" height="257" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.0.center" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586425049801" />
-    <state width="1046" height="257" key="GridCell.Tab.0.left" timestamp="1586425049799">
+    <state width="1046" height="257" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.0.left" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586425049799" />
-    <state width="1046" height="257" key="GridCell.Tab.0.right" timestamp="1586425049801">
+    <state width="1046" height="257" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.0.right" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586425049801" />
-    <state width="1046" height="257" key="GridCell.Tab.1.bottom" timestamp="1586425049802">
+    <state width="1046" height="257" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.1.bottom" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586425049802" />
-    <state width="1046" height="257" key="GridCell.Tab.1.center" timestamp="1586425049802">
+    <state width="1046" height="257" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.1.center" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586425049802" />
-    <state width="1046" height="257" key="GridCell.Tab.1.left" timestamp="1586425049802">
+    <state width="1046" height="257" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.1.left" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586425049802" />
-    <state width="1046" height="257" key="GridCell.Tab.1.right" timestamp="1586425049802">
+    <state width="1046" height="257" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
+    <state width="1046" height="257" key="GridCell.Tab.1.right" timestamp="1586432690005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1046" height="257" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586425049802" />
+    <state width="1046" height="257" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586432690005" />
     <state width="1322" height="328" key="GridCell.Tab.2.bottom" timestamp="1585556881235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

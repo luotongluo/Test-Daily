@@ -38,7 +38,7 @@ public class TestServiceImpl implements TestService {
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         DeploymentBuilder builder = processEngine.getRepositoryService().createDeployment();
         // 加载流程定义文件
-        builder.addClasspathResource("EnglishTesk.bpmn");
+        builder.addClasspathResource("TestBmpn.bpmn");
 //        builder.addClasspathResource("process/test1.png");
         // 部署流程定义
         Deployment deployment = builder.deploy();

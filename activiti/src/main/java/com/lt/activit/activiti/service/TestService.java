@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface TestService {
     /**
-     *
+     * 部署流程
      */
     public void activiti();
 
@@ -23,6 +23,11 @@ public interface TestService {
      * @param bizId 业务id
      */
     public void startProcesses(String bizId);
+
+    /**
+     * 根据定义的人来启动流程
+     */
+    public void startApproveByAssige();
 
     /**
      * 查询流程定义列表
@@ -39,5 +44,27 @@ public interface TestService {
      * //办理任务(主要操作ACT_RU_EXECUTION、ACT_RU_TASK表)
      */
     public void doSomeOnejobs();
+
+    /**
+     * 历史记录
+     */
+    public void historyData();
+
+    public void doApproveByAllStep();
+
+    /**
+     * 删除部署信息
+     */
+    public void delApproveInfo();
+
+    /**
+     * 删除流程定义(通过删除部署信息达到删除流程定义的目的)
+     */
+    public void delApproveDely();
+
+    /**
+     * 查询部署列表
+     */
+    public void getDeployList();
 
 }

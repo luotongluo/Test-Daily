@@ -24,37 +24,55 @@ class TestServiceTest {
     @Autowired
     private TestServiceImpl testService;
 
+
     @Test
-    public void testDeployFromClasspath() {
-        //得到流程引擎
-        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-        processEngine.getRepositoryService()
-                .createDeployment()
-                .name("EnglishTesk")
-                .activateProcessDefinitionsOn(new Date())
-                //以文本方式打开 process中的内容不能存在空的
-                .addClasspathResource("EnglishTesk.bpmn")
-//                .addClasspathResource("TestAct.png")
-                .deploy();
+    public void activiti() {
+        this.testService.activiti();
     }
 
     @Test
-    public void creatActivitiTask() {
-//        this.testService.creatActivitiTask("EnglishTesk.bpmn","oneTest");
-//        this.testService.testStartProcessInstance();
-//        this.testService.testQingjia();
-//        String assgn = "big-mall2";
-//        this.testService.testQueryTask(assgn);
-//        this.testService.testFinishTaskManager();
-//        this.testService.getQueryList();
-        /*
-        myProcess_1:3:37504
-myProcess_1:2:32504
-myProcess_1:1:22504
-         */
-//        this.testService.startProcesses("myProcess_1:3:37504");
-//        testService.getSomeOnejobs();
-        testService.doSomeOnejobs();
+    public void startProcesses() {
+        this.testService.startProcesses(null);
     }
+
+    @Test
+    public void getQueryList() {
+        this.testService.getQueryList();
+    }
+
+    @Test
+    public void getSomeOnejobs() {
+        this.testService.getSomeOnejobs();
+    }
+
+    @Test
+    public void doSomeOnejobs() {
+        this.testService.doSomeOnejobs();
+    }
+
+    @Test
+    public void historyData() {
+        this.testService.historyData();
+    }
+
+    @Test
+    public void doApproveByAllStep() {
+        this.testService.doApproveByAllStep();
+    }
+
+    @Test
+    public void delApproveInfo() {
+        this.testService.delApproveInfo();
+    }
+
+    @Test
+    public void getDeployList() {
+        this.testService.getDeployList();
+    }
+    @Test
+    public void delApproveDely() {
+        this.testService.delApproveDely();
+    }
+
 
 }

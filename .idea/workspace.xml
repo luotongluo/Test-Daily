@@ -6,26 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/activiti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/activiti.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/Activiti工作流的自带数据表的含义.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/EnglishTesk.bpmn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/application-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/ActivitiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/service/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/com/lt/activit/activiti/service/impl/TestServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/流程实例.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/classes/流程部署.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/test-classes/com/lt/activit/activiti/ActivitiApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/target/test-classes/com/lt/activit/activiti/service/TestServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,6 +330,9 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestSqlServiceTest.test1" />
+      <item itemvalue="JUnit.TestServiceTest.testDeployFromClasspath" />
+      <item itemvalue="JUnit.ActivitiApplicationTests.deployProcess" />
+      <item itemvalue="JUnit.TestServiceTest.creatActivitiTask" />
       <item itemvalue="Maven.web-test [package,-Dmaven.test.skip=true]" />
       <item itemvalue="Spring Boot.AlidemoApplication" />
       <item itemvalue="Spring Boot.CloudTestApplication" />
@@ -358,10 +341,7 @@
       <item itemvalue="Spring Boot.ResiveApplication" />
       <item itemvalue="Spring Boot.UtilsApplication" />
       <item itemvalue="Spring Boot.WebTestApplication" />
-      <item itemvalue="JUnit.TestServiceTest.testDeployFromClasspath" />
-      <item itemvalue="JUnit.ActivitiApplicationTests.deployProcess" />
       <item itemvalue="Spring Boot.ActivitiApplication" />
-      <item itemvalue="JUnit.TestServiceTest.creatActivitiTask" />
     </list>
     <recent_temporary>
       <list>
@@ -435,7 +415,7 @@
       <workItem from="1585732868897" duration="5465000" />
       <workItem from="1585883098114" duration="2983000" />
       <workItem from="1585903728126" duration="538000" />
-      <workItem from="1586251502487" duration="1868000" />
+      <workItem from="1586251502487" duration="2395000" />
     </task>
     <servers />
   </component>
@@ -497,22 +477,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585890259745" />
-    <state width="1322" height="319" key="GridCell.Tab.0.bottom" timestamp="1586253404900">
+    <state width="1322" height="319" key="GridCell.Tab.0.bottom" timestamp="1586253444037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.center" timestamp="1586253404900">
+    <state width="1322" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586253444037" />
+    <state width="1322" height="319" key="GridCell.Tab.0.center" timestamp="1586253444037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.left" timestamp="1586253404900">
+    <state width="1322" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586253444037" />
+    <state width="1322" height="319" key="GridCell.Tab.0.left" timestamp="1586253444037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1322" height="319" key="GridCell.Tab.0.right" timestamp="1586253404900">
+    <state width="1322" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586253444037" />
+    <state width="1322" height="319" key="GridCell.Tab.0.right" timestamp="1586253444037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
+    <state width="1322" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586253444037" />
     <state width="904" height="257" key="GridCell.Tab.1.bottom" timestamp="1586252996927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

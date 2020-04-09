@@ -529,10 +529,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="18" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1585224452725" />
-    <state x="392" y="78" key="MultipleFileMergeDialog" timestamp="1585797193945">
+    <state x="0" y="3" width="1366" height="714" key="MergeDialog" timestamp="1586395786185">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="392" y="78" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1585797193945" />
+    <state x="0" y="3" width="1366" height="714" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586395786185" />
+    <state x="392" y="78" key="MultipleFileMergeDialog" timestamp="1586395789745">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="78" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586395789745" />
     <state x="471" y="73" width="683" height="558" key="RollbackChangesDialog" timestamp="1585805180325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

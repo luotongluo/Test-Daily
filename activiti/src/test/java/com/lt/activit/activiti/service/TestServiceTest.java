@@ -4,7 +4,7 @@ import com.lt.activit.activiti.ActivitiApplication;
 import com.lt.activit.activiti.service.impl.TestServiceImpl;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

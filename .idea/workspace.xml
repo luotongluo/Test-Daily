@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/acti表介绍" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/EnglishTesk.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/EnglishTesk.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/TestApprove.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/TestApprove.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/test4bug.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/test4bug.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/TestBmpn.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/TestBmpn.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/流程实例.txt" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/流程实例.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +102,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.webtest.config" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.webtest.service" />
       <recent name="com.example.webtest.controller" />
@@ -114,19 +115,17 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.webtest" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Work_space\Test-Daily\activiti\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work_space\Test-Daily\web-test\src\main\resources" />
+      <recent name="D:\Work_space\Test-Daily\cloud-test\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.webtest.dao" />
       <recent name="com.example.webtest.po" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work_space\Test-Daily\web-test\src\main\resources" />
-      <recent name="D:\Work_space\Test-Daily\cloud-test\src\main\resources" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.webtest.config" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work_space\Test-Daily\activiti\src\main\resources\progress" />
+      <recent name="D:\Work_space\Test-Daily\activiti\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -432,7 +431,7 @@
       <workItem from="1586395664589" duration="815000" />
       <workItem from="1586401804006" duration="4251000" />
       <workItem from="1586432762500" duration="3029000" />
-      <workItem from="1586486545753" duration="2064000" />
+      <workItem from="1586486545753" duration="3917000" />
     </task>
     <servers />
   </component>
@@ -462,10 +461,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585556653076" />
-    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585555018960">
+    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586496133226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585555018960" />
+    <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1586496133226" />
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1586488609011">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -611,7 +610,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>176</line>
+          <line>183</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

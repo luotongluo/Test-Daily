@@ -48,6 +48,11 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public void activiti() {
+        /*
+        SELECT * FROM `act_re_procdef`;  ---- 流程定义表
+SELECT * FROM `act_re_deployment`; ---- 部署表
+SELECT * FROM `act_ge_property`;  --- 通用属性表 id生成策略 next.dbid 影响部署的id
+         */
         // 获得一个部署构建器对象，用于加载流程定义文件（test1.bpmn,test.png）完成流程定义的部署
 //        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         DeploymentBuilder builder = repositoryService.createDeployment();
@@ -55,7 +60,9 @@ public class TestServiceImpl implements TestService {
         UUID uuid = UUID.randomUUID();
         Deployment deploy = builder
                 .name(String.valueOf(uuid))
-                .addClasspathResource("TestBmpn.bpmn")
+                .addClasspathResource("progress/TestBmpn.bpmn")
+                ////设置部署类别
+                .category("测试类别")
                 .deploy();
         System.out.println("success");
         logger.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"

@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/EnglishTesk.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/EnglishTesk.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/TestApprove.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/TestApprove.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/test4bug.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/test4bug.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,6 +346,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TestServiceTest.activiti" />
+      <item itemvalue="JUnit.TestServiceTest.startProcesses" />
+      <item itemvalue="JUnit.TestServiceTest.getQueryList" />
+      <item itemvalue="JUnit.TestServiceTest.getSomeOnejobs" />
+      <item itemvalue="JUnit.TestServiceTest.doSomeOnejobs" />
       <item itemvalue="Maven.web-test [package,-Dmaven.test.skip=true]" />
       <item itemvalue="Spring Boot.AlidemoApplication" />
       <item itemvalue="Spring Boot.CloudTestApplication" />
@@ -349,11 +359,6 @@
       <item itemvalue="Spring Boot.ResiveApplication" />
       <item itemvalue="Spring Boot.UtilsApplication" />
       <item itemvalue="Spring Boot.WebTestApplication" />
-      <item itemvalue="JUnit.TestServiceTest.activiti" />
-      <item itemvalue="JUnit.TestServiceTest.startProcesses" />
-      <item itemvalue="JUnit.TestServiceTest.getQueryList" />
-      <item itemvalue="JUnit.TestServiceTest.getSomeOnejobs" />
-      <item itemvalue="JUnit.TestServiceTest.doSomeOnejobs" />
     </list>
     <recent_temporary>
       <list>
@@ -427,6 +432,7 @@
       <workItem from="1586395664589" duration="815000" />
       <workItem from="1586401804006" duration="4251000" />
       <workItem from="1586432762500" duration="3029000" />
+      <workItem from="1586486545753" duration="2064000" />
     </task>
     <servers />
   </component>
@@ -460,10 +466,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585555018960" />
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1586253370935">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1586488609011">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586253370935" />
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586488609011" />
     <state x="454" y="221" width="458" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585550316971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -605,7 +611,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>157</line>
+          <line>176</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

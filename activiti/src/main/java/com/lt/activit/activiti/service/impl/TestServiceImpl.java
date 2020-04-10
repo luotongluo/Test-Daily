@@ -3,38 +3,27 @@ package com.lt.activit.activiti.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.lt.activit.activiti.service.TestService;
 import org.activiti.engine.HistoryService;
-import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.ProcessEngines;
+import org.activiti.engine.IdentityService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.history.HistoricActivityInstanceQuery;
-import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.DeploymentBuilder;
 import org.activiti.engine.repository.DeploymentQuery;
-import org.activiti.engine.repository.NativeProcessDefinitionQuery;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.activiti.engine.task.TaskQuery;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
-import java.util.regex.PatternSyntaxException;
 
 /**
  * @Author: LT
@@ -54,6 +43,8 @@ public class TestServiceImpl implements TestService {
     private RepositoryService repositoryService;
     @Resource
     private RuntimeService runtimeService;
+    @Resource
+    private IdentityService identityService;
 
     @Override
     public void activiti() {
@@ -67,6 +58,8 @@ public class TestServiceImpl implements TestService {
                 .addClasspathResource("TestBmpn.bpmn")
                 .deploy();
         System.out.println("success");
+        logger.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"
+                , deploy.getId(), deploy.getName());
     }
 
     @Override
@@ -88,9 +81,35 @@ public class TestServiceImpl implements TestService {
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
             stringObjectHashMap.put("oneLevel", "123");
-            processInstance = runtimeService.startProcessInstanceById(item.getId(),"TestBmpn", stringObjectHashMap);
-            logger.info("id :{}", processInstance == null ? "" : processInstance.getId());
+            processInstance = runtimeService.startProcessInstanceById(item.getId(), "TestBmpn", stringObjectHashMap);
+            logger.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
         }
+    }
+
+    @Override
+    public void createReviewProcess() {
+        String bussnessCode = "";
+        String operator = "";
+        String processDefinitionKey = "";
+        HashMap<String, Object> variables = new HashMap<>();
+        ProcessInstance processInstance = runtimeService.createProcessInstanceQuery().
+                processInstanceBusinessKey(bussnessCode).singleResult();
+        if (null != processInstance) {
+            return;
+        }
+        identityService.setAuthenticatedUserId(operator);
+        ProcessInstance pi = runtimeService//与正在执行的流程实例和执行对象相关的Service
+                .startProcessInstanceByKey(processDefinitionKey, bussnessCode, variables);
+        logger.info(" end processDefinitionKey:{}," +
+                "ProcessInstanceID:{}", processDefinitionKey, pi.getId());
+    }
+
+    @Override
+    public void findTasksByUserId() {
+        String userId ="dulingjiang";
+        List<Task> resultTask = taskService.createTaskQuery().processDefinitionKey("TestBmpn").taskCandidateOrAssigned(userId).list();
+        System.out.println("任务列表："+resultTask);
+
     }
 
     @Override
@@ -183,7 +202,7 @@ public class TestServiceImpl implements TestService {
         // 加载流程定义文件
         Deployment deploy = builder
                 .name("TestApprove")
-                .addClasspathResource("TestApprove.bpmn")
+                .addClasspathResource("progress/TestApprove.bpmn")
                 .deploy();
 
         ProcessDefinitionQuery definitionQuery = repositoryService.createProcessDefinitionQuery();

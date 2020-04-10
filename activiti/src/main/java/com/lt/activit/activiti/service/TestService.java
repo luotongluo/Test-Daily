@@ -24,6 +24,9 @@ public interface TestService {
      */
     public void startProcesses(String bizId);
 
+    public void createReviewProcess();
+    public void findTasksByUserId();
+
     /**
      * 根据定义的人来启动流程
      */

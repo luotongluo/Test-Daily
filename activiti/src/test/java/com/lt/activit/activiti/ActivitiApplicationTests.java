@@ -48,7 +48,7 @@ class ActivitiApplicationTests {
     public void deployProcess() {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         DeploymentBuilder builder = repositoryService.createDeployment();
-        builder.addClasspathResource("EnglishTesk.bpmn");//bpmn文件的名称
+        builder.addClasspathResource("progress/EnglishTesk.bpmn");//bpmn文件的名称
         builder.deploy();
     }
 

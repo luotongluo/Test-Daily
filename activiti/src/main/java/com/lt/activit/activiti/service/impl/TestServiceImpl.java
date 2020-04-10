@@ -50,8 +50,8 @@ public class TestServiceImpl implements TestService {
     public void activiti() {
         /*
         SELECT * FROM `act_re_procdef`;  ---- 流程定义表
-SELECT * FROM `act_re_deployment`; ---- 部署表
-SELECT * FROM `act_ge_property`;  --- 通用属性表 id生成策略 next.dbid 影响部署的id
+    SELECT * FROM `act_re_deployment`; ---- 部署表
+    SELECT * FROM `act_ge_property`;  --- 通用属性表 id生成策略 next.dbid 影响部署的id
          */
         // 获得一个部署构建器对象，用于加载流程定义文件（test1.bpmn,test.png）完成流程定义的部署
 //        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();

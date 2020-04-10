@@ -2,15 +2,10 @@ package com.lt.activit.activiti.service;
 
 import com.lt.activit.activiti.ActivitiApplication;
 import com.lt.activit.activiti.service.impl.TestServiceImpl;
-import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.ProcessEngines;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.Date;
 
 /**
  * @Author: LT
@@ -18,7 +13,6 @@ import java.util.Date;
  * @Description:
  * @Version 1.0
  */
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {ActivitiApplication.class, TestServiceTest.class})
 public class TestServiceTest {
     @Autowired

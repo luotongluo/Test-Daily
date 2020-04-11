@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:activiti="http://activiti.org/bpmn"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:tns="http://www.activiti.org/test"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath"
+             id="m1586432065187"
+             name=""
+             targetNamespace="http://www.activiti.org/test"
+             typeLanguage="http://www.w3.org/2001/XMLSchema">
+   <process  id="myProcess_1" isClosed="false" isExecutable="true"
+            processType="None">
+      <startEvent id="theStart" name="StartEvent"/>
+      <userTask activiti:assignee="${oneLevel}" activiti:exclusive="true" id="firstapprove"
+                name="一级审批"/>
+      <exclusiveGateway gatewayDirection="Unspecified" id="判断条件" name="ExclusiveGateway"/>
+      <sequenceFlow id="_5" sourceRef="theStart" targetRef="firstapprove"/>
+      <sequenceFlow id="_6" sourceRef="firstapprove" targetRef="判断条件"/>
+      <userTask activiti:exclusive="true" id="secondLevel" name="二级审批"/>
+      <userTask activiti:exclusive="true" id="thirdLevel" name="三级审批"/>
+      <endEvent id="theend" name="EndEvent"/>
+      <sequenceFlow id="_10" sourceRef="secondLevel" targetRef="theend"/>
+      <sequenceFlow id="_11" sourceRef="thirdLevel" targetRef="theend"/>
+      <sequenceFlow id="_12" name="小于三天" sourceRef="判断条件" targetRef="secondLevel">
+         <conditionExpression xsi:type="tFormalExpression">${day &lt;=3}</conditionExpression>
+      </sequenceFlow>
+      <sequenceFlow id="_13" name="大于三天" sourceRef="判断条件" targetRef="thirdLevel">
+         <conditionExpression xsi:type="tFormalExpression">${day &gt; 3}</conditionExpression>
+      </sequenceFlow>
+   </process>
+   <bpmndi:BPMNDiagram xmlns=""
+                       documentation="background=#3C3F41;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0"
+                       id="Diagram-_1"
+                       name="New Diagram">
+      <bpmndi:BPMNPlane bpmnElement="myProcess_1">
+         <bpmndi:BPMNShape bpmnElement="theStart" id="Shape-theStart">
+            <omgdc:Bounds height="32.0" width="32.0" x="120.0" y="20.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="firstapprove" id="Shape-firstapprove">
+            <omgdc:Bounds height="55.0" width="85.0" x="105.0" y="110.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="判断条件" id="Shape-判断条件" isMarkerVisible="false">
+            <omgdc:Bounds height="32.0" width="32.0" x="325.0" y="120.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="secondLevel" id="Shape-secondLevel">
+            <omgdc:Bounds height="55.0" width="85.0" x="205.0" y="225.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="thirdLevel" id="Shape-thirdLevel">
+            <omgdc:Bounds height="55.0" width="85.0" x="435.0" y="225.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNShape bpmnElement="theend" id="Shape-theend">
+            <omgdc:Bounds height="32.0" width="32.0" x="340.0" y="365.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNShape>
+         <bpmndi:BPMNEdge bpmnElement="_13" id="BPMNEdge__13" sourceElement="判断条件"
+                          targetElement="thirdLevel">
+            <omgdi:waypoint x="340.0" y="151.0"/>
+            <omgdi:waypoint x="340.0" y="215.0"/>
+            <omgdi:waypoint x="435.0" y="252.5"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="1.0" width="-35.0" x="1.0" y="58.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_12" id="BPMNEdge__12" sourceElement="判断条件"
+                          targetElement="secondLevel">
+            <omgdi:waypoint x="345.0" y="148.0"/>
+            <omgdi:waypoint x="345.0" y="189.0"/>
+            <omgdi:waypoint x="290.0" y="252.5"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="15.0" x="1.0" y="-37.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_5" id="BPMNEdge__5" sourceElement="theStart"
+                          targetElement="firstapprove">
+            <omgdi:waypoint x="136.0" y="52.0"/>
+            <omgdi:waypoint x="136.0" y="110.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="firstapprove"
+                          targetElement="判断条件">
+            <omgdi:waypoint x="190.0" y="137.5"/>
+            <omgdi:waypoint x="325.0" y="136.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_11" id="BPMNEdge__11" sourceElement="thirdLevel"
+                          targetElement="theend">
+            <omgdi:waypoint x="480.0" y="280.0"/>
+            <omgdi:waypoint x="480.0" y="350.0"/>
+            <omgdi:waypoint x="372.0" y="381.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+         <bpmndi:BPMNEdge bpmnElement="_10" id="BPMNEdge__10" sourceElement="secondLevel"
+                          targetElement="theend">
+            <omgdi:waypoint x="240.0" y="280.0"/>
+            <omgdi:waypoint x="240.0" y="360.0"/>
+            <omgdi:waypoint x="340.0" y="381.0"/>
+            <bpmndi:BPMNLabel>
+               <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+            </bpmndi:BPMNLabel>
+         </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+   </bpmndi:BPMNDiagram>
+</definitions>

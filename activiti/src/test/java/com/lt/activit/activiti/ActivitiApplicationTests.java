@@ -5,7 +5,7 @@ import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngineConfiguration;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.repository.DeploymentBuilder;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -48,7 +48,7 @@ class ActivitiApplicationTests {
     public void deployProcess() {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         DeploymentBuilder builder = repositoryService.createDeployment();
-        builder.addClasspathResource("EnglishTesk.bpmn");//bpmn文件的名称
+        builder.addClasspathResource("progress/EnglishTesk.bpmn");//bpmn文件的名称
         builder.deploy();
     }
 

@@ -1,4 +1,4 @@
-package com.lt.activit.activiti;
+package com.lt.activit.activiti.utils;
 
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.repository.ProcessDefinition;

@@ -3,38 +3,27 @@ package com.lt.activit.activiti.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.lt.activit.activiti.service.TestService;
 import org.activiti.engine.HistoryService;
-import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.ProcessEngines;
+import org.activiti.engine.IdentityService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.history.HistoricActivityInstanceQuery;
-import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.DeploymentBuilder;
 import org.activiti.engine.repository.DeploymentQuery;
-import org.activiti.engine.repository.NativeProcessDefinitionQuery;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.activiti.engine.task.TaskQuery;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.UUID;
-import java.util.regex.PatternSyntaxException;
 
 /**
  * @Author: LT
@@ -54,9 +43,16 @@ public class TestServiceImpl implements TestService {
     private RepositoryService repositoryService;
     @Resource
     private RuntimeService runtimeService;
+    @Resource
+    private IdentityService identityService;
 
     @Override
     public void activiti() {
+        /*
+        SELECT * FROM `act_re_procdef`;  ---- 流程定义表
+    SELECT * FROM `act_re_deployment`; ---- 部署表
+    SELECT * FROM `act_ge_property`;  --- 通用属性表 id生成策略 next.dbid 影响部署的id
+         */
         // 获得一个部署构建器对象，用于加载流程定义文件（test1.bpmn,test.png）完成流程定义的部署
 //        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         DeploymentBuilder builder = repositoryService.createDeployment();
@@ -64,9 +60,13 @@ public class TestServiceImpl implements TestService {
         UUID uuid = UUID.randomUUID();
         Deployment deploy = builder
                 .name(String.valueOf(uuid))
-                .addClasspathResource("EnglishTesk.bpmn")
+                .addClasspathResource("progress/TestBmpn.bpmn")
+                ////设置部署类别
+                .category("测试类别")
                 .deploy();
-
+        System.out.println("success");
+        logger.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"
+                , deploy.getId(), deploy.getName());
     }
 
     @Override
@@ -87,10 +87,36 @@ public class TestServiceImpl implements TestService {
             System.out.println(item.getName() + "" + item.getId());
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
-            stringObjectHashMap.put("TL", "123");
-            processInstance = runtimeService.startProcessInstanceById(item.getId(), stringObjectHashMap);
-            logger.info("id :{}", processInstance == null ? "" : processInstance.getId());
+            stringObjectHashMap.put("oneLevel", "123");
+            processInstance = runtimeService.startProcessInstanceById(item.getId(), "TestBmpn", stringObjectHashMap);
+            logger.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
         }
+    }
+
+    @Override
+    public void createReviewProcess() {
+        String bussnessCode = "";
+        String operator = "";
+        String processDefinitionKey = "";
+        HashMap<String, Object> variables = new HashMap<>();
+        ProcessInstance processInstance = runtimeService.createProcessInstanceQuery().
+                processInstanceBusinessKey(bussnessCode).singleResult();
+        if (null != processInstance) {
+            return;
+        }
+        identityService.setAuthenticatedUserId(operator);
+        ProcessInstance pi = runtimeService//与正在执行的流程实例和执行对象相关的Service
+                .startProcessInstanceByKey(processDefinitionKey, bussnessCode, variables);
+        logger.info(" end processDefinitionKey:{}," +
+                "ProcessInstanceID:{}", processDefinitionKey, pi.getId());
+    }
+
+    @Override
+    public void findTasksByUserId() {
+        String userId ="dulingjiang";
+        List<Task> resultTask = taskService.createTaskQuery().processDefinitionKey("TestBmpn").taskCandidateOrAssigned(userId).list();
+        System.out.println("任务列表："+resultTask);
+
     }
 
     @Override
@@ -161,7 +187,8 @@ public class TestServiceImpl implements TestService {
         for (Task item : list) {
             System.out.println(item.getId() + "===" + item.getName());//204===提交请假申请
             HashMap<String, Object> hashMap = new HashMap<>();
-            hashMap.put("ML", "TL");
+            hashMap.put("oneLevel", "TL");
+            hashMap.put("day", "5");
             taskService.complete(item.getId(), hashMap);
         }
     }
@@ -182,7 +209,7 @@ public class TestServiceImpl implements TestService {
         // 加载流程定义文件
         Deployment deploy = builder
                 .name("TestApprove")
-                .addClasspathResource("TestApprove.bpmn")
+                .addClasspathResource("progress/TestApprove.bpmn")
                 .deploy();
 
         ProcessDefinitionQuery definitionQuery = repositoryService.createProcessDefinitionQuery();

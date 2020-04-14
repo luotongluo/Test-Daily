@@ -23,8 +23,8 @@ public class SemaphoreTest implements Runnable {
         try {
             //从该信号量获取许可证，阻止直到可用，或线程为 interrupted 。
             semaphore.acquire();
-            Thread.sleep(2000);
-            System.out.println(Thread.currentThread().getName() + "done");
+            Thread.sleep(200);
+            System.out.println(Thread.currentThread().getName() + " done");
             //释放许可证，将其返回到信号量。
             semaphore.release();
         } catch (Exception e) {
@@ -41,5 +41,6 @@ public class SemaphoreTest implements Runnable {
         for (int a = 0; a < 20; a++) {
             es.execute(semaphoreTest);
         }
+        es.shutdown();
     }
 }

@@ -5,70 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/IdentityTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/IdentityTestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/vo/ActiReqVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/acti表介绍" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/TestBmpn.bpmn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/IdentityTestServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_8_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/config/ActiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/SendMail.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/mail.bpmn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alidemo/src/test/java/com/lt/alidemo/controller/WeatherControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_odysseus_juel_juel_api_2_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_odysseus_juel_juel_impl_2_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_odysseus_juel_juel_spi_2_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_converter_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_model_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_dmn_api_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_dmn_model_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_engine_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_form_api_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_form_model_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_image_generator_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_process_validation_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_spring_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_spring_boot_starter_basic_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/activiti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/activiti.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/ActivitiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/ActivitiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/EnglishTesk.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/EnglishTesk.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/TestApprove.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/TestApprove.bpmn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/test4bug.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/progress/test4bug.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/流程实例.txt" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/流程实例.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/ActivitiApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/test/java/com/lt/activit/activiti/service/TestServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/main/java/com/example/webtest/WebTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/main/java/com/example/webtest/WebTestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/main/java/com/example/webtest/controller/FreemarkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/main/java/com/example/webtest/controller/FreemarkerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/WebTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/WebTestApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/controller/HomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/controller/HomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/service/TestSqlServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/service/TestSqlServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-test/web-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-test/web-test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +170,12 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lt.alidemo.controller" />
       <recent name="com.example.webtest.service" />
       <recent name="com.example.webtest.controller" />
     </key>
@@ -194,7 +211,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestServiceTest.delApproveInfo">
+  <component name="RunManager" selected="JUnit.TestServiceTest.startProcesses">
     <configuration name="TestServiceTest.activiti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activiti" />
       <extension name="coverage">
@@ -227,38 +244,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServiceTest.delApproveInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activiti" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lt.activit.activiti.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lt.activit.activiti.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.service.TestServiceTest" />
-      <option name="METHOD_NAME" value="delApproveInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServiceTest.getDeployList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activiti" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lt.activit.activiti.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lt.activit.activiti.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.service.TestServiceTest" />
-      <option name="METHOD_NAME" value="getDeployList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestServiceTest.startProcesses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activiti" />
       <extension name="coverage">
@@ -270,6 +255,22 @@
       <option name="PACKAGE_NAME" value="com.lt.activit.activiti.service" />
       <option name="MAIN_CLASS_NAME" value="com.lt.activit.activiti.service.TestServiceTest" />
       <option name="METHOD_NAME" value="startProcesses" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherControllerTest.testWeather" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alidemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lt.alidemo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lt.alidemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.lt.alidemo.controller.WeatherControllerTest" />
+      <option name="METHOD_NAME" value="testWeather" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -348,6 +349,19 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="activiti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lt.activit.activiti.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lt.activit.activiti.ActivitiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlidemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="alidemo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lt.alidemo.AlidemoApplication" />
@@ -398,9 +412,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestServiceTest.delApproveInfo" />
-      <item itemvalue="JUnit.TestServiceTest.getDeployList" />
       <item itemvalue="JUnit.TestServiceTest.activiti" />
+      <item itemvalue="JUnit.WeatherControllerTest.testWeather" />
       <item itemvalue="JUnit.TestServiceTest.startProcesses" />
       <item itemvalue="JUnit.TestServiceTest.delApproveDely" />
       <item itemvalue="Maven.web-test [package,-Dmaven.test.skip=true]" />
@@ -411,14 +424,15 @@
       <item itemvalue="Spring Boot.ResiveApplication" />
       <item itemvalue="Spring Boot.UtilsApplication" />
       <item itemvalue="Spring Boot.WebTestApplication" />
+      <item itemvalue="Spring Boot.ActivitiApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestServiceTest.delApproveInfo" />
+        <item itemvalue="Spring Boot.ActivitiApplication" />
+        <item itemvalue="JUnit.TestServiceTest.startProcesses" />
         <item itemvalue="JUnit.TestServiceTest.activiti" />
         <item itemvalue="JUnit.TestServiceTest.delApproveDely" />
-        <item itemvalue="JUnit.TestServiceTest.getDeployList" />
-        <item itemvalue="JUnit.TestServiceTest.startProcesses" />
+        <item itemvalue="JUnit.WeatherControllerTest.testWeather" />
       </list>
     </recent_temporary>
   </component>
@@ -426,17 +440,12 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.17964481" />
+          <option name="contentProportion" value="0.18306011" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -487,7 +496,10 @@
       <workItem from="1586328602870" duration="6134000" />
       <workItem from="1586334856570" duration="7522000" />
       <workItem from="1586575655635" duration="123000" />
-      <workItem from="1586575825089" duration="486000" />
+      <workItem from="1586575825089" duration="1048000" />
+      <workItem from="1586576921827" duration="8374000" />
+      <workItem from="1586682330077" duration="2093000" />
+      <workItem from="1586931693861" duration="269000" />
     </task>
     <servers />
   </component>
@@ -521,11 +533,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585555018960" />
-    <state x="549" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586359562147">
+    <state x="549" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586609765247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586253370935" />
-    <state x="549" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586359562147" />
+    <state x="549" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586609765247" />
     <state x="454" y="221" width="458" height="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585550316971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -538,65 +550,65 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585725572470" />
-    <state x="42" y="114" width="808" height="618" key="#xdebugger.evaluate" timestamp="1586359310310">
+    <state x="42" y="114" width="808" height="618" key="#xdebugger.evaluate" timestamp="1586610607300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="37" y="101" width="808" height="618" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1585555903487" />
-    <state x="42" y="114" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1586359310310" />
-    <state width="506" height="466" key="DebuggerActiveHint" timestamp="1586359690151">
+    <state x="42" y="114" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1586610607300" />
+    <state width="506" height="466" key="DebuggerActiveHint" timestamp="1586610633531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="506" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1586359690151" />
+    <state width="506" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1586610633531" />
     <state x="145" y="61" width="1228" height="688" maximized="true" key="DiffContextDialog" timestamp="1586353583822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585805178867" />
     <state x="145" y="61" width="1228" height="688" maximized="true" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1586353583822" />
-    <state x="497" y="134" key="FileChooserDialogImpl" timestamp="1586575999662">
+    <state x="497" y="134" key="FileChooserDialogImpl" timestamp="1586682421011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585890259745" />
-    <state x="497" y="134" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586575999662" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1586359932761">
+    <state x="497" y="134" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586682421011" />
+    <state width="1195" height="311" key="GridCell.Tab.0.bottom" timestamp="1586699617058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1586359932760">
+    <state width="1195" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586699617058" />
+    <state width="1195" height="311" key="GridCell.Tab.0.center" timestamp="1586699617048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586359932760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1586359932760">
+    <state width="1195" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586699617048" />
+    <state width="1195" height="311" key="GridCell.Tab.0.left" timestamp="1586699617048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586359932760" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1586359932761">
+    <state width="1195" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586699617048" />
+    <state width="1195" height="311" key="GridCell.Tab.0.right" timestamp="1586699617048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1322" height="319" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586253404900" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586359932761">
+    <state width="1195" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586699617048" />
+    <state width="1195" height="311" key="GridCell.Tab.1.bottom" timestamp="1586699617058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="904" height="257" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586359932761">
+    <state width="1195" height="311" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586699617058" />
+    <state width="1195" height="311" key="GridCell.Tab.1.center" timestamp="1586699617058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="904" height="257" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586359932761">
+    <state width="1195" height="311" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586699617058" />
+    <state width="1195" height="311" key="GridCell.Tab.1.left" timestamp="1586699617058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="904" height="257" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586359932761">
+    <state width="1195" height="311" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586699617058" />
+    <state width="1195" height="311" key="GridCell.Tab.1.right" timestamp="1586699617058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="904" height="257" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586252996927" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586359932761" />
+    <state width="1195" height="311" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586699617058" />
     <state width="1322" height="328" key="GridCell.Tab.2.bottom" timestamp="1585556881235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -643,14 +655,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586252809281" />
-    <state x="437" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585205220081">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="437" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1585205220081" />
-    <state x="668" y="346" key="com.timout.bpmn.property.inspector.editor.string.StringEditorDialog" timestamp="1586332608400">
+    <state x="491" y="92" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586580598414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="668" y="346" key="com.timout.bpmn.property.inspector.editor.string.StringEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1586332608400" />
+    <state x="437" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1585205220081" />
+    <state x="491" y="92" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586580598414" />
+    <state x="668" y="346" key="com.timout.bpmn.property.inspector.editor.string.StringEditorDialog" timestamp="1586610138916">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="668" y="346" key="com.timout.bpmn.property.inspector.editor.string.StringEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1586610138916" />
     <state x="359" y="95" width="647" height="538" key="find.popup" timestamp="1585536499418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -693,7 +706,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>209</line>
+          <line>210</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -708,27 +721,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>128</line>
+          <line>129</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>185</line>
+          <line>186</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>257</line>
+          <line>258</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/activiti/src/main/java/com/lt/activit/activiti/service/impl/TestServiceImpl.java</url>
-          <line>244</line>
+          <line>245</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/web-test/src/test/java/com/example/webtest/service/TestSqlServiceTest.java</url>
-          <line>40</line>
+          <line>37</line>
           <properties class="com.example.webtest.service.TestSqlServiceTest" method="testActiveSql">
             <option name="EMULATED" value="true" />
           </properties>

@@ -3,11 +3,9 @@ package com.example.webtest.service;
 import com.alibaba.fastjson.JSON;
 import com.example.webtest.WebTestApplication;
 import com.example.webtest.dao.TestMapper;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.HashMap;
 
@@ -17,7 +15,6 @@ import java.util.HashMap;
  *
  * @date 2020/3/26 14:47
  */
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {WebTestApplication.class, TestSqlServiceTest.class})
 public class TestSqlServiceTest {
 

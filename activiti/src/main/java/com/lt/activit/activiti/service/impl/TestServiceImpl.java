@@ -60,7 +60,7 @@ public class TestServiceImpl implements TestService {
         UUID uuid = UUID.randomUUID();
         Deployment deploy = builder
                 .name(String.valueOf(uuid))
-                .addClasspathResource("progress/TestBmpn.bpmn")
+                .addClasspathResource("progress/mail.bpmn")
                 ////设置部署类别
                 .category("测试类别")
                 .deploy();
@@ -78,16 +78,17 @@ public class TestServiceImpl implements TestService {
          */
 
         // 流程定义查询对象，查询表 act_re_procdef
-        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery().orderByProcessDefinitionKey();
         query.orderByDeploymentId().active().asc();
         //分页查询
         query.listPage(0, 10);
         List<ProcessDefinition> list = query.list();
         for (ProcessDefinition item : list) {
-            System.out.println(item.getName() + "" + item.getId());
+            System.out.println(item.getName() + "：" + item.getId());
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
-            stringObjectHashMap.put("oneLevel", "123");
+            stringObjectHashMap.put("start", "2");
+            stringObjectHashMap.put("user", "1231231232");
             processInstance = runtimeService.startProcessInstanceById(item.getId(), "TestBmpn", stringObjectHashMap);
             logger.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
         }

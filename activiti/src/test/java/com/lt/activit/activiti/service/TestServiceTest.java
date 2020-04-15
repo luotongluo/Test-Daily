@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @Description:
  * @Version 1.0
  */
-@SpringBootTest(classes = {ActivitiApplication.class, TestServiceTest.class})
+@SpringBootTest
 public class TestServiceTest {
     @Autowired
     private TestServiceImpl testService;

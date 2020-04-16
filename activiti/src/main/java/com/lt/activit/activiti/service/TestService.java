@@ -2,7 +2,9 @@ package com.lt.activit.activiti.service;
 
 import org.activiti.engine.task.Task;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: LT
@@ -14,7 +16,7 @@ public interface TestService {
     /**
      * 部署流程
      */
-    public void activiti();
+    public Map activiti();
 
 
     /**
@@ -22,9 +24,18 @@ public interface TestService {
      *
      * @param bizId 业务id
      */
-    public void startProcesses(String bizId);
+    public Map startProcesses(String bizId);
+
+    /**
+     * 通过查询 key和code 单号和类型判断有没有提交过审批
+     * 没有提交的时候需要提交审批
+     *
+     * @return
+     */
+    public Map startProcessesByKey(HashMap<Object, Object> reqmap) throws Exception;
 
     public void createReviewProcess();
+
     public void findTasksByUserId();
 
     /**

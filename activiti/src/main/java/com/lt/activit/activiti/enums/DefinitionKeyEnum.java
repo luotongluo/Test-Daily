@@ -10,6 +10,8 @@ import java.util.List;
  */
 public enum DefinitionKeyEnum {
     TEST(1, "testKey"),
+    TESTBMPN(1, "TestBmpn"),
+    TESTAPPROVE(1, "TestApprove"),
     ;
     private int code;
     private String name;

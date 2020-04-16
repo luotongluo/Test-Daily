@@ -61,10 +61,11 @@ public class TestController {
     @RequestMapping("startProcessesByKey")
     public Map startProcessesByKey() throws Exception {
         HashMap<Object, Object> hashMap = new HashMap<>();
-        hashMap.put("definitionKey", DefinitionKeyEnum.TEST.getName());
+        hashMap.put("definitionKey", DefinitionKeyEnum.TESTBMPN.getName());
         hashMap.put("bussnessCode", "definitionKey");
         hashMap.put("oprator", "oprator");
         HashMap<String, Object> variablesmap = new HashMap<>();
+        variablesmap.put("oneLevel",123);
         hashMap.put("variables", variablesmap);
         return this.testService.startProcessesByKey(hashMap);
     }

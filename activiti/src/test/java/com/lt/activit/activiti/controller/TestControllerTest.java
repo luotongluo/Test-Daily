@@ -27,7 +27,12 @@ class TestControllerTest {
 
     @Test
     void startProcesses() {
-        Map map = this.testController.startProcesses();
+        Map map = null;
+        try {
+            map = this.testController.startProcessesByKey();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         System.out.println(JSON.toJSONString(map));
     }
 

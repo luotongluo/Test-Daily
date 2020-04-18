@@ -12,7 +12,7 @@
              name=""
              targetNamespace="http://www.activiti.org/test"
              typeLanguage="http://www.w3.org/2001/XMLSchema">
-   <process  id="myProcess_1" isClosed="false" isExecutable="true"
+   <process  id="TestBmpn" isClosed="false" isExecutable="true"
             processType="None">
       <startEvent id="theStart" name="StartEvent"/>
       <userTask activiti:assignee="${oneLevel}" activiti:exclusive="true" id="firstapprove"
@@ -36,7 +36,7 @@
                        documentation="background=#3C3F41;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0"
                        id="Diagram-_1"
                        name="New Diagram">
-      <bpmndi:BPMNPlane bpmnElement="myProcess_1">
+      <bpmndi:BPMNPlane bpmnElement="TestBmpn">
          <bpmndi:BPMNShape bpmnElement="theStart" id="Shape-theStart">
             <omgdc:Bounds height="32.0" width="32.0" x="120.0" y="20.0"/>
             <bpmndi:BPMNLabel>

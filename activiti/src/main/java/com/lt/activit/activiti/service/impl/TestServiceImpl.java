@@ -21,8 +21,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -47,7 +49,7 @@ public class TestServiceImpl implements TestService {
     private IdentityService identityService;
 
     @Override
-    public void activiti() {
+    public Map activiti() {
         /*
         SELECT * FROM `act_re_procdef`;  ---- 流程定义表
     SELECT * FROM `act_re_deployment`; ---- 部署表
@@ -60,17 +62,23 @@ public class TestServiceImpl implements TestService {
         UUID uuid = UUID.randomUUID();
         Deployment deploy = builder
                 .name(String.valueOf(uuid))
-                .addClasspathResource("progress/mail.bpmn")
-                ////设置部署类别
+                .addClasspathResource("progress/TestBmpn.bpmn")
+                //设置部署类别
                 .category("测试类别")
                 .deploy();
-        System.out.println("success");
         logger.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"
                 , deploy.getId(), deploy.getName());
+        HashMap<String, Object> hashMap = new HashMap<>();
+        hashMap.put("id", deploy.getId());
+        hashMap.put("name", deploy.getName());
+        hashMap.put("key", deploy.getKey());
+        hashMap.put("deployment_time", deploy.getDeploymentTime());
+        hashMap.put("category", deploy.getCategory());
+        return hashMap;
     }
 
     @Override
-    public void startProcesses(String bizId) {
+    public Map startProcesses(String bizId) {
         /*
         根据流程定义的Id启动一个流程实例(操作ACT_RU_EXECUTION、ACT_RU_TASK、
         ACT_HI_PROCINST、ACT_HI_ACTINST、ACT_HI_TASKINST、ACT_RU_IDENTITYLINK、
@@ -78,20 +86,74 @@ public class TestServiceImpl implements TestService {
          */
 
         // 流程定义查询对象，查询表 act_re_procdef
-        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery().orderByProcessDefinitionKey();
+        HashMap<String, Object> hashMap = new HashMap<>();
+        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
         query.orderByDeploymentId().active().asc();
         //分页查询
         query.listPage(0, 10);
         List<ProcessDefinition> list = query.list();
+
+        ArrayList<Map> objects = new ArrayList<>();
+
         for (ProcessDefinition item : list) {
-            System.out.println(item.getName() + "：" + item.getId());
+            System.out.println(item.getName() + "" + item.getId());
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
-            stringObjectHashMap.put("start", "2");
-            stringObjectHashMap.put("user", "1231231232");
+            HashMap<String, Object> map = new HashMap<>();
+            stringObjectHashMap.put("oneLevel", "123");
             processInstance = runtimeService.startProcessInstanceById(item.getId(), "TestBmpn", stringObjectHashMap);
             logger.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
+
+            map.put("id", processInstance.getId());
+            map.put("processDefinitionKey", processInstance.getProcessDefinitionKey());
+            map.put("processDefinitionId", processInstance.getProcessDefinitionId());
+            map.put("processDefinitionName", processInstance.getProcessDefinitionName());
+            map.put("processDefinitionVersion", processInstance.getProcessDefinitionVersion());
+            map.put("deploymentId", processInstance.getDeploymentId());
+            map.put("businessKey", processInstance.getBusinessKey());
+            objects.add(map);
         }
+
+        hashMap.put("retMsg", hashMap);
+        return hashMap;
+    }
+
+    @Override
+    public Map startProcessesByKey(HashMap<Object, Object> reqmap) throws RuntimeException {
+        //流程定义的key
+        String processDefinitionKey = "promotFlowVo.getProcessKey()";
+        //流程定义的key
+        processDefinitionKey = (String) reqmap.get("definitionKey");
+        String bussnessCode = "promotFlowVo.getBussnessCode()";
+        //提交审批的单号
+        bussnessCode = (String) reqmap.get("bussnessCode");
+        String oprator = "promotFlowVo.getOprator()";
+        //操作人
+        oprator = (String) reqmap.get("oprator");
+        //审批中的流程变量
+        Map<String, Object> variables = (Map<String, Object>) reqmap.get("variables");
+        String result = null;
+        try {
+            ProcessInstance processInstance = runtimeService.createProcessInstanceQuery().
+                    processInstanceBusinessKey(bussnessCode).singleResult();
+            if (null != processInstance) {
+//                throw new WFException("此单号已创建审批,故不能重复创建");
+            }
+            identityService.setAuthenticatedUserId(oprator);
+            ProcessInstance pi = runtimeService//与正在执行的流程实例和执行对象相关的Service
+                    .startProcessInstanceByKey(processDefinitionKey, bussnessCode, variables);
+            logger.info("WorkFlowServiceImpl-->createReviewProcess-->startProcessInstanceByKey end processDefinitionKey:{}," +
+                    "ProcessInstanceID:{}", processDefinitionKey, pi.getId());
+            result = pi.getProcessDefinitionId();
+
+        } catch (Exception e) {
+//            logger.error("WorkFlowServiceImpl-->createReviewProcess-->error processDefinitionKey:{}," +
+//                    "promotFlowVo:{},Excpttion:{}",processDefinitionKey,JSON.toJSONString(promotFlowVo), e);
+            throw new RuntimeException("WorkFlowServiceImpl-->createReviewProcess->error");
+        }
+        HashMap<String, Object> retmap = new HashMap<>();
+        retmap.put("msg",result);
+        return retmap;
     }
 
     @Override
@@ -114,9 +176,9 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public void findTasksByUserId() {
-        String userId ="dulingjiang";
+        String userId = "dulingjiang";
         List<Task> resultTask = taskService.createTaskQuery().processDefinitionKey("TestBmpn").taskCandidateOrAssigned(userId).list();
-        System.out.println("任务列表："+resultTask);
+        System.out.println("任务列表：" + resultTask);
 
     }
 

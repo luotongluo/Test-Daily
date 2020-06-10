@@ -50,7 +50,7 @@
             enableCountByExample、enableSelectByExample、enableDeleteByExample、enableUpdateByExample、selectByExampleQueryId：
             去除自动生成的例子
         -->
-        <table schema="" tableName="apollo_electronic_invoice_shop" enableCountByExample="false"
+        <table schema="" tableName="testdb_1" enableCountByExample="false"
                enableSelectByExample="false"
                enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
         </table>

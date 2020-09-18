@@ -44,7 +44,7 @@ public class TestController {
         }
 
         stringBuffer.append(" "+substring + "." + type);
-        System.out.print(stringBuffer);
+        System.out.println(stringBuffer);
         return stringBuffer.toString();
     }
 }

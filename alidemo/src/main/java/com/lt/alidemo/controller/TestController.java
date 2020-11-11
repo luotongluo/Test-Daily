@@ -14,9 +14,10 @@ import java.util.UUID;
  */
 @RestController
 public class TestController {
+
     @RequestMapping("testloop")
     public String test(@RequestParam("loop") Integer loop,
-                       @RequestParam(value = "param",required = false) String param,
+                       @RequestParam(value = "Loopparam",required = false) String param,
                        @RequestParam(value = "type",required = false) String type){
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("copy /b ");

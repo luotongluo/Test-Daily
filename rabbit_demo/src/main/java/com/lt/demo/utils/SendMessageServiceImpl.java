@@ -26,7 +26,7 @@ public class SendMessageServiceImpl implements SendMessageService {
     @Override
     public void sendMessage(Object message) {
 //设置回调对象
-        rabbitTemplate.setConfirmCallback(this);
+//        rabbitTemplate.setConfirmCallback(this);
         //构建回调返回的数据
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());
         rabbitTemplate.convertAndSend(Constants.SAVE_USER_EXCHANGE_NAME, Constants.SAVE_USER_QUEUE_ROUTE_KEY, message, correlationData);

@@ -1,12 +1,14 @@
 package com.lt.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author LT
  */
-@SpringBootApplication
+@MapperScan(basePackages = "com.lt.demo")
+@SpringBootApplication()
 public class RabbitApplication {
 
     public static void main(String[] args) {

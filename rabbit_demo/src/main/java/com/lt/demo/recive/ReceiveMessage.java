@@ -1,5 +1,6 @@
 package com.lt.demo.recive;
 
+import com.lt.demo.config.Constants;
 import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +24,7 @@ public class ReceiveMessage {
     private static Logger logger = LoggerFactory.getLogger(ReceiveMessage.class);
 
     @RabbitHandler
-    @RabbitListener(queues = "user.save.queue.name")
+    @RabbitListener(queues = Constants.SAVE_USER_QUEUE_NAME)
     public void receiveMessage(@Payload String message, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag,
                                Channel channel) {
         logger.info("消息接收成功，用户名为：" + message);

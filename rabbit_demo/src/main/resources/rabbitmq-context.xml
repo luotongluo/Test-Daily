@@ -1,4 +1,3 @@
-<!--
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
        xsi:schemaLocation="http://www.springframework.org/schema/rabbit
@@ -6,21 +5,21 @@
    http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
 
-    &lt;!&ndash; 定义RabbitMQ的连接工厂 &ndash;&gt;
+    <!-- 定义RabbitMQ的连接工厂 -->
     <rabbit:connection-factory id="connectionFactory"
                                host="127.0.0.1" port="5672" username="admin" password="admin"
                                virtual-host="testhost"/>
 
-    &lt;!&ndash; MQ的管理，包括队列、交换器等 &ndash;&gt;
+    <!-- MQ的管理，包括队列、交换器等 -->
     <rabbit:admin connection-factory="connectionFactory"/>
 
-    &lt;!&ndash; 定义交换器，暂时不把Q绑定到交换机，在管理界面去绑定 &ndash;&gt;
-    &lt;!&ndash;<rabbit:topic-exchange name="topicExchange" auto-declare="true" ></rabbit:topic-exchange>&ndash;&gt;
+    <!-- 定义交换器，暂时不把Q绑定到交换机，在管理界面去绑定 -->
+    <!--<rabbit:topic-exchange name="topicExchange" auto-declare="true" ></rabbit:topic-exchange>-->
     <rabbit:direct-exchange name="directExchange" auto-declare="true"></rabbit:direct-exchange>
-    &lt;!&ndash;<rabbit:fanout-exchange name="fanoutExchange" auto-declare="true" ></rabbit:fanout-exchange>&ndash;&gt;
+    <!--<rabbit:fanout-exchange name="fanoutExchange" auto-declare="true" ></rabbit:fanout-exchange>-->
 
-    &lt;!&ndash; 定义Rabbit模板，指定连接工厂以及定义exchange(exchange要和上面的一致) &ndash;&gt;
-    &lt;!&ndash;<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="topicExchange" />&ndash;&gt;
+    <!-- 定义Rabbit模板，指定连接工厂以及定义exchange(exchange要和上面的一致) -->
+    <!--<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="topicExchange" />-->
     <rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="directExchange"/>
-    &lt;!&ndash;<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="fanoutExchange" />&ndash;&gt;
-</beans>-->
+    <!--<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="fanoutExchange" />-->
+</beans>

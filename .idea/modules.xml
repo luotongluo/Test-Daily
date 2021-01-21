@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/activiti/activiti.iml" filepath="$PROJECT_DIR$/activiti/activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/alidemo/alidemo.iml" filepath="$PROJECT_DIR$/alidemo/alidemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-test/cloud-test.iml" filepath="$PROJECT_DIR$/cloud-test/cloud-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-recive/demo (1) (com.lt.rabbit).iml" filepath="$PROJECT_DIR$/rabbit-recive/demo (1) (com.lt.rabbit).iml" />

@@ -6,11 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo (1) (com.lt.rabbit)" />
-        <module name="rabbit" />
         <module name="cloud-test" />
-        <module name="utils" />
         <module name="alidemo" />
+        <module name="rabbit" />
+        <module name="utils" />
       </profile>
       <profile name="Annotation profile for web-test" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

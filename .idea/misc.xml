@@ -33,7 +33,6 @@
       <list>
         <option value="$PROJECT_DIR$/alidemo/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-test/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbit-recive/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit_demo/pom.xml" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/web-test/pom.xml" />

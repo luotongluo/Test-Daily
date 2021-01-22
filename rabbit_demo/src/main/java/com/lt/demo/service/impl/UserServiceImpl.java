@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public void testFanout() {
-        HashMap<String, Object> stringObjectHashMap = new HashMap<>();
+        HashMap<String, Object> stringObjectHashMap = new HashMap<>(16);
         stringObjectHashMap.put("test", 123);
         stringObjectHashMap.put("ok", "123123");
         stringObjectHashMap.put("user_id", "123user_id123");
@@ -62,15 +62,12 @@ public class UserServiceImpl implements UserService {
      * @param message
      */
     @Override
-    public void sendTTl(Object message) {
+    public void sendTtl(Object message) {
         LocalDateTime localDateTime = LocalDateTime.now();
-        HashMap<String, Object> msgMap = new HashMap<>();
+        HashMap<String, Object> msgMap = new HashMap<>(16);
         msgMap.put("time", localDateTime);
         msgMap.put("date", "ttltest");
         //设置过期时间3s
-//        MessageProperties messageProperties = MessagePropertiesBuilder.newInstance().setExpiration("3000").build();
-//        Message messagesend = new Message(msgMap.toString().getBytes(), messageProperties);
-//        this.rabbitTemplate.send(MqConstants.TOPOIC_EXCHANGE_NAME, MqConstants.TOPOIC_ROUTE_KEY, messagesend);
         this.rabbitTemplate.convertAndSend(MqConstants.TOPOIC_EXCHANGE_NAME, MqConstants.TOPOIC_ROUTE_KEY, JSON.toJSONString(msgMap));
         LOGGER.info("发送消息使用的交换机为：{}，路由间为：{}，msg：{},before:{}", MqConstants.TOPOIC_EXCHANGE_NAME,
                  MqConstants.TOPOIC_ROUTE_KEY, JSON.toJSONBytes(msgMap),JSON.toJSONString(msgMap));

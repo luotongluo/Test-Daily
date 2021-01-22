@@ -16,18 +16,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TopicRabbitConfig {
 
-    final static String message = "q_topic_message";
-    final static String messages = "q_topic_messages";
+    final static String MESSAGE = "q_topic_message";
+    final static String MESSAGES = "q_topic_messages";
 
     @Bean
     public Queue queueMessage() {
         return new Queue(MqConstants.TOPOIC_QUEUE_NAME);
     }
 
-//    @Bean
-//    public Queue queueMessages() {
-//        return new Queue(TopicRabbitConfig.messages);
-//    }
 
     /**
      * 声明一个Topic类型的交换机

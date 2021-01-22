@@ -9,6 +9,12 @@ import com.lt.demo.bean.UserEntity;
  * @Version 1.0
  */
 public interface UserService {
+    /**
+     * saveUser
+     *
+     * @param userEntity
+     * @return
+     */
     Long saveUser(UserEntity userEntity);
 
     /**
@@ -18,7 +24,8 @@ public interface UserService {
 
     /**
      * ttl msg
+     *
      * @param message
      */
-    void sendTTl(Object message);
+    void sendTtl(Object message);
 }

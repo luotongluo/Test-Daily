@@ -30,7 +30,7 @@ public class DemoMqConfig {
     public static final String TOPIC1_QUEUE = "topicQueue1demo";
     public static final String TOPIC2_QUEUE = "topicQueue2demo";
     public static final String TOPIC_QUEUE_EXCHANGE = "topicExchangeemo";
-    public static final String TOPIC_ROUTE_KEY = "sms.test";
+    public static final String TOPIC_ROUTE_KEY = "sms.mail.test";
 
     @Bean
     public Queue fanout1() {
@@ -84,7 +84,9 @@ public class DemoMqConfig {
         return BindingBuilder.bind(directQueue2()).to(directExchangeDemo()).with(DIRECT_ROUTE_KEY2);
     }
 
-    // 主题交换机示例
+    /**
+     *     主题交换机示例
+      */
     @Bean
     public Queue topicQueue1() {
         return new Queue(TOPIC1_QUEUE);
@@ -116,7 +118,7 @@ public class DemoMqConfig {
      */
     @Bean
     public Binding topicBinding2() {
-        return BindingBuilder.bind(topicQueue2()).to(topicExchangeDemo()).with("mail.#");
+        return BindingBuilder.bind(topicQueue2()).to(topicExchangeDemo()).with("*.mail.#");
     }
 
 

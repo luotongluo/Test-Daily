@@ -17,14 +17,11 @@ import org.springframework.stereotype.Component;
 @Configuration
 @Component
 public class RabbitConfig {
-//    @Bean
-//    public Queue queue() {
-//        return new Queue("q_hello");
-//    }
     /**
      * 如果消息没有到exchange,则confirm回调,ack=false
-     如果消息到达exchange,则confirm回调,ack=true
-     但如果是找不到exchange，则会先触发returncallback
+     * 如果消息到达exchange,则confirm回调,ack=true
+     * 但如果是找不到exchange，则会先触发returncallback
+     *
      * @param connectionFactory
      * @return
      */
@@ -48,7 +45,6 @@ public class RabbitConfig {
                 System.out.println("ack true");
             }
         });
-        /**若消息找不到对应的Exchange会先触发returncallback */
         rabbitTemplate.setReturnCallback((message, replyCode, replyText, tmpExchange, tmpRoutingKey) -> {
             try {
                 System.out.println("ReturnCallback true");

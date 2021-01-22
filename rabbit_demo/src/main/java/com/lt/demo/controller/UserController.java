@@ -45,7 +45,7 @@ public class UserController {
      */
     @RequestMapping("testttl")
     public String testttl() {
-        this.userService.sendTTl(null);
+        this.userService.sendTtl(null);
         return "SUCCESS";
     }
 }

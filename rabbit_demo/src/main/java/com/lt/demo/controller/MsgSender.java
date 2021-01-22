@@ -41,13 +41,13 @@ public class MsgSender {
         //24小时制
         String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         //发送消息
-        Map<String, Object> msg = new HashMap<String, Object>();
+        Map<String, Object> msg = new HashMap<String, Object>(16);
         msg.put("type", "1");
         msg.put("date", date);
         template.convertAndSend("type2", JSON.toJSONString(msg));
         // 休眠1秒
         Thread.sleep(1000);
         //容器销毁
-        ctx.destroy();
+        ctx.close();
     }
 }

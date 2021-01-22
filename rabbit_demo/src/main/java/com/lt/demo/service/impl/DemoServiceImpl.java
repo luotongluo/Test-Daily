@@ -27,7 +27,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public void directDemo() {
-        HashMap<String, Object> dateMap = new HashMap<>();
+        HashMap<String, Object> dateMap = new HashMap<>(16);
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "directDemo");
         //因为在demo中的路由间配置的字段不同
@@ -38,7 +38,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public void topicDemo() {
-        HashMap<String, Object> dateMap = new HashMap<>();
+        HashMap<String, Object> dateMap = new HashMap<>(16);
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "topicDemo");
         this.rabbitTemplate.convertAndSend(DemoMqConfig.TOPIC_QUEUE_EXCHANGE,DemoMqConfig.TOPIC_ROUTE_KEY,JSON.toJSONString(dateMap));
@@ -48,7 +48,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public void fanoutDemo() {
-        HashMap<String, Object> dateMap = new HashMap<>();
+        HashMap<String, Object> dateMap = new HashMap<>(16);
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "fanoutDemo");
         this.rabbitTemplate.convertAndSend(DemoMqConfig.FANOUT_QUEUE_EXCHANGE,DemoMqConfig.FANOUT_ROUTE_KEY,JSON.toJSONString(dateMap));

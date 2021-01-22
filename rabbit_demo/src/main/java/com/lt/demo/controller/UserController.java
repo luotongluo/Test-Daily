@@ -17,11 +17,35 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 测试直连交换机的使用
+     */
     @RequestMapping("/sendMessage")
     public void sendMessage() {
         UserEntity userEntity = new UserEntity();
         userEntity.setAge(20);
         userEntity.setName("zhangsan");
         userService.saveUser(userEntity);
+    }
+
+    /**
+     * 广播交换机的使用
+     *
+     * @return
+     */
+    @RequestMapping("testFanout")
+    public String testFanout() {
+        this.userService.testFanout();
+        return "SUCCESS";
+    }
+    /**
+     * 广播交换机的使用
+     *
+     * @return
+     */
+    @RequestMapping("testttl")
+    public String testttl() {
+        this.userService.sendTTl(null);
+        return "SUCCESS";
     }
 }

@@ -1,6 +1,6 @@
 package com.lt.demo.utils;
 
-import com.lt.demo.config.Constants;
+import com.lt.demo.config.MqConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
@@ -25,11 +25,10 @@ public class SendMessageServiceImpl implements SendMessageService {
 
     @Override
     public void sendMessage(Object message) {
-//设置回调对象
-//        rabbitTemplate.setConfirmCallback(this);
+        //设置回调对象
         //构建回调返回的数据
         CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());
-        rabbitTemplate.convertAndSend(Constants.SAVE_USER_EXCHANGE_NAME, Constants.SAVE_USER_QUEUE_ROUTE_KEY, message, correlationData);
+        rabbitTemplate.convertAndSend(MqConstants.SAVE_USER_EXCHANGE_NAME, MqConstants.SAVE_USER_QUEUE_ROUTE_KEY, message, correlationData);
         logger.info("SendMessageServiceImpl() >>> 发送消息到RabbitMQ, 消息内容: " + message);
     }
 

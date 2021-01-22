@@ -10,4 +10,15 @@ import com.lt.demo.bean.UserEntity;
  */
 public interface UserService {
     Long saveUser(UserEntity userEntity);
+
+    /**
+     * 测试fanout的mq
+     */
+    void testFanout();
+
+    /**
+     * ttl msg
+     * @param message
+     */
+    void sendTTl(Object message);
 }

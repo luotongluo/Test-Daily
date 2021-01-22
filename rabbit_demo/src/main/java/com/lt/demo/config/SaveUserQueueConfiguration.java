@@ -23,64 +23,35 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class SaveUserQueueConfiguration {
-    /**
-     * 配置交换机实例
-     *
-     * @return
-     */
-    @Bean("directExchange")
-    public DirectExchange directExchange() {
-        return new DirectExchange(Constants.SAVE_USER_EXCHANGE_NAME);
-    }
 
-    /**
-     * 配置队列实例，并且设置持久化队列
-     *
-     * @return
-     */
-    @Bean("queue")
-    public Queue queue() {
-        return new Queue(Constants.SAVE_USER_QUEUE_NAME, true);
-    }
-
-    /**
-     * 将队列绑定到交换机上，并设置消息分发的路由键
-     *
-     * @return
-     */
-    @Bean
-    public Binding binding() {
-        //链式写法: 用指定的路由键将队列绑定到交换机
-        return BindingBuilder.bind(queue()).to(directExchange()).with(Constants.SAVE_USER_QUEUE_ROUTE_KEY);
-    }
 
     @Bean
     public TopicExchange topicExchange() {
-        return new TopicExchange(Constants.TOPOIC_EXCHANGE_NAME);
+        return new TopicExchange(MqConstants.TOPOIC_EXCHANGE_NAME);
     }
 
     @Bean
     public Queue topicQueue() {
-        return new Queue(Constants.TOPOIC_QUEUE_NAME, true);
+        return new Queue(MqConstants.TOPOIC_QUEUE_NAME, true);
     }
 
     @Bean
     public Binding topicBind() {
-        return BindingBuilder.bind(topicQueue()).to(topicExchange()).with(Constants.TOPOIC_ROUTE_KEY);
+        return BindingBuilder.bind(topicQueue()).to(topicExchange()).with(MqConstants.TOPOIC_ROUTE_KEY);
     }
 
     @Bean
     public FanoutExchange fanoutExchange() {
-        return new FanoutExchange(Constants.FANOUT_EXCAHNGE_NAME);
+        return new FanoutExchange(MqConstants.FANOUT_EXCAHNGE_NAME);
     }
 
     @Bean
     public Queue fanoutQueue() {
-        return new Queue(Constants.FANOUT_QUEUE_ROUTE_NAME, true);
+        return new Queue(MqConstants.FANOUT_QUEUE_ROUTE_NAME, true);
     }
 
     @Bean
     public Binding fanoutBind() {
-        return BindingBuilder.bind(topicQueue()).to(topicExchange()).with(Constants.FANOUT_QUEUE_KEY);
+        return BindingBuilder.bind(topicQueue()).to(topicExchange()).with(MqConstants.FANOUT_QUEUE_KEY);
     }
 }

@@ -15,4 +15,6 @@ public interface SendMessageService extends RabbitTemplate.ConfirmCallback {
      * @param message 发送内容
      */
     void sendMessage(Object message);
+
+
 }

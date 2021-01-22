@@ -31,7 +31,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/pom.xml" />
         <option value="$PROJECT_DIR$/alidemo/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-test/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit-recive/pom.xml" />

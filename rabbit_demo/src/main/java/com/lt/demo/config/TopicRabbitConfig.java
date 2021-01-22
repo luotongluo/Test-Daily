@@ -21,13 +21,13 @@ public class TopicRabbitConfig {
 
     @Bean
     public Queue queueMessage() {
-        return new Queue(TopicRabbitConfig.message);
+        return new Queue(MqConstants.TOPOIC_QUEUE_NAME);
     }
 
-    @Bean
-    public Queue queueMessages() {
-        return new Queue(TopicRabbitConfig.messages);
-    }
+//    @Bean
+//    public Queue queueMessages() {
+//        return new Queue(TopicRabbitConfig.messages);
+//    }
 
     /**
      * 声明一个Topic类型的交换机
@@ -35,7 +35,7 @@ public class TopicRabbitConfig {
      */
     @Bean
     TopicExchange exchange() {
-        return new TopicExchange("mybootexchange");
+        return new TopicExchange(MqConstants.TOPOIC_EXCHANGE_NAME);
     }
 
     /**
@@ -46,11 +46,11 @@ public class TopicRabbitConfig {
      */
     @Bean
     Binding bindingExchangeMessage(Queue queueMessage, TopicExchange exchange) {
-        return BindingBuilder.bind(queueMessage).to(exchange).with("topic.message");
+        return BindingBuilder.bind(queueMessage).to(exchange).with(MqConstants.TOPOIC_ROUTE_KEY);
     }
 
-    @Bean
-    Binding bindingExchangeMessages(Queue queueMessages, TopicExchange exchange) {
-        return BindingBuilder.bind(queueMessages).to(exchange).with("topic.#");
-    }
+//    @Bean
+//    Binding bindingExchangeMessages(Queue queueMessages, TopicExchange exchange) {
+//        return BindingBuilder.bind(queueMessages).to(exchange).with("com.lt.topic.#");
+//    }
 }

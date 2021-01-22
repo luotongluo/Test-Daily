@@ -23,16 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/DemoMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/DemoMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/TopicRabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/config/TopicRabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/controller/MsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/controller/MsgSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/DemoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/impl/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/impl/DemoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_demo/src/main/java/com/lt/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -462,7 +454,7 @@
       <workItem from="1609833649118" duration="99000" />
       <workItem from="1609833764913" duration="1180000" />
       <workItem from="1611214391558" duration="7491000" />
-      <workItem from="1611279513536" duration="13780000" />
+      <workItem from="1611279513536" duration="14329000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1600444439026</created>

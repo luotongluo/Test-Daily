@@ -13,20 +13,20 @@ import java.util.HashMap;
  */
 public class FileUse {
     public static void main(String[] args) {
-        String path = "G:\\Using\\2021-01-30,G:\\Using\\2021-02-27";
-        getFiles(path);
+        String path = "G:\\Using\\2021-02-27";
+        rennameFileName(path);
     }
 
     /**
-     *
      * @param filepath eg file,file2
      * @return
      */
     public static ArrayList<String> getFiles(String filepath) {
         ArrayList<String> files = new ArrayList<String>();
-        if(StringUtils.isEmpty(filepath)){
+        if (StringUtils.isEmpty(filepath)) {
             return null;
         }
+        StringBuilder builder = new StringBuilder();
         String[] split = filepath.split(",");
         HashMap<String, String> hashMap = new HashMap<>();
         for (String filename : split) {
@@ -37,22 +37,34 @@ public class FileUse {
                     String name = tempLists[i].getName();
                     String[] s = name.split("_");
                     String names1 = s[0];
-
-                    if(hashMap.keySet().contains(names1)){
-                        System.out.println(names1 +"============="+ filename);
-                        System.out.println(hashMap.get(names1) +"======before=======");
+                    builder.append("ren " + name + " " + names1 + ".mp4 \n");
+                    if (hashMap.keySet().contains(names1)) {
+                        System.out.println(names1 + "=============" + filename);
+                        System.out.println(hashMap.get(names1) + "======before=======");
                     }
-                    hashMap.put(names1,filename);
+                    hashMap.put(names1, filename);
 
                 }
             }
         }
-        System.out.println("size : "+ hashMap.keySet().size());
-
+        System.out.println("size : " + hashMap.keySet().size());
+        System.out.println(builder);
 //        for (int i = 0; i < files.size(); i++) {
 //            System.out.println(files.get(i));
 //        }
         return files;
     }
 
+    public static void rennameFileName(String path) {
+        File folder = new File(path);
+        File[] files = folder.listFiles();
+        for (File file : files) {
+            String name = file.getName();
+            String[] s = name.split("_");
+            File newfile = new File(path + "/" + s[0] + ".mp4");
+            System.out.println(newfile);
+            file.renameTo(newfile);
+//            break;
+        }
+    }
 }

@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-test/src/test/java/othertest/FileUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-test/src/test/java/othertest/FileUse.java" afterDir="false" />
-    </list>
+    <list default="true" id="f5e28c9b-ebfe-4bbe-afec-77a660a8db81" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -397,8 +394,16 @@
       <workItem from="1614435284207" duration="2567000" />
       <workItem from="1614518514456" duration="1707000" />
       <workItem from="1614695574794" duration="750000" />
-      <workItem from="1614780810180" duration="1354000" />
+      <workItem from="1614780810180" duration="1684000" />
     </task>
+    <task id="LOCAL-00001" summary="add files">
+      <created>1614782584636</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614782584636</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +426,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

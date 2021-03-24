@@ -26,7 +26,7 @@ public class TestYiYuanWeather {
         testYiYuanWeather.testYiYuanWeaTher();
     }
 
-    public  void testYiYuanWeaTher(){
+    public void testYiYuanWeaTher() {
         String host = "https://ali-weather.showapi.com";
         String path = "/weatherhistory";
         String method = "GET";

@@ -17,24 +17,24 @@ import java.util.HashMap;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {AlidemoApplication.class})
-public  class SelfLifeServiceTest {
-	@Autowired
-	private SelfLifeService selfLifeService;
+public class SelfLifeServiceTest {
+    @Autowired
+    private SelfLifeService selfLifeService;
 
-	@Test
-	public void testSlefLife(){
-		HashMap<String, String> reqMap = new HashMap<>(16);
-		reqMap.put("host","http://fzlq.market.alicloudapi.com");
-		reqMap.put("path","/ai_metaphysics/fo_zu_lin_qian/elite");
-		reqMap.put("BIRTH","19960316000000");
-		reqMap.put("FIRST_NAME","张");
-		reqMap.put("GENDER","男");
-		reqMap.put("LAST_NAME","无忌");
+    @Test
+    public void testSlefLife() {
+        HashMap<String, String> reqMap = new HashMap<>(16);
+        reqMap.put("host", "http://fzlq.market.alicloudapi.com");
+        reqMap.put("path", "/ai_metaphysics/fo_zu_lin_qian/elite");
+        reqMap.put("BIRTH", "19960316000000");
+        reqMap.put("FIRST_NAME", "张");
+        reqMap.put("GENDER", "男");
+        reqMap.put("LAST_NAME", "无忌");
 		/*
 		ret:
 		{"FIRT_NAME": "张", "LAST_NAME": "无忌", "BIRTH": "20180808", "YEAR": "戊戌", "MONTH": "六月", "DAY": "廿七", "HOUR": "辰时", "ANIMAL": "狗", "GENDER": "男", "SIGN_NAME": "佛祖灵签", "SIGN_ID": "47", "SIGN_TYPE": "中平签", "SIGN_TITLE": "许宁祖平番", "SIGN_POEM": "月边添六九，牛尾两旁开；且待浮云散，光明依旧同", "SIGN_INTRO": "密云不雨，雨湿桃腮之兆", "SIGN_ENTITY": {"SIGN_CAREER": "得陇望蜀，因地制宜，出生入死，万箭穿心", "SIGN_FAMILY": "暗度陈仓，金枝玉叶，落花流水，昙花一现", "SIGN_EMOTION": "越俎代庖，难得糊涂，因果报应，差强人意", "SIGN_ACADEMIC": "黔驴技穷，完璧归赵，大浪淘沙，天方夜谭", "SIGN_INVEST": "酸甜苦辣，沧海桑田，患得患失，出生入死", "SIGN_HEALTH": "蝇营狗苟，不耻下问，退避三舍，矫枉过正", "SIGN_SWITCH": "鸠占鹊巢，明日黄花，患得患失，蝇营狗苟", "SIGN_LAWSUIT": "南柯一梦，运筹帷幄，画地为牢，坐井观天", "SIGN_LOST": "矫枉过正，十字路口，天方夜谭，龙潭虎穴", "SIGN_TRAVEL": "姗姗来迟，不一而足，塞翁失马，高山流水", "SIGN_CHILD": "望梅止渴，愚公移山，空穴来风，昙花一现"}}
 		 */
-		this.selfLifeService.getSlefLife(reqMap);
+        this.selfLifeService.getSlefLife(reqMap);
 		/*
 		{
     "FIRT_NAME":"张",                                                                #姓氏
@@ -67,5 +67,5 @@ public  class SelfLifeServiceTest {
     }
 }
 		 */
-	}
+    }
 }

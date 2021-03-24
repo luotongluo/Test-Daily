@@ -25,6 +25,7 @@ public class IdentityTestServiceTest {
     public void addUser() {
         this.identityTestService.adduser();
     }
+
     @Test
     public void getUser() {
         User user = identityService.newUser("null");

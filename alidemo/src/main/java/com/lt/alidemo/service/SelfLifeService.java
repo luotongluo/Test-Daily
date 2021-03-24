@@ -9,10 +9,11 @@ import java.util.Map;
  * @Version 1.0
  */
 public interface SelfLifeService {
-	/**
-	 * 艾福特恩（iFORTUNE）-命理玄学知识图谱-佛祖灵签
-	 * @param map
-	 * @return
-	 */
-	public Map getSlefLife(Map map);
+    /**
+     * 艾福特恩（iFORTUNE）-命理玄学知识图谱-佛祖灵签
+     *
+     * @param map
+     * @return
+     */
+    public Map getSlefLife(Map map);
 }

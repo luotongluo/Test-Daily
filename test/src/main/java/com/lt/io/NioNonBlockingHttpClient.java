@@ -86,9 +86,9 @@ public class NioNonBlockingHttpClient {
      * <p>
      * 这里与 Linux 下的 selector 有点不同，nio 下的 selecotr 不会去遍历所有关联的 socket。
      * 我们在注册时设置了我们关心的事件类型，每次从选择器中获取的，只会是那些符合事件类型，
-     注意：这里的selector.select()是同步阻塞的，等待有事件发生后，才会被唤醒。
-     这就防止了 CPU 空转的产生。当然，我们也可以给它设置超时时间，
-     selector.select(long timeout)来结束阻塞过程。
+     * 注意：这里的selector.select()是同步阻塞的，等待有事件发生后，才会被唤醒。
+     * 这就防止了 CPU 空转的产生。当然，我们也可以给它设置超时时间，
+     * selector.select(long timeout)来结束阻塞过程。
      * 并且完成就绪操作的 socket，减少了大量无效的遍历操作
      *
      * @throws IOException
@@ -124,6 +124,7 @@ public class NioNonBlockingHttpClient {
      * 一个 socket 是如何来处理连接、写入数据和读取数据的
      * （这些操作都是阻塞的过程，只是我们将等待就绪的过程变成了非阻塞的了）。
      * // SelectionKey 代表 SocketChannel 在选择器中注册的事件句柄
+     *
      * @param key
      * @throws IOException
      */
@@ -141,6 +142,7 @@ public class NioNonBlockingHttpClient {
 
     /**
      * 处理写入就绪事件
+     *
      * @param key
      * @throws IOException
      */
@@ -174,6 +176,7 @@ readyOps：表示 SocketChannel 当前就绪的事件类型。以key.isReadable(
 
     /**
      * 处理读取就绪事件
+     *
      * @param key
      * @throws IOException
      */

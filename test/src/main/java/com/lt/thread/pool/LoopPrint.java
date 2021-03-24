@@ -26,7 +26,7 @@ public class LoopPrint {
             }
             //干活
 //            for (int i = 1; i <= 5; i++) {
-                System.out.print(Thread.currentThread().getName() + "\t" + "AA" + "\t当前是第：" + loop + "轮\n");
+            System.out.print(Thread.currentThread().getName() + "\t" + "AA" + "\t当前是第：" + loop + "轮\n");
 //            }
             //线程的唤醒+改标记
             number = 2;
@@ -48,7 +48,7 @@ public class LoopPrint {
             }
             //干活
 //            for (int i = 1; i <= 5; i++) {
-                System.out.print(Thread.currentThread().getName() + "\t" + "BB" + "\t当前是第：" + loop + "轮\n");
+            System.out.print(Thread.currentThread().getName() + "\t" + "BB" + "\t当前是第：" + loop + "轮\n");
 //            }
             //线程的唤醒+改标记
             number = 2;
@@ -69,7 +69,7 @@ public class LoopPrint {
             }
             //干活
 //            for (int i = 1; i <= 5; i++) {
-                System.out.print(Thread.currentThread().getName() + "\t" + "CC" + "\t当前是第：" + loop + "轮\n");
+            System.out.print(Thread.currentThread().getName() + "\t" + "CC" + "\t当前是第：" + loop + "轮\n");
 //            }
             //线程的唤醒+改标记
             number = 2;

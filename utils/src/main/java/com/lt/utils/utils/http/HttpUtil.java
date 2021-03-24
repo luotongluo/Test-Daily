@@ -71,7 +71,7 @@ public class HttpUtil {
             String[] var4 = arrSplit;
             int var5 = arrSplit.length;
 
-            for(int var6 = 0; var6 < var5; ++var6) {
+            for (int var6 = 0; var6 < var5; ++var6) {
                 String strSplit = var4[var6];
                 String[] arrSplitEqual = null;
                 arrSplitEqual = strSplit.split("[=]");
@@ -126,7 +126,7 @@ public class HttpUtil {
 
         try {
             URL url = new URL(reqUrl);
-            HttpURLConnection httpUrlConn = (HttpURLConnection)url.openConnection();
+            HttpURLConnection httpUrlConn = (HttpURLConnection) url.openConnection();
             httpUrlConn.setDoOutput(false);
             httpUrlConn.setDoInput(true);
             httpUrlConn.setUseCaches(false);
@@ -139,7 +139,7 @@ public class HttpUtil {
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             String str = null;
 
-            while((str = bufferedReader.readLine()) != null) {
+            while ((str = bufferedReader.readLine()) != null) {
                 buffer.append(str);
             }
 
@@ -170,13 +170,13 @@ public class HttpUtil {
             Map<String, List<String>> map = connection.getHeaderFields();
             Iterator var8 = map.keySet().iterator();
 
-            while(var8.hasNext()) {
-                String key = (String)var8.next();
+            while (var8.hasNext()) {
+                String key = (String) var8.next();
                 System.out.println(key + "--->" + map.get(key));
             }
 
             String line;
-            for(in = new BufferedReader(new InputStreamReader(connection.getInputStream())); (line = in.readLine()) != null; result = result + line) {
+            for (in = new BufferedReader(new InputStreamReader(connection.getInputStream())); (line = in.readLine()) != null; result = result + line) {
             }
         } catch (Exception var18) {
             System.out.println("发送GET请求出现异常！" + var18);

@@ -21,7 +21,7 @@ public class TestSqlServiceImpl implements TestSqlService {
     @Override
     public String testActiveSql(Map map) {
         ElectronicInvoiceShop electronicInvoiceShopResVo = null;
-        electronicInvoiceShopResVo =new ElectronicInvoiceShop("shopname","indet_name","placr-code",2,12);
+        electronicInvoiceShopResVo = new ElectronicInvoiceShop("shopname", "indet_name", "placr-code", 2, 12);
 
         Integer integer = testMapper.updateSql(electronicInvoiceShopResVo);
         return String.valueOf(integer);

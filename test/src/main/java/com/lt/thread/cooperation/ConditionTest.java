@@ -26,7 +26,7 @@ public class ConditionTest implements Runnable {
             reentrantLock.lock();
             //导致当前线程等到发信号或 interrupted 。
             condition.await();
-            System.out.println("Thread is going on "+ System.currentTimeMillis());
+            System.out.println("Thread is going on " + System.currentTimeMillis());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -34,7 +34,7 @@ public class ConditionTest implements Runnable {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         long start = System.currentTimeMillis();
         System.out.println(start);
         ConditionTest test = new ConditionTest();
@@ -44,6 +44,6 @@ public class ConditionTest implements Runnable {
         reentrantLock.lock();
         condition.signal();
         reentrantLock.unlock();
-        System.out.println("cost:"+ (System.currentTimeMillis() - start));
+        System.out.println("cost:" + (System.currentTimeMillis() - start));
     }
 }

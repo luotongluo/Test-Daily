@@ -25,13 +25,13 @@ public class JokeServiceTest {
     public void getTextJoke() throws Exception {
         HashMap<String, String> reqMap = new HashMap<>();
         //查看文字笑话
-        reqMap.put("path","/xiaohua/text");
+        reqMap.put("path", "/xiaohua/text");
         //页码
-        reqMap.put("pagenum","1");
+        reqMap.put("pagenum", "1");
         //每页条数 最大20
-        reqMap.put("pagesize","20");
+        reqMap.put("pagesize", "20");
         //排序 addtime按时间倒叙 rand随机获取 sort=rand时，pagenum无效
-        reqMap.put("sort","addtime");
+        reqMap.put("sort", "addtime");
         this.jokeService.getTextJoke(reqMap);
         /*
         {"status":0,"msg":"ok","result":{"total":79510,"pagenum":1,"pagesize":20,"list":[{"content":"&nbsp; &nbsp; 小区门口修车师傅生意特好。人实在,只要不换零件，常常不收钱或只收个块把钱辛苦钱。最近发现他心黑了，价钱明显上调,就连充个气也收1块钱。旁边书报亭大妈是知情人，: 唉，多担待一下吧！他家上个月二胎,一窝生了四个带把的。。。。","addtime":"2019-06-09 03:20:33","url":"http:\/\/m.kaixinhui.com\/detail-128249.html"},{"content":"前天和同事去逛超市，说好久没买肉吃了，于是去看猪肉，结果看到的最便宜的猪肉都要十八块多，同事当场惊呼：“猪怎么了，这是！”卖肉的师傅笑着说：“猪没事，就是涨价了。”","addtime":"2019-05-04 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128248.html"},{"content":"去小卖部买烟，10块钱一盒的，给老板100，老板喜咪咪的看着我说：“我没零钱找你，就让我闺女陪你一晚抵账得了。”我一激动：“你老别介啊，我攒个私房钱出来偷偷买烟，真的很不容易啊！”老板：“怎么，你不愿意？要不然我去把我闺女叫出来！”我：“别！别！这钱你不用找了，千万别让您闺女知道我藏私房钱啊！”老板：“好女婿，只要你经常来买东西，我保证不说！哈哈哈”","addtime":"2019-05-04 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128247.html"},{"content":"昨天路过单位餐厅门口的金鱼池，正好看到一条小金鱼蹦到外边了，还在张嘴，就捡起来扔到池子里。回到家跟老婆聊天时随口说起，老婆抱怨着说，“我说你个缺心眼的，怎么不去向它要幢别墅呢！”","addtime":"2019-04-12 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128246.html"},{"content":"刚才在QQ上有个还在上大学的姑娘突然跟我讲：“朋友介绍我去打工，今天晚上要到一个酒吧领舞，现在有点不敢去。”我：“有什么不敢去的？”姑娘：“刚才在小摊上只吃了碗牛肉面，怕到时候饿。”──姑娘，你心太宽了！","addtime":"2019-04-12 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128245.html"},{"content":"为什么古装剧里总是有女人会对恩人说：小女子无以为报，唯有以身相许，古代真的存在这种现象吗？ 扯淡，那是因为她喜欢他，要是不喜欢，她就会说：小女子无以为报，唯有来生再报了。","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128244.html"},{"content":"网上聊了一妹子，今天见面。问老妈要了二百块钱，老妈问我干嘛用，我说约会，她高高兴兴的就给了。刚出家门，老爸就把我拽到一边说“小子，二百块钱给我一百，半个月不知道烟的滋味了。”我说“爸，这是我和女朋友的约会钱，不能给你。”老爸说了。“你约什么会，那是我刚建的小号，为了抽颗烟我和你聊了半个月了，快拿来。‘’","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128243.html"},{"content":"家长对孩子的教育真的非常重要。有些男孩，小时候调皮的很，偷了邻居家一根针，家长也不管，一根针嘛，没事。结果孩子长大了，不好好学习每天呆在家里刺十字绣。","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128242.html"},{"content":"一女人问大师：大师，在这么复杂险恶的世界，我一个弱女子如何保护自己？大师说：你把妆卸了！","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128241.html"},{"content":"楼主大四女生，这几天和同一宿舍的女生一起去找工作，在火车站，碰到一个大姐，带着一个四五岁的小男孩侯车，小男孩总是粘着我，要坐我腿上，同宿舍的女生很是羡慕我有人缘，我得意的问小男孩：“你为什么老是喜欢坐姐姐腿上？” 小男孩用稚嫩的口气回答：“姐姐腿上肉多，坐着舒服” 我：“尼玛，这是谁家小哔崽子，快点领走！”","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128240.html"},{"content":"女：“我购物车里的那些水果牛奶饮料零食你赶紧给我买！” 男：“着什么急呀？” 女：“天越来越热了，会放坏的。”","addtime":"2019-04-10 03:20:03","url":"http:\/\/m.kaixinhui.com\/detail-128239.html"},{"content":"朋友问我：有一种鸟，好笑又神经，它是什么鸟？我：我不知道。。沙雕！","addtime":"2019-04-09 03:20:06","url":"http:\/\/m.kaixinhui.com\/detail-128238.html"},{"content":"昨天在家看抗日神剧，我问六岁的小侄女：“宝宝，你知道为什么曰本人头盔两耳边有两块布么？” 她不假思索的瞟了我一眼：“叔叔你真笨，他们设计这两块布肯定是防止被长官打耳光的！” 我。。。","addtime":"2019-04-09 03:20:06","url":"http:\/\/m.kaixinhui.com\/detail-128237.html"},{"content":"昨天哥哥和嫂子有事出门，把小侄子留给我了，我带他去街上，非要拉着我给他买玩具，我给他说：“姑姑兜里没带钱。” 小侄子从自己兜里掏出三百块钱说：“就知道你小气，花我的钱。” 我俩去玩具店，给侄子买了好多玩具，又去吃了顿饭，三百块终于造完了。 摸着肚子问侄子：“这钱是你妈留给你的吗？” 侄子摸摸头说：“不是啊！来的时候趁你不注意，在你包里拿的。”","addtime":"2019-04-09 03:20:06","url":"http:\/\/m.kaixinhui.com\/detail-128236.html"},{"content":"今天不巧看见前女友，更不巧的是我俩都穿的以前买的情侣装。。。 我寻思见面总得打个招呼吧，就贱贱的过去了，本想说“好巧啊，咱俩竟还能然穿情侣装”，没想到被她抢先一句“呦～还有跟老娘穿亲子装的！” 。。。","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128235.html"},{"content":"今天坐高铁回家注意到身边一名男子，他穿得干净、得体，脸庞留下少许岁月痕迹。 他忧郁的眼神，时而静静望窗外，像是思考过往人生；时而双眼微闭，让疲倦的身体有片刻歇息。 根据个人多年行为模式研究、心理学观察及社会经验判断——――这人十有八九是手机没电了。","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128234.html"},{"content":"家里大拜祖先。小明不拜，说：“拜祖先有什么用，祖先又不会保佑的！”爸爸：“你个死孩子，不要乱说！”小明：“谁乱说了啊。”他指着供桌上的猪头：“要是祖先会保佑的话，这猪的祖先天蓬元帅怎么会让自己的后辈子孙给人宰了当祭品。”","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128233.html"},{"content":"三毛去发型屋做发型，对发型师说：给我编个麻花辫。发型师不小心弄掉了三毛的一根头发。三毛叹口气说：那来个中分好拉。可是发型师不小心又弄掉了根。三毛一看火了：你丫的想让我披头散发？","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128232.html"},{"content":"酒吧里，一个大汉侃侃而谈：“我们出来 混社团，最重要的就是信用二字！”旁边 几个小年轻赶紧上前，崇拜的为他点了 一支烟问：“哥，不知您混的哪个社 团？”大汉吸了口烟，眯着眼睛答道：“铁 岭农村信用社。”","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128231.html"},{"content":"问：什么生物拥有超强的臂力、锋利的指甲和尖锐的牙齿，以至于能撕碎一切坚硬牢固的东西？答：拆快递时的妹子。","addtime":"2019-04-09 03:20:04","url":"http:\/\/m.kaixinhui.com\/detail-128230.html"}]}}
@@ -39,17 +39,18 @@ public class JokeServiceTest {
          */
 
     }
+
     @Test
     public void getxiaohua() throws Exception {
         HashMap<String, String> reqMap = new HashMap<>();
         //查询图片笑话
-        reqMap.put("path","/xiaohua/pic");
+        reqMap.put("path", "/xiaohua/pic");
         //页码
-        reqMap.put("pagenum","1");
+        reqMap.put("pagenum", "1");
         //每页条数 最大20
-        reqMap.put("pagesize","20");
+        reqMap.put("pagesize", "20");
         //排序 addtime按时间倒叙 rand随机获取 sort=rand时，pagenum无效
-        reqMap.put("sort","addtime");
+        reqMap.put("sort", "addtime");
         this.jokeService.getTextJoke(reqMap);
         /*
         res:

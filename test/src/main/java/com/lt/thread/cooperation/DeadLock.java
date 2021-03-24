@@ -48,7 +48,7 @@ public class DeadLock extends Thread {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         DeadLock deadLock2 = new DeadLock(o2);
         DeadLock deadLock = new DeadLock(o1);
         deadLock.start();

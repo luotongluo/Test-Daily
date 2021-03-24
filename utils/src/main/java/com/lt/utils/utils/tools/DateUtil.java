@@ -282,7 +282,7 @@ public class DateUtil {
      * @return 当前日期是星期几
      */
     public static String getWeekOfDate(Date date) {
-        String[] weekDays = { "星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六" };
+        String[] weekDays = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
@@ -290,6 +290,7 @@ public class DateUtil {
             w = 0;
         return weekDays[w];
     }
+
     public static void main(String[] args) {
         Date d1 = parseDate("2014-01-02 11:30:23");
         Date d2 = parseDate("2004-01-02 11:30:24");

@@ -1,5 +1,6 @@
 package com.lt.activit.activiti.service;
 
+import com.lt.activit.activiti.vo.ActiReqVo;
 import org.activiti.engine.task.Task;
 
 import java.util.HashMap;
@@ -16,7 +17,7 @@ public interface TestService {
     /**
      * 部署流程
      */
-    public Map activiti();
+    public Map activiti(ActiReqVo actiReqVo);
 
 
     /**

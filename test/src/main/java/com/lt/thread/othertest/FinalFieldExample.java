@@ -9,6 +9,7 @@ public class FinalFieldExample {
     final int x;
     int y;
     static FinalFieldExample f;
+
     public FinalFieldExample() {
         x = 3;
         y = 4;
@@ -27,7 +28,7 @@ public class FinalFieldExample {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         reader();
         Object obj = new Object();
         obj.wait();

@@ -52,7 +52,7 @@ public class SocketHttpClient {
         for (final String host : HttpConstant.HOSTS) {
             poolExecutor.execute(() -> {
                 new SocketHttpClient().start(host, HttpConstant.PORT);
-                System.out.println("haoshi:" + (System.currentTimeMillis() - start+"name:" + Thread.currentThread().getName()));
+                System.out.println("haoshi:" + (System.currentTimeMillis() - start + "name:" + Thread.currentThread().getName()));
                 System.out.println("count:" + poolExecutor.getActiveCount() + "-isShutdown:" + poolExecutor.isShutdown()
                         + "-count-alive:" + poolExecutor.getActiveCount());
             });

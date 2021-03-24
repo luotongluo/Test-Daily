@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.lt.demo.config.DemoMqConfig;
 import com.lt.demo.config.MqConstants;
 import com.lt.demo.service.DemoService;
-import com.sun.security.ntlm.Client;
+import org.slf4j.Logger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -31,7 +31,7 @@ public class DemoServiceImpl implements DemoService {
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "directDemo");
         //因为在demo中的路由间配置的字段不同
-        this.rabbitTemplate.convertAndSend(DemoMqConfig.DIRECT_QUEUE_EXCHANGE,DemoMqConfig.DIRECT_ROUTE_KEY1,JSON.toJSONString(dateMap));
+        this.rabbitTemplate.convertAndSend(DemoMqConfig.DIRECT_QUEUE_EXCHANGE, DemoMqConfig.DIRECT_ROUTE_KEY1, JSON.toJSONString(dateMap));
         LOGGER.info("发送消息使用的交换机为：{}，路由间为：{}，msg：{},before:{}", DemoMqConfig.DIRECT_QUEUE_EXCHANGE,
                 DemoMqConfig.DIRECT_ROUTE_KEY1, JSON.toJSONString(dateMap));
     }
@@ -41,7 +41,7 @@ public class DemoServiceImpl implements DemoService {
         HashMap<String, Object> dateMap = new HashMap<>(16);
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "topicDemo");
-        this.rabbitTemplate.convertAndSend(DemoMqConfig.TOPIC_QUEUE_EXCHANGE,DemoMqConfig.TOPIC_ROUTE_KEY,JSON.toJSONString(dateMap));
+        this.rabbitTemplate.convertAndSend(DemoMqConfig.TOPIC_QUEUE_EXCHANGE, DemoMqConfig.TOPIC_ROUTE_KEY, JSON.toJSONString(dateMap));
         LOGGER.info("发送消息使用的交换机为：{}，路由间为：{}，msg：{},before:{}", DemoMqConfig.TOPIC_QUEUE_EXCHANGE,
                 DemoMqConfig.TOPIC_ROUTE_KEY, JSON.toJSONString(dateMap));
     }
@@ -51,7 +51,7 @@ public class DemoServiceImpl implements DemoService {
         HashMap<String, Object> dateMap = new HashMap<>(16);
         dateMap.put("time", LocalDateTime.now());
         dateMap.put("data", "fanoutDemo");
-        this.rabbitTemplate.convertAndSend(DemoMqConfig.FANOUT_QUEUE_EXCHANGE,DemoMqConfig.FANOUT_ROUTE_KEY,JSON.toJSONString(dateMap));
+        this.rabbitTemplate.convertAndSend(DemoMqConfig.FANOUT_QUEUE_EXCHANGE, DemoMqConfig.FANOUT_ROUTE_KEY, JSON.toJSONString(dateMap));
         LOGGER.info("发送消息使用的交换机为：{}，路由间为：{}，msg：{},before:{}", DemoMqConfig.FANOUT_QUEUE_EXCHANGE,
                 DemoMqConfig.FANOUT_ROUTE_KEY, JSON.toJSONString(dateMap));
     }

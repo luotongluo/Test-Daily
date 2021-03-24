@@ -29,7 +29,7 @@ public class ExceptionThreadPoolDemo {
         // 请注意， isTerminated从不true ，除非shutdown或shutdownNow被称为第一。
         boolean terminated = executor.isTerminated();
         System.out.println("isTerminated" + terminated);
-        if(terminated){
+        if (terminated) {
             /*
             shutdown()方法将允许先前提交的任务在终止之前执行，而shutdownNow()
             方法可以防止等待任务启动并尝试停止当前正在执行的任务。 一旦终止，执行者没有任务正在执行，
@@ -54,8 +54,8 @@ public class ExceptionThreadPoolDemo {
 //                System.out.println("a : " + a + " b:" + b);
 //
 //            } else {
-                double re = a / b;
-                System.out.println("res : " + re);
+            double re = a / b;
+            System.out.println("res : " + re);
 //            }
         }
     }

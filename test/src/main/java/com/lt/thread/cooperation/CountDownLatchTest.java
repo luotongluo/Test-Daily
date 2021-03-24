@@ -19,7 +19,7 @@ public class CountDownLatchTest implements Runnable {
     public void run() {
         try {
             Thread.sleep(new Random().nextInt(10) * 100);
-            System.out.println("check complete"+Thread.currentThread().getName());
+            System.out.println("check complete" + Thread.currentThread().getName());
         } catch (Exception e) {
             COUNT_DOWN_LATCH.countDown();
         }

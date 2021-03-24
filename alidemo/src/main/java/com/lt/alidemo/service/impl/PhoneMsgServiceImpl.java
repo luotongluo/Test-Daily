@@ -18,6 +18,7 @@ import java.util.Map;
 public class PhoneMsgServiceImpl implements PhoneMsgService {
     @Autowired
     private CommonConfig commonConfig;
+
     @Override
     public String sendPhoneMsg(Map reqMaq) throws Exception {
         String host = (String) reqMaq.get("host");

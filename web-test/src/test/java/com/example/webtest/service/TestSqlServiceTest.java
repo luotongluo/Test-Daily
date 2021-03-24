@@ -12,7 +12,6 @@ import java.util.HashMap;
 /**
  * @author luotong
  * @description TestSqlServiceTest
- *
  * @date 2020/3/26 14:47
  */
 @SpringBootTest(classes = {WebTestApplication.class, TestSqlServiceTest.class})

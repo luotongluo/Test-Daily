@@ -21,7 +21,7 @@ public class MulitiPrit {
     private int MOD = 3;
 
     private void printChar(int threadIdentify) {
-        for (int i = 0; i < LOOP_NUM;i++) {
+        for (int i = 0; i < LOOP_NUM; i++) {
             lock.lock();
             try {
                 /**

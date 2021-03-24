@@ -20,8 +20,8 @@ public class ExceptionTest {
         }
     }
 
-    private static void testException1(int i)  {
-        if ( i ==5)
-            throw new  RuntimeException("123");
+    private static void testException1(int i) {
+        if (i == 5)
+            throw new RuntimeException("123");
     }
 }

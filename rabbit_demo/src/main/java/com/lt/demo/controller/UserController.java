@@ -38,6 +38,7 @@ public class UserController {
         this.userService.testFanout();
         return "SUCCESS";
     }
+
     /**
      * 广播交换机的使用
      *

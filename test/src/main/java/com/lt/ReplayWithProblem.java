@@ -16,11 +16,11 @@ import java.util.List;
  */
 public class ReplayWithProblem {
 
-    public List<HttpUriRequest> loadMockRequest(int n){
+    public List<HttpUriRequest> loadMockRequest(int n) {
 
         List<HttpUriRequest> cache = new ArrayList<HttpUriRequest>(n);
         for (int i = 0; i < n; i++) {
-            HttpGet request = new HttpGet("http://www.baidu.com?a="+i);
+            HttpGet request = new HttpGet("http://www.baidu.com?a=" + i);
             cache.add(request);
         }
         return cache;
@@ -32,18 +32,20 @@ public class ReplayWithProblem {
         HttpAsyncClient httpClient = new HttpAsyncClient();
         int i = 0;
 
-        while (true){
+        while (true) {
 
-            final HttpUriRequest request = cache.get(i%cache.size());
+            final HttpUriRequest request = cache.get(i % cache.size());
             httpClient.execute(request, new FutureCallback<HttpResponse>() {
                 @Override
                 public void completed(final HttpResponse response) {
                     System.out.println(request.getRequestLine() + "->" + response.getStatusLine());
                 }
+
                 @Override
                 public void failed(final Exception ex) {
                     System.out.println(request.getRequestLine() + "->" + ex);
                 }
+
                 @Override
                 public void cancelled() {
                     System.out.println(request.getRequestLine() + " cancelled");

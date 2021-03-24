@@ -2,6 +2,7 @@ package com.lt.activit.activiti.service;
 
 import com.lt.activit.activiti.ActivitiApplication;
 import com.lt.activit.activiti.service.impl.TestServiceImpl;
+import com.lt.activit.activiti.vo.ActiReqVo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,7 +22,8 @@ public class TestServiceTest {
 
     @Test
     public void activiti() {
-        this.testService.activiti();
+        ActiReqVo actiReqVo =new ActiReqVo();
+        this.testService.activiti(actiReqVo);
     }
 
     @Test
@@ -63,6 +65,7 @@ public class TestServiceTest {
     public void getDeployList() {
         this.testService.getDeployList();
     }
+
     @Test
     public void delApproveDely() {
         this.testService.delApproveDely();

@@ -41,7 +41,7 @@ public class TestActiveSqlControler {
 
     @ApiOperation("testtest")
     @RequestMapping("testtest")
-    public String testtest(){
+    public String testtest() {
         logger.info("test");
         return "123";
     }

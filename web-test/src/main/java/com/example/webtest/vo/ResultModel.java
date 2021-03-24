@@ -54,6 +54,7 @@ public class ResultModel<T> {
     public void setResCode(Integer resCode) {
         this.resCode = resCode;
     }
+
     public boolean isResult() {
         return result;
     }

@@ -18,7 +18,7 @@ public class MD5 {
     public static String byteArrayToHexString(byte[] b) {
         StringBuffer resultSb = new StringBuffer();
 
-        for(int i = 0; i < b.length; ++i) {
+        for (int i = 0; i < b.length; ++i) {
             resultSb.append(byteToHexString(b[i]));
         }
 

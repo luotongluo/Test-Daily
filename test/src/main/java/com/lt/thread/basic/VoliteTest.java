@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Version 1.0
  */
 public class VoliteTest {
-    public  int aaa = 0;
+    public int aaa = 0;
     Lock lock = new ReentrantLock();
 
     public void increase() {
@@ -23,7 +23,7 @@ public class VoliteTest {
             lock.lock();
             aaa++;
         } finally {
-           lock.unlock();
+            lock.unlock();
         }
     }
 
@@ -47,10 +47,10 @@ public class VoliteTest {
             /*
             线程的join方法是将线程的并行变为串行
              */
-            System.out.println(t.getName()+":"+t.getId()+":"+t.getState());
+            System.out.println(t.getName() + ":" + t.getId() + ":" + t.getState());
             t.setName("wer");
             t.join();
-            System.out.println(t.getName()+":"+t.getId()+":"+t.getState());
+            System.out.println(t.getName() + ":" + t.getId() + ":" + t.getState());
         }
         System.out.println(test.aaa);
     }

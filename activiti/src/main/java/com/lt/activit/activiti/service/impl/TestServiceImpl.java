@@ -2,6 +2,7 @@ package com.lt.activit.activiti.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.lt.activit.activiti.service.TestService;
+import com.lt.activit.activiti.vo.ActiReqVo;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.IdentityService;
 import org.activiti.engine.RepositoryService;
@@ -36,7 +37,7 @@ import java.util.UUID;
 @Service
 public class TestServiceImpl implements TestService {
 
-    private static Logger logger = LoggerFactory.getLogger(TestServiceImpl.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(TestServiceImpl.class);
     @Resource
     private TaskService taskService;
     @Resource
@@ -49,12 +50,13 @@ public class TestServiceImpl implements TestService {
     private IdentityService identityService;
 
     @Override
-    public Map activiti() {
+    public Map activiti(ActiReqVo actiReqVo) {
         /*
         SELECT * FROM `act_re_procdef`;  ---- 流程定义表
     SELECT * FROM `act_re_deployment`; ---- 部署表
     SELECT * FROM `act_ge_property`;  --- 通用属性表 id生成策略 next.dbid 影响部署的id
          */
+        LOGGER.info("部署流程的请求对象为：{}",JSON.toJSONString(actiReqVo));
         // 获得一个部署构建器对象，用于加载流程定义文件（test1.bpmn,test.png）完成流程定义的部署
 //        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         DeploymentBuilder builder = repositoryService.createDeployment();
@@ -66,7 +68,7 @@ public class TestServiceImpl implements TestService {
                 //设置部署类别
                 .category("测试类别")
                 .deploy();
-        logger.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"
+        LOGGER.info("WorkFlowServiceImpl-->deploymentProcessDefinition-->end.. ,deploymentID:{},deploymentName:{}"
                 , deploy.getId(), deploy.getName());
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("id", deploy.getId());
@@ -74,6 +76,7 @@ public class TestServiceImpl implements TestService {
         hashMap.put("key", deploy.getKey());
         hashMap.put("deployment_time", deploy.getDeploymentTime());
         hashMap.put("category", deploy.getCategory());
+        LOGGER.info("部署流程的返回值为：{}",JSON.toJSONString(hashMap));
         return hashMap;
     }
 
@@ -96,13 +99,13 @@ public class TestServiceImpl implements TestService {
         ArrayList<Map> objects = new ArrayList<>();
 
         for (ProcessDefinition item : list) {
-            System.out.println(item.getName() + "" + item.getId());
+            System.out.println(item.getName() + " " + item.getId());
             ProcessInstance processInstance = null;
             HashMap<String, Object> stringObjectHashMap = new HashMap<>();
             HashMap<String, Object> map = new HashMap<>();
             stringObjectHashMap.put("oneLevel", "123");
             processInstance = runtimeService.startProcessInstanceById(item.getId(), "TestBmpn", stringObjectHashMap);
-            logger.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
+            LOGGER.info("流程启动成功 id :{}", processInstance == null ? "" : processInstance.getId());
 
             map.put("id", processInstance.getId());
             map.put("processDefinitionKey", processInstance.getProcessDefinitionKey());
@@ -115,6 +118,8 @@ public class TestServiceImpl implements TestService {
         }
 
         hashMap.put("retMsg", hashMap);
+        LOGGER.info("启动流程的返回值为：{}",JSON.toJSONString(hashMap));
+
         return hashMap;
     }
 
@@ -142,7 +147,7 @@ public class TestServiceImpl implements TestService {
             identityService.setAuthenticatedUserId(oprator);
             ProcessInstance pi = runtimeService//与正在执行的流程实例和执行对象相关的Service
                     .startProcessInstanceByKey(processDefinitionKey, bussnessCode, variables);
-            logger.info("WorkFlowServiceImpl-->createReviewProcess-->startProcessInstanceByKey end processDefinitionKey:{}," +
+            LOGGER.info("WorkFlowServiceImpl-->createReviewProcess-->startProcessInstanceByKey end processDefinitionKey:{}," +
                     "ProcessInstanceID:{}", processDefinitionKey, pi.getId());
             result = pi.getProcessDefinitionId();
 
@@ -152,7 +157,7 @@ public class TestServiceImpl implements TestService {
             throw new RuntimeException("WorkFlowServiceImpl-->createReviewProcess->error");
         }
         HashMap<String, Object> retmap = new HashMap<>();
-        retmap.put("msg",result);
+        retmap.put("msg", result);
         return retmap;
     }
 
@@ -170,7 +175,7 @@ public class TestServiceImpl implements TestService {
         identityService.setAuthenticatedUserId(operator);
         ProcessInstance pi = runtimeService//与正在执行的流程实例和执行对象相关的Service
                 .startProcessInstanceByKey(processDefinitionKey, bussnessCode, variables);
-        logger.info(" end processDefinitionKey:{}," +
+        LOGGER.info(" end processDefinitionKey:{}," +
                 "ProcessInstanceID:{}", processDefinitionKey, pi.getId());
     }
 
@@ -206,7 +211,7 @@ public class TestServiceImpl implements TestService {
             } finally {
 
             }
-            logger.info("id :{}", processInstance == null ? "" : JSON.toJSONString(processInstance));
+            LOGGER.info("id :{}", processInstance == null ? "" : JSON.toJSONString(processInstance));
 
         }
     }
@@ -260,7 +265,7 @@ public class TestServiceImpl implements TestService {
     public void historyData() {
         HistoricActivityInstanceQuery query = historyService.createHistoricActivityInstanceQuery();
         HistoricActivityInstanceQuery instanceQuery = query.orderByActivityId().orderByHistoricActivityInstanceEndTime().asc();
-        logger.info("historyData --》{}", JSON.toJSONString(instanceQuery));
+        LOGGER.info("historyData --》{}", JSON.toJSONString(instanceQuery));
     }
 
     @Override
@@ -297,7 +302,7 @@ public class TestServiceImpl implements TestService {
         List<Deployment> list = query.list();
         for (Deployment deployment : list) {
             repositoryService.deleteDeployment(deployment.getId(), true);
-            logger.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
+            LOGGER.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
         }
 
     }
@@ -321,7 +326,7 @@ public class TestServiceImpl implements TestService {
         DeploymentQuery query = repositoryService.createDeploymentQuery();
         List<Deployment> list = query.list();
         for (Deployment deployment : list) {
-            logger.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
+            LOGGER.info("deploymentId ---->{},deploymentname-->{}", deployment.getId(), deployment.getName());
         }
     }
 }

@@ -12,7 +12,7 @@ import java.util.Arrays;
  */
 public class SheelSortCalcute implements SortSolt {
     public static void main(String[] args) {
-        Integer[] aa = {6,5,4,3,2,2,1,0};
+        Integer[] aa = {6, 5, 4, 3, 2, 2, 1, 0};
         SortSolt sortSolt = new SheelSortCalcute();
         sortSolt.sort(aa);
         System.out.println(Arrays.toString(aa));
@@ -51,7 +51,7 @@ public class SheelSortCalcute implements SortSolt {
                     }
                 }
             }
-            h = h/2;
+            h = h / 2;
         }
 
         return aa;

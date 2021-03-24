@@ -11,12 +11,13 @@ import org.springframework.test.context.junit4.SpringRunner;
  * Created by tong.luo on 2019/12/21 21:58
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes={CloudTestApplication.class,RedisTestServiceImplTest.class})
+@SpringBootTest(classes = {CloudTestApplication.class, RedisTestServiceImplTest.class})
 public class RedisTestServiceImplTest {
     @Autowired
     RedisTestServiceImpl redisTestService;
+
     @Test
-    public void test1(){
+    public void test1() {
         this.redisTestService.JedisTest();
     }
 }

@@ -15,16 +15,16 @@ public class Change {
         String a1 = "Y2hlbmppbmdjb25n";
 //                     Y2hlbmppbmdjb25n0
         for (int i = 0; i <= loop; i++) {
-            if(i == loop ){
-                stringBuffer.append(a1+ i);
-            }else {
-                stringBuffer.append(a1+ i + "+");
+            if (i == loop) {
+                stringBuffer.append(a1 + i);
+            } else {
+                stringBuffer.append(a1 + i + "+");
 
             }
         }
         UUID uuid = UUID.randomUUID();
         String substring = String.valueOf(uuid).substring(0, 10);
-        stringBuffer.append(" "+substring + ".avi");
+        stringBuffer.append(" " + substring + ".avi");
         System.out.print(stringBuffer);
     }
 }

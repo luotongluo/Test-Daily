@@ -194,7 +194,7 @@ public class DateUtil {
     }
 
     public static String getTimeMinuteAdd(Date date, int x) {
-        long new_d = date.getTime() + (long)(x * 60 * 1000);
+        long new_d = date.getTime() + (long) (x * 60 * 1000);
         return getDate(new_d, "yyyy-MM-dd HH:mm:ss");
     }
 
@@ -318,7 +318,7 @@ public class DateUtil {
             end.setTime(endTime);
             int year = 0;
             if (end.get(1) > start.get(1)) {
-                 year = end.get(1) - start.get(1);
+                year = end.get(1) - start.get(1);
                 if (end.get(2) + 1 >= start.get(2) + 1) {
                     return end.get(5) >= start.get(5) ? year : year - 1;
                 } else {
@@ -370,7 +370,7 @@ public class DateUtil {
         max.set(max.get(1), max.get(2), 2);
         Calendar curr = min;
 
-        while(curr.before(max)) {
+        while (curr.before(max)) {
             result.add(formatDateTime(curr.getTime(), "yyyy-MM"));
             curr.add(2, 1);
         }
@@ -405,9 +405,9 @@ public class DateUtil {
         DayOfWeek week = today.getDayOfWeek();
         int value = week.getValue();
         if (isFirst) {
-            resDate = today.minusDays((long)(value - 1));
+            resDate = today.minusDays((long) (value - 1));
         } else {
-            resDate = today.plusDays((long)(7 - value));
+            resDate = today.plusDays((long) (7 - value));
         }
 
         return resDate.toString();
@@ -494,8 +494,8 @@ public class DateUtil {
         } else {
             List<List<T>> result = new ArrayList();
 
-            for(int index = 0; index < data.size(); index += eachPieceSize) {
-                result.add(data.stream().skip((long)index).limit((long)eachPieceSize).collect(Collectors.toList()));
+            for (int index = 0; index < data.size(); index += eachPieceSize) {
+                result.add(data.stream().skip((long) index).limit((long) eachPieceSize).collect(Collectors.toList()));
             }
 
             return result;
@@ -504,13 +504,13 @@ public class DateUtil {
 
     public static Map<Integer, List<String>> getMonthSpilt(List<String> yearMonths) {
         Map<Integer, List<String>> monthMap = new HashMap();
-        yearMonths = (List)yearMonths.stream().sorted().collect(Collectors.toList());
+        yearMonths = (List) yearMonths.stream().sorted().collect(Collectors.toList());
         List<List<String>> lists = splitToPieces(yearMonths, 3);
         int i = 1;
 
-        for(Iterator var4 = lists.iterator(); var4.hasNext(); ++i) {
-            List<String> months = (List)var4.next();
-            List<String> list = (List)monthMap.get(i);
+        for (Iterator var4 = lists.iterator(); var4.hasNext(); ++i) {
+            List<String> months = (List) var4.next();
+            List<String> list = (List) monthMap.get(i);
             if (CollectionUtils.isEmpty(list)) {
                 monthMap.put(i, months);
             } else {
@@ -538,7 +538,7 @@ public class DateUtil {
     }
 
     public static String getNdaydDate(int days, String format) {
-        long nDays = System.currentTimeMillis() + 1L * (long)days * 24L * 60L * 60L * 1000L;
+        long nDays = System.currentTimeMillis() + 1L * (long) days * 24L * 60L * 60L * 1000L;
         Date date = new Date(nDays);
         return formatDateTime(date, format);
     }
@@ -572,11 +572,11 @@ public class DateUtil {
         System.out.println("=====================");
         System.out.println(getStartOrEndDayOfMonth(localDate, false));
         List<String> months = Arrays.asList("2019-03", "2019-02", "2019-04", "2019-05", "2019-06", "2019-07");
-        months = (List)months.stream().sorted().collect(Collectors.toList());
+        months = (List) months.stream().sorted().collect(Collectors.toList());
         Iterator var14 = months.iterator();
 
-        while(var14.hasNext()) {
-            String yearMonth = (String)var14.next();
+        while (var14.hasNext()) {
+            String yearMonth = (String) var14.next();
             String[] yearMonthArr = yearMonth.split("-");
             Integer month = Integer.parseInt(yearMonthArr[1]);
             Integer quarter = (month - 1) / 3 + 1;
@@ -624,8 +624,8 @@ public class DateUtil {
         List<List<String>> listList = splitToPieces(years, 3);
         Iterator var27 = listList.iterator();
 
-        while(var27.hasNext()) {
-            List<String> list1 = (List)var27.next();
+        while (var27.hasNext()) {
+            List<String> list1 = (List) var27.next();
             System.out.println("-----------");
             System.out.println(JSON.toJSONString(list1));
         }
@@ -640,7 +640,7 @@ public class DateUtil {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateString = format.format(nowDate);
         System.out.println("结果：" + dateString);
-        System.out.println(getBeforeOrAfterDate((String)"2020-02-19 00:00:00", 9));
-        System.out.println(getBeforeOrAfterDate((Date)(new Date()), 9));
+        System.out.println(getBeforeOrAfterDate((String) "2020-02-19 00:00:00", 9));
+        System.out.println(getBeforeOrAfterDate((Date) (new Date()), 9));
     }
 }

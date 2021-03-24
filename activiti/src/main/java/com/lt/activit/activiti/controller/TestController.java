@@ -29,7 +29,7 @@ public class TestController {
      */
     @RequestMapping("activiti")
     public Map activiti() {
-        return this.testService.activiti();
+        return this.testService.activiti(null);
     }
 
     /**
@@ -65,7 +65,7 @@ public class TestController {
         hashMap.put("bussnessCode", "definitionKey");
         hashMap.put("oprator", "oprator");
         HashMap<String, Object> variablesmap = new HashMap<>();
-        variablesmap.put("oneLevel",123);
+        variablesmap.put("oneLevel", 123);
         hashMap.put("variables", variablesmap);
         return this.testService.startProcessesByKey(hashMap);
     }

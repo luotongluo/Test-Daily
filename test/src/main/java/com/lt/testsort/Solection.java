@@ -10,11 +10,12 @@ import java.util.List;
  */
 public class Solection implements SortSolt {
     public static void main(String[] args) {
-        Integer[] aa = {4,3,2,1,5,0,8,7};
+        Integer[] aa = {4, 3, 2, 1, 5, 0, 8, 7};
         Solection solection = new Solection();
         solection.sort(aa);
         System.out.println(Arrays.toString(aa));
     }
+
     /**
      * 对数组中的元素进行排序
      *
@@ -24,17 +25,17 @@ public class Solection implements SortSolt {
     @Override
     public Object sort(Comparable[] aa) {
         //选择排序
-        for (int i = 0 ; i < aa.length ; i++) {
+        for (int i = 0; i < aa.length; i++) {
             //选择排序将 最小的元素放在首位，最大的元素放在末尾
             Integer minIndex = i;
-            for( int j = i;j < aa.length;j++){
+            for (int j = i; j < aa.length; j++) {
                 //比较的是 第二个元素后面的值
                 boolean greater = greater(aa[minIndex], aa[j]);
-                if(greater){
+                if (greater) {
                     minIndex = j;
                 }
             }
-            exchage(aa,i,minIndex);
+            exchage(aa, i, minIndex);
 
         }
         return aa;

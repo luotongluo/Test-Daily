@@ -1,0 +1,1 @@
+官方demo介绍：http://www.mossle.com/docs/activiti/index.html#bpmnFirstExampleUseCase

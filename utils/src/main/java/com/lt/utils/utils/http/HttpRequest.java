@@ -43,7 +43,7 @@ public class HttpRequest {
             out.flush();
 
             String line;
-            for(in = new BufferedReader(new InputStreamReader(conn.getInputStream())); (line = in.readLine()) != null; result = result + line) {
+            for (in = new BufferedReader(new InputStreamReader(conn.getInputStream())); (line = in.readLine()) != null; result = result + line) {
             }
         } catch (Exception var18) {
             System.out.println("发送 POST 请求出现异常！" + var18);

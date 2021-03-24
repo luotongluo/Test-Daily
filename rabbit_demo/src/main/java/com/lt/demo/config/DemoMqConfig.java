@@ -85,8 +85,8 @@ public class DemoMqConfig {
     }
 
     /**
-     *     主题交换机示例
-      */
+     * 主题交换机示例
+     */
     @Bean
     public Queue topicQueue1() {
         return new Queue(TOPIC1_QUEUE);
@@ -105,6 +105,7 @@ public class DemoMqConfig {
 
     /**
      * *：能够模糊匹配一个单词。
+     *
      * @return
      */
     @Bean
@@ -114,6 +115,7 @@ public class DemoMqConfig {
 
     /**
      * #：能够模糊匹配零个或多个单词。
+     *
      * @return
      */
     @Bean

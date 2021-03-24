@@ -9,11 +9,11 @@ import java.util.Map;
  * @Version 1.0
  */
 public interface IdVerifyService {
-	/**
-	 * 失信人和被执行人验证
-	 *
-	 * @param reqMap
-	 * @return
-	 */
-	public String selectVerifyName(Map reqMap);
+    /**
+     * 失信人和被执行人验证
+     *
+     * @param reqMap
+     * @return
+     */
+    public String selectVerifyName(Map reqMap);
 }

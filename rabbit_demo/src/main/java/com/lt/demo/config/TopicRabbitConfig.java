@@ -27,6 +27,7 @@ public class TopicRabbitConfig {
 
     /**
      * 声明一个Topic类型的交换机
+     *
      * @return
      */
     @Bean
@@ -36,6 +37,7 @@ public class TopicRabbitConfig {
 
     /**
      * 绑定Q到交换机,并且指定routingKey
+     *
      * @param queueMessage
      * @param exchange
      * @return

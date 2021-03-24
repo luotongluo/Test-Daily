@@ -7,8 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author LT
  */
-@MapperScan(basePackages = "com.lt.demo.mapper")
-@SpringBootApplication()
+@SpringBootApplication(scanBasePackages = {"com.lt.demo"})
 public class RabbitApplication {
 
     public static void main(String[] args) {

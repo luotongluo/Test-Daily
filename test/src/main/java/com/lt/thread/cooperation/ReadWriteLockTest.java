@@ -46,7 +46,7 @@ public class ReadWriteLockTest {
             public void run() {
                 try {
                     Object headleRead = readWriteLockTest.headleRead(readLock);
-                    System.out.println("read :value "+headleRead);
+                    System.out.println("read :value " + headleRead);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -58,8 +58,8 @@ public class ReadWriteLockTest {
             public void run() {
                 try {
                     int nextInt = new Random().nextInt();
-                    System.out.println("nextint:"+nextInt);
-                    readWriteLockTest.headleWite(readLock,nextInt );
+                    System.out.println("nextint:" + nextInt);
+                    readWriteLockTest.headleWite(readLock, nextInt);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

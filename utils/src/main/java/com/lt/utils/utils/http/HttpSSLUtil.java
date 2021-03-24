@@ -35,9 +35,11 @@ public class HttpSSLUtil {
         public X509Certificate[] getAcceptedIssuers() {
             return null;
         }
+
         @Override
         public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
         }
+
         @Override
         public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
         }
@@ -61,12 +63,12 @@ public class HttpSSLUtil {
             }
 
             SSLContext sslcontext = SSLContext.getInstance("TLS");
-            sslcontext.init((KeyManager[])null, new TrustManager[]{myX509TrustManager}, (SecureRandom)null);
+            sslcontext.init((KeyManager[]) null, new TrustManager[]{myX509TrustManager}, (SecureRandom) null);
             String sendUrl = getUrlWithQueryString(host, params);
             URL uri = new URL(sendUrl);
-            HttpURLConnection conn = (HttpURLConnection)uri.openConnection();
+            HttpURLConnection conn = (HttpURLConnection) uri.openConnection();
             if (conn instanceof HttpsURLConnection) {
-                ((HttpsURLConnection)conn).setSSLSocketFactory(sslcontext.getSocketFactory());
+                ((HttpsURLConnection) conn).setSSLSocketFactory(sslcontext.getSocketFactory());
             }
 
             conn.setConnectTimeout(connectTimeOut);
@@ -82,7 +84,7 @@ public class HttpSSLUtil {
             StringBuilder builder = new StringBuilder();
             String line = null;
 
-            while((line = br.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 builder.append(line);
             }
 
@@ -118,9 +120,9 @@ public class HttpSSLUtil {
             int i = 0;
             Iterator var4 = params.keySet().iterator();
 
-            while(var4.hasNext()) {
-                String key = (String)var4.next();
-                String value = (String)params.get(key);
+            while (var4.hasNext()) {
+                String key = (String) var4.next();
+                String value = (String) params.get(key);
                 if (value != null) {
                     if (i != 0) {
                         builder.append('&');

@@ -38,6 +38,7 @@ public class DiningPhilosophers {
         }
 
     }
+
     // call the run() method of any runnable to execute its code
     public void wantsToEat(int philosopher,
                            Runnable pickLeftFork,

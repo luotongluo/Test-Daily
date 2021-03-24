@@ -61,7 +61,7 @@ public class HttpClientMethod {
                     BufferedReader reader = new BufferedReader(new InputStreamReader(method.getResponseBodyAsStream(), charset));
 
                     String line;
-                    while((line = reader.readLine()) != null) {
+                    while ((line = reader.readLine()) != null) {
                         if (pretty) {
                             response.append(line).append(System.getProperty("line.separator"));
                         } else {
@@ -89,7 +89,7 @@ public class HttpClientMethod {
         StringBuffer result = new StringBuffer();
 
         try {
-            conn = (HttpURLConnection)(new URL(url)).openConnection();
+            conn = (HttpURLConnection) (new URL(url)).openConnection();
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setRequestMethod("POST");
@@ -108,7 +108,7 @@ public class HttpClientMethod {
             reader = new BufferedReader(inputStreamReader);
             String tempLine = null;
 
-            while((tempLine = reader.readLine()) != null) {
+            while ((tempLine = reader.readLine()) != null) {
                 result.append(tempLine);
             }
         } catch (IOException var15) {
@@ -146,8 +146,8 @@ public class HttpClientMethod {
             boolean flag = false;
             Iterator var4 = params.entrySet().iterator();
 
-            while(var4.hasNext()) {
-                Entry<String, String> entry = (Entry)var4.next();
+            while (var4.hasNext()) {
+                Entry<String, String> entry = (Entry) var4.next();
                 if (entry.getKey() != null && entry.getValue() != null) {
                     if (flag) {
                         data.append("&");
@@ -155,7 +155,7 @@ public class HttpClientMethod {
                         flag = true;
                     }
 
-                    data.append((String)entry.getKey()).append("=").append(URLEncoder.encode(String.valueOf(entry.getValue()), charset));
+                    data.append((String) entry.getKey()).append("=").append(URLEncoder.encode(String.valueOf(entry.getValue()), charset));
                 }
             }
 
@@ -191,7 +191,7 @@ public class HttpClientMethod {
 
         try {
             URL dataUrl = new URL(url);
-            HttpURLConnection con = (HttpURLConnection)dataUrl.openConnection();
+            HttpURLConnection con = (HttpURLConnection) dataUrl.openConnection();
             con.setRequestMethod("POST");
             con.setRequestProperty("Proxy-Connection", "Keep-Alive");
             con.setDoOutput(true);
@@ -218,7 +218,7 @@ public class HttpClientMethod {
     public static String readContentFromPost(String POST_URL, String content, String charsetName) throws IOException {
         String data = null;
         URL postUrl = new URL(POST_URL);
-        HttpURLConnection connection = (HttpURLConnection)postUrl.openConnection();
+        HttpURLConnection connection = (HttpURLConnection) postUrl.openConnection();
         connection.setDoOutput(true);
         connection.setDoInput(true);
         connection.setRequestMethod("POST");
@@ -236,7 +236,7 @@ public class HttpClientMethod {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), charsetName));
 
-        for(String line = ""; (line = reader.readLine()) != null; data = line) {
+        for (String line = ""; (line = reader.readLine()) != null; data = line) {
         }
 
         reader.close();
@@ -264,7 +264,7 @@ public class HttpClientMethod {
                     }
                 }
             };
-            String responseBody = (String)httpclient.execute(httpPost, responseHandler);
+            String responseBody = (String) httpclient.execute(httpPost, responseHandler);
             System.out.println("----------------------------------------");
             System.out.println(responseBody);
             return responseBody;

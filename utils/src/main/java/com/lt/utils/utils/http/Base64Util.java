@@ -27,7 +27,7 @@ public class Base64Util {
         int n = 0;
 
         int d;
-        while(i <= end) {
+        while (i <= end) {
             d = (data[i] & 255) << 16 | (data[i + 1] & 255) << 8 | data[i + 2] & 255;
             buf.append(legalChars[d >> 18 & 63]);
             buf.append(legalChars[d >> 12 & 63]);
@@ -64,7 +64,7 @@ public class Base64Util {
         } else if (c >= '0' && c <= '9') {
             return c - 48 + 26 + 26;
         } else {
-            switch(c) {
+            switch (c) {
                 case '+':
                     return 62;
                 case '/':
@@ -107,8 +107,8 @@ public class Base64Util {
         int i = 0;
         int len = s.length();
 
-        while(true) {
-            while(i < len && s.charAt(i) <= ' ') {
+        while (true) {
+            while (i < len && s.charAt(i) <= ' ') {
                 ++i;
             }
 

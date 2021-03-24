@@ -95,14 +95,14 @@ public class DateUtils {
     public static String dateToStringMod(Date date, int data) {
         String str = "yyyy-MM-dd HH:mm:ss";
         SimpleDateFormat format = new SimpleDateFormat(str);
-        String dateFormat = format.format(date.getTime() + (long)data * 1000L * 60L);
+        String dateFormat = format.format(date.getTime() + (long) data * 1000L * 60L);
         return dateFormat;
     }
 
     public static String dateToStringModHour(Date date, int data) {
         String str = "yyyy-MM-dd HH:mm:ss";
         SimpleDateFormat format = new SimpleDateFormat(str);
-        String dateFormat = format.format(date.getTime() + (long)data * 1000L * 60L * 60L);
+        String dateFormat = format.format(date.getTime() + (long) data * 1000L * 60L * 60L);
         return dateFormat;
     }
 
@@ -171,7 +171,7 @@ public class DateUtils {
         } else {
             String jj = "";
 
-            for(int k = 0; k < i; ++k) {
+            for (int k = 0; k < i; ++k) {
                 jj = jj + jjj.nextInt(9);
             }
 

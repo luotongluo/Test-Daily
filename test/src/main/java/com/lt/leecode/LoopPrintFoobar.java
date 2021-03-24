@@ -9,7 +9,7 @@ package com.lt.leecode;
  * @date 2020/3/11 16:54
  */
 public class LoopPrintFoobar {
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args) throws Exception {
         FooBar fooBar = new FooBar(5);
         fooBar.bar(new Runnable() {
             @Override

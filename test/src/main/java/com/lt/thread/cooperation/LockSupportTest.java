@@ -19,7 +19,7 @@ public class LockSupportTest {
     static ChangeObjectThread thread = new ChangeObjectThread("t1");
     static ChangeObjectThread thread1 = new ChangeObjectThread("t2");
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         thread.start();
         Thread.sleep(1000);
         thread1.start();
@@ -29,6 +29,7 @@ public class LockSupportTest {
         thread.join();
         thread1.join();
     }
+
     public static class ChangeObjectThread extends Thread {
         public ChangeObjectThread(String name) {
             super.setName(name);
@@ -37,7 +38,7 @@ public class LockSupportTest {
         @Override
         public void run() {
             synchronized (obj) {
-                System.out.println("in"+ getName());
+                System.out.println("in" + getName());
                 //禁止当前线程进行线程调度，除非许可证可用。
                 LockSupport.park();
             }

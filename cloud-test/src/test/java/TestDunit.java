@@ -27,7 +27,7 @@ public class TestDunit {
 
     @Test
     @ExpectedDataSet("/result_data/reg-user.xml")
-    public void resultExpect(){
+    public void resultExpect() {
 
     }
 }

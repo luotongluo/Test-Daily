@@ -8,14 +8,14 @@ package com.lt.thread.basic;
  * @date 2020/3/13 11:11
  */
 public class DaemoDemo {
-    public static class T1 extends Thread{
+    public static class T1 extends Thread {
         @Override
         public void run() {
-            while (true){
+            while (true) {
                 System.out.println("i am alive ");
                 try {
                     Thread.sleep(500);
-                }catch (InterruptedException e){
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }

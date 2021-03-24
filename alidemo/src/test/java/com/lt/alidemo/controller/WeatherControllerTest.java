@@ -19,7 +19,7 @@ class WeatherControllerTest {
     private WeatherController weatherController;
 
     @Test
-    public void testWeather(){
+    public void testWeather() {
         HashMap<String, String> reqMap = new HashMap<>(16);
         reqMap.put("area", "");
         reqMap.put("areaid", "");

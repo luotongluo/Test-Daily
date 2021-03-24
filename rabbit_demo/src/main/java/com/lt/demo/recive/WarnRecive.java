@@ -23,8 +23,8 @@ public class WarnRecive {
     @RabbitHandler
     @RabbitListener(queues = MqConstants.WARN_QUEUE)
     public void test1(@Payload String message, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag,
-                      Channel channel) throws Exception{
+                      Channel channel) throws Exception {
         LOGGER.info("req:{}", message);
-        channel.basicAck(deliveryTag,true);
+        channel.basicAck(deliveryTag, true);
     }
 }

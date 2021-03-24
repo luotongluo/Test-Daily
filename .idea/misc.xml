@@ -36,6 +36,7 @@
         <option value="$PROJECT_DIR$/rabbit_demo/pom.xml" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/web-test/pom.xml" />
+        <option value="$PROJECT_DIR$/activiti/pom.xml" />
       </list>
     </option>
   </component>

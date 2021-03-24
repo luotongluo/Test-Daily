@@ -10,7 +10,8 @@ import java.io.IOException;
 
 
 public class CopyFolderDemo {
-   private static String filePath = "F:\\Using\\2020-07-26";
+    private static String filePath = "F:\\Using\\2020-07-26";
+
     public static void main(String[] args) throws IOException {
 //        String filePath = "F:\\Using\\2020-07-26";
 // 封装数据源File

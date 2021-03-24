@@ -82,10 +82,10 @@ class Solution {
         int isSort = startVal.compareTo(endVal);
         for (int a = 0; a < length; a++) {
             Integer integer = hashMap.get(String.valueOf(chars[a]));
-            if(isSort < 0){
-                maxval =   - maxval  +  integer;
-            }else {
-                maxval = maxval +  integer;
+            if (isSort < 0) {
+                maxval = -maxval + integer;
+            } else {
+                maxval = maxval + integer;
             }
         }
         return maxval;

@@ -70,6 +70,6 @@ public class UserServiceImpl implements UserService {
         //设置过期时间3s
         this.rabbitTemplate.convertAndSend(MqConstants.TOPOIC_EXCHANGE_NAME, MqConstants.TOPOIC_ROUTE_KEY, JSON.toJSONString(msgMap));
         LOGGER.info("发送消息使用的交换机为：{}，路由间为：{}，msg：{},before:{}", MqConstants.TOPOIC_EXCHANGE_NAME,
-                 MqConstants.TOPOIC_ROUTE_KEY, JSON.toJSONBytes(msgMap),JSON.toJSONString(msgMap));
+                MqConstants.TOPOIC_ROUTE_KEY, JSON.toJSONBytes(msgMap), JSON.toJSONString(msgMap));
     }
 }

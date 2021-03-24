@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @EnableFeignClients
 public class WebTestApplication {
-	private static Logger logger = LoggerFactory.getLogger(WebTestApplication.class);
+    private static Logger logger = LoggerFactory.getLogger(WebTestApplication.class);
 
     public static void main(String[] args) {
         SpringApplication.run(WebTestApplication.class, args);

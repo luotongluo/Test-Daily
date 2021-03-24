@@ -18,7 +18,7 @@ public class MD5Util {
     private static String byteArrayToHexString(byte[] b) {
         StringBuffer resultSb = new StringBuffer();
 
-        for(int i = 0; i < b.length; ++i) {
+        for (int i = 0; i < b.length; ++i) {
             resultSb.append(byteToHexString(b[i]));
         }
 
@@ -64,7 +64,7 @@ public class MD5Util {
             byte[] hashed = digest.digest(bytes);
             int iterations = hashIterations - 1;
 
-            for(int i = 0; i < iterations; ++i) {
+            for (int i = 0; i < iterations; ++i) {
                 digest.reset();
                 hashed = digest.digest(hashed);
             }
@@ -93,7 +93,7 @@ public class MD5Util {
         StringBuilder hs = new StringBuilder("");
         String stmp = "";
 
-        for(int n = 0; n < b.length; ++n) {
+        for (int n = 0; n < b.length; ++n) {
             stmp = Integer.toHexString(b[n] & 255);
             if (stmp.length() == 1) {
                 hs.append("0").append(stmp);

@@ -11,17 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {ActivitiApplication.class, ActivitiApplicationTests.class})
-class ActivitiApplicationTests {
+@SpringBootTest()
+public class ActivitiApplicationTests {
     @Autowired
     private TestService testService;
     @Autowired
     private ProcessEngine processEngine;
 
-    @Test
-    void contextLoads() {
-    }
 
     /**
      * 从配置文件中读取配置，测试Activiti数据库环境是否建立

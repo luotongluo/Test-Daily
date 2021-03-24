@@ -36,25 +36,26 @@ public class ReceiveMessage {
     public void receiveMessage(@Payload String message, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag,
                                Channel channel) {
         logger.info("消息接收成功，用户名为：" + message);
-        logger.info("deliveryTag:{}",deliveryTag);
+        logger.info("deliveryTag:{}", deliveryTag);
         logger.info("channel:{}", JSON.toJSONString(channel));
         //可以添加自定义业务逻辑处理
         try {
-            channel.basicAck(deliveryTag,true);
-        logger.info("deliveryTag:{}",deliveryTag);
+            channel.basicAck(deliveryTag, true);
+            logger.info("deliveryTag:{}", deliveryTag);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
     @RabbitHandler
     @RabbitListener(queues = MqConstants.TOPOIC_QUEUE_NAME)
     public void receiveMessage1(@Payload String message, @Header(AmqpHeaders.DELIVERY_TAG) long deliveryTag,
                                 Channel channel) {
-        logger.info("消息接收成功，为：{},after:{}" , message);
+        logger.info("消息接收成功，为：{},after:{}", message);
         logger.info("channel:{}", JSON.toJSONString(channel));
         //可以添加自定义业务逻辑处理
         try {
-            channel.basicAck(deliveryTag,true);
+            channel.basicAck(deliveryTag, true);
         } catch (IOException e) {
             e.printStackTrace();
         }

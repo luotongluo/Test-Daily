@@ -14,7 +14,7 @@ public class ThreadGroupTest implements Runnable {
             System.out.println("i am " + groupName);
             try {
                 Thread.sleep(5000);
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }

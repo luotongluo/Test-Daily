@@ -17,10 +17,10 @@ public class FreemarkerController {
     @RequestMapping("/getUser")
     public String StringgetUser(Integer id, Model model) {
         HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put("id","123");
-        hashMap.put("age","222");
-        hashMap.put("sex","1232");
-        model.addAttribute("user",hashMap);
+        hashMap.put("id", "123");
+        hashMap.put("age", "222");
+        hashMap.put("sex", "1232");
+        model.addAttribute("user", hashMap);
         return "getUser";
 
     }

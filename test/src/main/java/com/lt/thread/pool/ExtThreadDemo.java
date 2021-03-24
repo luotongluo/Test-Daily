@@ -27,13 +27,13 @@ public class ExtThreadDemo {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         ExtThreadDemo.MyTask myTask = new ExtThreadDemo.MyTask();
         ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 0L,
-                TimeUnit.SECONDS, new LinkedBlockingQueue(16)){
+                TimeUnit.SECONDS, new LinkedBlockingQueue(16)) {
             @Override
             protected void beforeExecute(Thread t, Runnable r) {
-                System.out.println("准备执行线程： " + r.toString() +"==="  + t.getName());
+                System.out.println("准备执行线程： " + r.toString() + "===" + t.getName());
             }
 
             @Override
@@ -43,7 +43,7 @@ public class ExtThreadDemo {
 
             @Override
             protected void terminated() {
-                System.out.println("线程池退出" );
+                System.out.println("线程池退出");
             }
         };
 

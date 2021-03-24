@@ -19,7 +19,7 @@ public class RandomUtil {
         StringBuilder str = new StringBuilder();
         Random random = new Random();
 
-        for(int i = 0; i < 12; ++i) {
+        for (int i = 0; i < 12; ++i) {
             str.append(random.nextInt(10));
         }
 
@@ -30,7 +30,7 @@ public class RandomUtil {
         StringBuilder str = new StringBuilder();
         Random random = new Random();
 
-        for(int i = 0; i < n; ++i) {
+        for (int i = 0; i < n; ++i) {
             str.append(random.nextInt(10));
         }
 
